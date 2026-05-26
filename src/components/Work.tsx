@@ -7,134 +7,178 @@ import FadeIn from "./ui/FadeIn"
 const projects = [
   {
     id: "01",
-    slug: "dani-sparn",
     name: "Dani Sparn Entertainment",
     category: "Branding & OOH-Kampagne",
     year: "2024",
-    desc: "Ganzheitliche Markenkommunikation für eine Eventfirma — von der CI bis zur Outdoor-Kampagne.",
-    featured: true,
-    bg: "linear-gradient(135deg, #0c1a10 0%, #080808 60%, #0a100c 100%)",
-    accent: "#6DBB7D",
+    desc: "Ganzheitliche Markenkommunikation für eine Eventfirma — von der CI bis zur Outdoor-Kampagne in Köln.",
+    size: "large", // col-span-2 in 3-col grid
+    bg: "#0A1410",
+    lineColor: "rgba(109,187,125,0.15)",
+    accentColor: "#6DBB7D",
   },
   {
     id: "02",
-    slug: "security-expo",
     name: "Security Expo 2024",
     category: "Print & Editorial",
     year: "2024",
     desc: "Messemagazin-Produktion für die grösste Sicherheitsleitmesse der Schweiz.",
-    featured: false,
-    bg: "linear-gradient(135deg, #0a0c1a 0%, #080810 60%, #0d0d18 100%)",
-    accent: "#8899DD",
+    size: "small",
+    bg: "#0A0C14",
+    lineColor: "rgba(120,140,220,0.12)",
+    accentColor: "#7890DC",
   },
   {
     id: "03",
-    slug: "rei-solar",
     name: "REI Solar",
     category: "Brand Identity",
     year: "2023",
     desc: "Markenentwicklung und digitaler Auftritt für einen Schweizer Solarpionier.",
-    featured: false,
-    bg: "linear-gradient(135deg, #1a1200 0%, #100c00 60%, #0f0b00 100%)",
-    accent: "#D4A820",
+    size: "small",
+    bg: "#141000",
+    lineColor: "rgba(210,160,30,0.12)",
+    accentColor: "#D4A020",
+  },
+  {
+    id: "04",
+    name: "H&B Real Estate",
+    category: "Corporate Identity",
+    year: "2023",
+    desc: "Premium-Markenauftritt für ein internationales Immobilienunternehmen in Zusammenarbeit mit Savills.",
+    size: "small",
+    bg: "#111110",
+    lineColor: "rgba(180,155,110,0.10)",
+    accentColor: "#B09B6E",
+  },
+  {
+    id: "05",
+    name: "Mit Musig dur d Schwiiz",
+    category: "Event & Kultur",
+    year: "2023",
+    desc: "Visueller Auftritt und Kommunikationsstrategie für ein Schweizer Musikprojekt.",
+    size: "large",
+    bg: "#0E0810",
+    lineColor: "rgba(160,100,200,0.10)",
+    accentColor: "#A064C8",
   },
 ]
 
-function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
+function ProjectCard({
+  project,
+  index,
+}: {
+  project: (typeof projects)[0]
+  index: number
+}) {
   const [hovered, setHovered] = useState(false)
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
+    <motion.article
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
-      transition={{ duration: 0.7, delay: index * 0.08, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.7, delay: index * 0.06, ease: [0.16, 1, 0.3, 1] }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      data-cursor
       className={`group relative overflow-hidden cursor-pointer ${
-        project.featured ? "col-span-1 md:col-span-2" : "col-span-1"
+        project.size === "large"
+          ? "col-span-1 md:col-span-2"
+          : "col-span-1"
       }`}
-      style={{ aspectRatio: project.featured ? "16/7" : "4/3" }}
+      style={{
+        aspectRatio: project.size === "large" ? "16/7" : "4/3",
+        background: project.bg,
+      }}
     >
-      {/* Background */}
+      {/* Animated border glow on hover */}
+      <motion.div
+        animate={{ opacity: hovered ? 1 : 0 }}
+        transition={{ duration: 0.4 }}
+        className="absolute inset-0 border"
+        style={{ borderColor: project.accentColor + "30" }}
+      />
+
+      {/* Subtle diagonal scan line — unique per card */}
       <div
-        className="absolute inset-0 transition-transform duration-700 ease-out"
+        className="absolute inset-0 pointer-events-none"
         style={{
-          background: project.bg,
-          transform: hovered ? "scale(1.02)" : "scale(1)",
+          background: `repeating-linear-gradient(
+            -55deg,
+            transparent,
+            transparent 24px,
+            ${project.lineColor} 25px,
+            transparent 26px
+          )`,
         }}
       />
 
-      {/* Subtle noise texture overlay */}
-      <div
-        className="absolute inset-0 opacity-[0.04] mix-blend-overlay"
+      {/* Large faint number — visual anchor */}
+      <span
+        className="absolute right-5 top-4 font-display font-bold select-none pointer-events-none"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+          fontSize: "clamp(48px, 8vw, 120px)",
+          letterSpacing: "-0.04em",
+          lineHeight: 1,
+          color: "rgba(255,255,255,0.04)",
         }}
-      />
+      >
+        {project.id}
+      </span>
 
-      {/* Corner accent */}
-      <div
-        className="absolute top-0 right-0 w-px h-16 transition-all duration-500"
-        style={{
-          background: `linear-gradient(to bottom, ${project.accent}60, transparent)`,
-          opacity: hovered ? 1 : 0,
-        }}
-      />
-      <div
-        className="absolute top-0 right-0 h-px w-16 transition-all duration-500"
-        style={{
-          background: `linear-gradient(to left, ${project.accent}60, transparent)`,
-          opacity: hovered ? 1 : 0,
-        }}
-      />
+      {/* Arrow icon — appears on hover */}
+      <motion.div
+        animate={{ opacity: hovered ? 1 : 0, scale: hovered ? 1 : 0.85 }}
+        transition={{ duration: 0.25 }}
+        className="absolute top-5 right-5 w-9 h-9 border border-white/20 flex items-center justify-center"
+        style={{ borderColor: hovered ? project.accentColor + "60" : "rgba(255,255,255,0.15)" }}
+      >
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+          <path d="M1 10L10 1M10 1H1M10 1V10" stroke="white" strokeWidth="1.2" />
+        </svg>
+      </motion.div>
 
       {/* Content overlay */}
-      <div className="absolute inset-0 flex flex-col justify-between p-6 md:p-8">
-        {/* Top row */}
-        <div className="flex justify-between items-start">
-          <span className="label text-white/30">{project.id}</span>
-          <motion.div
-            initial={{ opacity: 0, x: -6 }}
-            animate={{ opacity: hovered ? 1 : 0, x: hovered ? 0 : -6 }}
-            transition={{ duration: 0.3 }}
-            className="w-8 h-8 border border-white/20 flex items-center justify-center"
+      <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
+        <motion.div
+          animate={{ y: hovered ? -4 : 0 }}
+          transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <span className="label text-white/35 block mb-2">{project.category}</span>
+          <h3
+            className="font-display font-bold text-ink leading-tight"
+            style={{ fontSize: "clamp(17px, 1.8vw, 26px)", letterSpacing: "-0.015em" }}
           >
-            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
-              <path d="M1 9L9 1M9 1H1M9 1V9" stroke="white" strokeWidth="1.2" />
-            </svg>
-          </motion.div>
-        </div>
+            {project.name}
+          </h3>
 
-        {/* Bottom info */}
-        <div>
-          <motion.div
-            animate={{ y: hovered ? -4 : 0 }}
-            transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+          {/* Description — slides in on hover */}
+          <motion.p
+            initial={false}
+            animate={{
+              opacity: hovered ? 1 : 0,
+              height: hovered ? "auto" : 0,
+              marginTop: hovered ? 8 : 0,
+            }}
+            transition={{ duration: 0.3, ease: "easeOut" }}
+            className="body text-white/45 overflow-hidden"
           >
-            <span className="label text-white/40 mb-2 block">{project.category}</span>
-            <h3 className="font-display font-bold text-ink leading-tight"
-              style={{ fontSize: "clamp(18px, 2vw, 28px)" }}>
-              {project.name}
-            </h3>
-            <motion.p
-              initial={{ opacity: 0, height: 0 }}
-              animate={{
-                opacity: hovered ? 1 : 0,
-                height: hovered ? "auto" : 0,
-              }}
-              transition={{ duration: 0.35 }}
-              className="body text-white/50 mt-2 overflow-hidden"
-            >
-              {project.desc}
-            </motion.p>
-          </motion.div>
-          <div className="flex items-center gap-4 mt-3">
-            <span className="label text-white/25">{project.year}</span>
-          </div>
+            {project.desc}
+          </motion.p>
+        </motion.div>
+
+        <div className="flex items-center gap-3 mt-3">
+          <span className="label text-white/20">{project.year}</span>
+          <motion.span
+            animate={{ opacity: hovered ? 1 : 0, x: hovered ? 0 : -4 }}
+            transition={{ duration: 0.3 }}
+            className="label"
+            style={{ color: project.accentColor }}
+          >
+            Ansehen →
+          </motion.span>
         </div>
       </div>
-    </motion.div>
+    </motion.article>
   )
 }
 
@@ -152,25 +196,39 @@ export default function Work() {
             </h2>
           </FadeIn>
           <FadeIn delay={0.1} direction="left">
-            <Link
-              href="#portfolio"
-              className="label text-ink-3 hover:text-accent transition-colors duration-300 link-underline self-start"
-            >
-              Alle Projekte ansehen →
-            </Link>
+            <div className="flex items-center gap-2">
+              <span className="label text-ink-4">{projects.length} Projekte</span>
+              <span className="label text-ink-4">·</span>
+              <Link
+                href="#kontakt"
+                className="label text-ink-3 hover:text-accent transition-colors duration-300 link-underline"
+              >
+                Alle ansehen →
+              </Link>
+            </div>
           </FadeIn>
         </div>
 
-        {/* Project grid: 2-col, first card spans full width */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {/*
+          3-column grid — alternating layouts:
+          Row 1: large (2 cols) + small (1 col)
+          Row 2: small + small (filling remaining)  → but since row 1 uses 3 cols (2+1),
+                 row 2 starts fresh: small (1) + large (2)
+          This creates a pleasing rhythm.
+
+          Actually with CSS grid auto-placement:
+          items 0,1,2 → row 1: [0=col-span-2][1=col-span-1]
+          items 3,4   → row 2: [3=col-span-1][4=col-span-2]
+        */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {projects.map((p, i) => (
             <ProjectCard key={p.id} project={p} index={i} />
           ))}
         </div>
 
-        {/* CTA row */}
-        <FadeIn delay={0.2}>
-          <div className="mt-10 md:mt-12 flex justify-center">
+        {/* CTA */}
+        <FadeIn delay={0.15}>
+          <div className="mt-10 md:mt-14 flex justify-center">
             <Link href="#kontakt" className="btn-secondary">
               Ihr Projekt starten →
             </Link>

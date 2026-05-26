@@ -37,6 +37,13 @@ body {
   overflow-x: hidden;
 }
 
+/* Hide native cursor on desktop — replaced by CustomCursor */
+@media (pointer: fine) {
+  html, body, a, button, [data-cursor] {
+    cursor: none !important;
+  }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 2px;

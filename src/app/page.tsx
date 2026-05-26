@@ -7,19 +7,25 @@ import Clients from "@/components/Clients"
 import About from "@/components/About"
 import Contact from "@/components/Contact"
 import Footer from "@/components/Footer"
+import CustomCursor from "@/components/ui/CustomCursor"
+import PageLoader from "@/components/ui/PageLoader"
 
 export default function Home() {
   return (
-    <main className="bg-bg">
-      <Navigation />
-      <Hero />
-      <MarqueeBand />
-      <Services />
-      <Work />
-      <Clients />
-      <About />
-      <Contact />
-      <Footer />
-    </main>
+    <>
+      <PageLoader />
+      <CustomCursor />
+      <main className="bg-bg">
+        <Navigation />
+        <Hero />
+        <MarqueeBand />
+        <Services />
+        <Work />
+        <Clients />
+        <About />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   )
 }
