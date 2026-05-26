@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation"
 import Hero from "@/components/Hero"
 import MarqueeBand from "@/components/MarqueeBand"
 import Services from "@/components/Services"
+import Process from "@/components/Process"
 import Work from "@/components/Work"
 import Clients from "@/components/Clients"
 import About from "@/components/About"
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <MarqueeBand />
       <Services />
+      <Process />
       <Work />
       <Clients />
       <About />

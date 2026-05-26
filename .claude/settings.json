@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /home/user/madkourmedia && RESULT=$(grep -rn '—' src/ 2>/dev/null); if [ -n \"$RESULT\" ]; then echo '\\n❌ EM-DASH VIOLATION (taste-skill non-negotiable):\\n'; echo \"$RESULT\"; echo '\\nFix all em-dashes before finishing. Replace with: period, colon, or comma.'; exit 2; fi"
+          }
+        ]
+      }
+    ]
+  }
+}

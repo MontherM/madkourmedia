@@ -15,9 +15,9 @@ const config: Config = {
         accent: "#6DBB7D",
         "accent-dim": "rgba(109,187,125,0.08)",
         ink: "#EFEFEF",
-        "ink-2": "#A0A0A0",
-        "ink-3": "#5C5C5C",
-        "ink-4": "#2E2E2E",
+        "ink-2": "#B8B8B8",
+        "ink-3": "#646464",
+        "ink-4": "#323232",
       },
       fontFamily: {
         sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],

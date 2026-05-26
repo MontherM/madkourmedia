@@ -10,28 +10,57 @@ const clients = [
   { name: "Dani Sparn", sector: "Entertainment" },
 ]
 
+const stats = [
+  { n: "50+", label: "Projekte abgeschlossen" },
+  { n: "20+", label: "Zufriedene Kunden" },
+  { n: "5+", label: "Jahre Erfahrung" },
+  { n: "3", label: "Kernbereiche" },
+]
+
 export default function Clients() {
   return (
-    <section className="py-24 md:py-32 border-y border-white/[0.05]">
+    <section className="py-28 md:py-36 border-y border-white/[0.06]">
       <div className="container-wide">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center">
-          {/* Label */}
+
+        {/* Editorial statement : the scroll stopper */}
+        <FadeIn>
+          <div className="mb-16 md:mb-20 pb-14 md:pb-16 border-b border-white/[0.06]">
+            <p
+              className="font-display font-bold text-ink leading-[0.94]"
+              style={{
+                fontSize: "clamp(32px, 4.8vw, 72px)",
+                letterSpacing: "-0.025em",
+                maxWidth: "16ch",
+              }}
+            >
+              Vertrauen, das durch{" "}
+              <span className="text-ink-3">Arbeit</span>{" "}
+              verdient wurde.
+            </p>
+          </div>
+        </FadeIn>
+
+        {/* Label + client list */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
           <FadeIn className="md:col-span-3">
             <span className="label text-ink-3">Sie vertrauen uns</span>
           </FadeIn>
 
-          {/* Client list */}
           <div className="md:col-span-9">
-            <div className="flex flex-wrap gap-x-10 gap-y-6 md:gap-x-14">
+            <div className="flex flex-wrap gap-x-10 gap-y-5 md:gap-x-14 md:gap-y-6">
               {clients.map((c, i) => (
-                <FadeIn key={c.name} delay={i * 0.06}>
-                  <div className="group">
+                <FadeIn key={c.name} delay={i * 0.055}>
+                  <div className="group flex flex-col gap-1">
                     <span
-                      className="font-display font-bold text-ink-4 hover:text-ink transition-colors duration-400 cursor-default"
-                      style={{ fontSize: "clamp(14px, 1.4vw, 20px)", letterSpacing: "-0.01em" }}
+                      className="font-display font-bold text-ink-2 hover:text-ink transition-colors duration-300 cursor-default"
+                      style={{
+                        fontSize: "clamp(15px, 1.4vw, 21px)",
+                        letterSpacing: "-0.01em",
+                      }}
                     >
                       {c.name}
                     </span>
+                    <span className="label text-ink-4">{c.sector}</span>
                   </div>
                 </FadeIn>
               ))}
@@ -39,19 +68,18 @@ export default function Clients() {
           </div>
         </div>
 
-        {/* Divider with stat numbers */}
-        <FadeIn delay={0.2}>
+        {/* Stats row */}
+        <FadeIn delay={0.18}>
           <div className="mt-16 md:mt-20 pt-10 md:pt-12 border-t border-white/[0.06] grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
-            {[
-              { n: "50+", label: "Projekte abgeschlossen" },
-              { n: "20+", label: "Zufriedene Kunden" },
-              { n: "5+", label: "Jahre Erfahrung" },
-              { n: "3", label: "Kernbereiche" },
-            ].map((s) => (
-              <div key={s.n} className="flex flex-col gap-1">
+            {stats.map((s) => (
+              <div key={s.n} className="flex flex-col gap-1.5">
                 <span
                   className="font-display font-bold text-ink"
-                  style={{ fontSize: "clamp(32px, 3.5vw, 52px)", letterSpacing: "-0.03em", lineHeight: 1 }}
+                  style={{
+                    fontSize: "clamp(36px, 3.8vw, 58px)",
+                    letterSpacing: "-0.035em",
+                    lineHeight: 1,
+                  }}
                 >
                   {s.n}
                 </span>
