@@ -105,7 +105,13 @@ export default function Hero() {
           <span className="label text-ink-3">
             Branding&nbsp;·&nbsp;Content&nbsp;·&nbsp;Design
           </span>
-          <span className="label text-accent flex items-center gap-2">
+          <span
+            className="label text-accent flex items-center gap-2 px-3 py-1.5"
+            style={{
+              border: "1px solid rgba(109,187,125,0.22)",
+              background: "rgba(109,187,125,0.06)",
+            }}
+          >
             <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse-slow" />
             Verfügbar für Projekte
           </span>

@@ -25,7 +25,35 @@ export default function Footer() {
     <footer className="border-t border-white/[0.06] pt-16 pb-10">
       <div className="container-wide">
 
-        {/* Top row */}
+        {/* Editorial large-type CTA */}
+        <div className="pb-16 md:pb-20 mb-16 md:mb-20 border-b border-white/[0.06]">
+          <span className="label text-ink-4 mb-5 block">Bereit für Ihr Projekt?</span>
+          <a
+            href="mailto:hello@madkourmedia.com"
+            className="group block"
+            style={{ outline: "none" }}
+          >
+            <p
+              className="font-display font-bold leading-none"
+              style={{
+                fontSize: "clamp(28px, 5.5vw, 88px)",
+                letterSpacing: "-0.03em",
+                color: "rgba(240,240,240,0.22)",
+                transition: "color 0.5s cubic-bezier(0.23,1,0.32,1)",
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.color = "rgba(109,187,125,1)"
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.color = "rgba(240,240,240,0.22)"
+              }}
+            >
+              hello@madkourmedia.com
+            </p>
+          </a>
+        </div>
+
+        {/* Column grid */}
         <div className="grid grid-cols-2 md:grid-cols-12 gap-12 md:gap-8 mb-16 md:mb-20">
 
           {/* Brand */}
@@ -80,9 +108,11 @@ export default function Footer() {
             <span className="label text-ink-3">Zürich, Schweiz</span>
             <Link href="#kontakt" className="btn-primary self-start mt-2">
               Projekt starten
-              <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden>
-                <path d="M1 10L10 1M10 1H1M10 1V10" stroke="currentColor" strokeWidth="1.4" />
-              </svg>
+              <span className="btn-icon-wrap">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" aria-hidden>
+                  <path d="M1 7L7 1M7 1H1M7 1V7" stroke="currentColor" strokeWidth="1.3" />
+                </svg>
+              </span>
             </Link>
           </div>
         </div>

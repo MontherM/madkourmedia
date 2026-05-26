@@ -193,13 +193,11 @@ export default function Contact() {
                   <div className="flex items-center gap-4">
                     <button type="submit" className="btn-primary">
                       Anfrage senden
-                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" aria-hidden>
-                        <path
-                          d="M1 10L10 1M10 1H1M10 1V10"
-                          stroke="currentColor"
-                          strokeWidth="1.4"
-                        />
-                      </svg>
+                      <span className="btn-icon-wrap">
+                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" aria-hidden>
+                          <path d="M1 7L7 1M7 1H1M7 1V7" stroke="currentColor" strokeWidth="1.3" />
+                        </svg>
+                      </span>
                     </button>
                     <span className="label text-ink-4">Antwort in &lt; 24h</span>
                   </div>

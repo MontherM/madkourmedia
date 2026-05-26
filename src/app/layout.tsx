@@ -1,11 +1,11 @@
 import type { Metadata, Viewport } from "next"
-import { DM_Sans, Syne } from "next/font/google"
+import { Plus_Jakarta_Sans, Syne } from "next/font/google"
 import "./globals.css"
 
-const dmSans = DM_Sans({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-dm-sans",
-  weight: ["300", "400", "500"],
+  weight: ["400", "500", "600"],
   display: "swap",
 })
 
@@ -42,7 +42,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de" className={`${dmSans.variable} ${syne.variable}`}>
+    <html lang="de" className={`${plusJakartaSans.variable} ${syne.variable}`}>
       <body>{children}</body>
     </html>
   )

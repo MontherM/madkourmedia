@@ -52,7 +52,7 @@ export default function Clients() {
                 <FadeIn key={c.name} delay={i * 0.055}>
                   <div className="group flex flex-col gap-1">
                     <span
-                      className="font-display font-bold text-ink-3 hover:text-ink transition-colors duration-300 cursor-default"
+                      className="font-display font-bold text-ink-2 hover:text-ink transition-colors duration-300 cursor-default"
                       style={{
                         fontSize: "clamp(15px, 1.4vw, 21px)",
                         letterSpacing: "-0.01em",

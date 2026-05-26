@@ -109,7 +109,7 @@ export default function Process() {
                 >
                   {step.title}
                 </h3>
-                <p className="body text-ink-2 leading-relaxed">{step.desc}</p>
+                <p className="body-lg text-ink-2 leading-relaxed">{step.desc}</p>
               </div>
 
               {/* Step label at bottom */}

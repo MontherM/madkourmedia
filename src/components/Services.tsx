@@ -120,7 +120,7 @@ export default function Services() {
                   fontSize: "clamp(72px, 8vw, 108px)",
                   letterSpacing: "-0.04em",
                   lineHeight: 1,
-                  opacity: 0.028,
+                  opacity: 0.048,
                 }}
                 aria-hidden
               >

@@ -13,7 +13,7 @@ export default function MarqueeBand() {
   const doubled = [...items, ...items]
 
   return (
-    <div className="border-y border-white/[0.07] overflow-hidden py-5 bg-surface">
+    <div className="border-y border-white/[0.07] overflow-hidden py-[18px] bg-surface">
       <div
         className="flex whitespace-nowrap animate-marquee"
         style={{ width: "max-content" }}
@@ -21,8 +21,8 @@ export default function MarqueeBand() {
         {doubled.map((item, i) => (
           <span key={i} className="flex items-center gap-8 mx-8">
             <span
-              className="font-display font-bold text-ink-3 uppercase tracking-wide"
-              style={{ fontSize: "clamp(11px, 1vw, 14px)", letterSpacing: "0.12em" }}
+              className="font-display font-bold text-ink-3 uppercase"
+              style={{ fontSize: "clamp(10px, 0.9vw, 13px)", letterSpacing: "0.14em" }}
             >
               {item}
             </span>
@@ -30,8 +30,8 @@ export default function MarqueeBand() {
             <svg
               viewBox="0 0 58 48"
               fill="currentColor"
-              className="text-accent/40 flex-shrink-0"
-              style={{ width: "12px", height: "10px" }}
+              className="text-accent/35 flex-shrink-0"
+              style={{ width: "11px", height: "9px" }}
               aria-hidden="true"
             >
               <rect x="0" y="0" width="11" height="48" />

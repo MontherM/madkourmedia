@@ -118,7 +118,7 @@ export default function About() {
                 >
                   {v.title}
                 </h4>
-                <p className="body text-ink-2 leading-relaxed">{v.desc}</p>
+                <p className="body-lg text-ink-2 leading-relaxed">{v.desc}</p>
               </div>
             </FadeIn>
           ))}
