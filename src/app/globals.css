@@ -4,12 +4,14 @@
 
 :root {
   --bg: #080808;
-  --surface: #0E0E0E;
+  --surface: #0D0D0D;
+  --surface-2: #121212;
   --border: rgba(255, 255, 255, 0.07);
   --border-strong: rgba(255, 255, 255, 0.13);
   --ink: #EFEFEF;
   --ink-2: #A0A0A0;
   --ink-3: #5C5C5C;
+  --ink-4: #2E2E2E;
   --accent: #6DBB7D;
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -202,6 +204,27 @@ video {
 .btn-secondary:hover {
   border-color: rgba(255, 255, 255, 0.35);
   transform: translateY(-1px);
+}
+
+/* Transition utility */
+.transition-colors {
+  transition-property: color, background-color, border-color;
+  transition-timing-function: var(--ease-out-expo);
+  transition-duration: 0.25s;
+}
+
+/* Tag/badge */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  color: var(--ink-3);
 }
 
 /* Form inputs */

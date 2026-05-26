@@ -33,6 +33,7 @@ export default function Services() {
   return (
     <section id="projekte" className="py-32 md:py-44">
       <div className="container-wide">
+
         {/* Section header */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mb-20 md:mb-24">
           <FadeIn className="md:col-span-4">
@@ -46,6 +47,23 @@ export default function Services() {
           </FadeIn>
         </div>
 
+        {/* Statement line */}
+        <FadeIn delay={0.05}>
+          <div className="mb-12 md:mb-16 overflow-hidden">
+            <p
+              className="font-display font-bold text-ink/[0.12] select-none pointer-events-none"
+              style={{
+                fontSize: "clamp(48px, 7vw, 112px)",
+                letterSpacing: "-0.03em",
+                lineHeight: 0.9,
+              }}
+              aria-hidden="true"
+            >
+              VIER DISZIPLINEN.
+            </p>
+          </div>
+        </FadeIn>
+
         {/* Services list */}
         <div className="border-t border-white/[0.07]">
           {services.map((s, i) => (
@@ -54,11 +72,17 @@ export default function Services() {
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.6, delay: i * 0.05, ease: [0.16, 1, 0.3, 1] }}
-              className="group py-8 md:py-10 border-b border-white/[0.07] grid grid-cols-12 gap-4 items-start cursor-default hover:bg-white/[0.015] transition-colors duration-300 -mx-4 md:-mx-8 px-4 md:px-8"
+              transition={{
+                duration: 0.6,
+                delay: i * 0.06,
+                ease: [0.16, 1, 0.3, 1],
+              }}
+              className="group py-8 md:py-10 border-b border-white/[0.07] grid grid-cols-12 gap-4 items-start cursor-default hover:bg-white/[0.02] transition-colors duration-300 -mx-[clamp(20px,4vw,64px)] px-[clamp(20px,4vw,64px)]"
             >
               {/* Number */}
-              <span className="col-span-2 md:col-span-1 label text-ink-4 pt-1">{s.num}</span>
+              <span className="col-span-2 md:col-span-1 label text-ink-4 pt-1">
+                {s.num}
+              </span>
 
               {/* Name */}
               <div className="col-span-10 md:col-span-4">
@@ -77,7 +101,7 @@ export default function Services() {
                 {s.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="label text-ink-3 border border-white/[0.08] px-3 py-1.5 group-hover:border-accent/30 transition-colors duration-300"
+                    className="label text-ink-3 border border-white/[0.08] px-3 py-1.5 group-hover:border-accent/25 group-hover:text-ink-2 transition-colors duration-300"
                   >
                     {tag}
                   </span>
