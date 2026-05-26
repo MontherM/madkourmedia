@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { LogoFull } from "./Logo"
 
 const navLinks = [
   { label: "Portfolio", href: "#portfolio" },
@@ -19,20 +20,8 @@ export default function Footer() {
         {/* Top row */}
         <div className="grid grid-cols-2 md:grid-cols-12 gap-12 md:gap-8 mb-16 md:mb-20">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-4 flex flex-col gap-4">
-            <div className="flex items-center gap-3">
-              <svg width="22" height="22" viewBox="0 0 26 26" fill="none">
-                <rect x="0" y="0" width="11" height="11" fill="#6DBB7D" />
-                <rect x="15" y="0" width="11" height="11" fill="#6DBB7D" />
-                <rect x="7" y="15" width="11" height="11" fill="#6DBB7D" opacity="0.5" />
-              </svg>
-              <div className="leading-none">
-                <span className="font-display text-[12px] font-bold tracking-[0.18em] text-ink uppercase block">
-                  Madkour
-                </span>
-                <span className="label text-ink-3 block mt-[2px]">Media</span>
-              </div>
-            </div>
+          <div className="col-span-2 md:col-span-4 flex flex-col gap-5">
+            <LogoFull size="sm" className="text-ink" />
             <p className="body text-ink-3 max-w-[220px] leading-relaxed">
               Strategie, Content &amp; Design für Unternehmen, die wachsen wollen.
             </p>
