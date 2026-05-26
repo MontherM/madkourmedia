@@ -5,15 +5,16 @@
 :root {
   --bg: #080808;
   --surface: #0D0D0D;
-  --surface-2: #121212;
+  --surface-2: #141414;
   --border: rgba(255, 255, 255, 0.07);
-  --border-strong: rgba(255, 255, 255, 0.13);
-  --ink: #EFEFEF;
-  --ink-2: #A0A0A0;
-  --ink-3: #5C5C5C;
-  --ink-4: #2E2E2E;
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --ink: #F0F0F0;
+  --ink-2: #B8B8B8;   /* was #A0A0A0 — bumped for legibility */
+  --ink-3: #646464;
+  --ink-4: #323232;
   --accent: #6DBB7D;
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.23, 1, 0.32, 1);  /* Emil: ease-out */
 }
 
 *,
@@ -40,36 +41,24 @@ body {
 }
 
 /* Scrollbar */
-::-webkit-scrollbar {
-  width: 2px;
-}
-::-webkit-scrollbar-track {
-  background: var(--bg);
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.12);
-}
+::-webkit-scrollbar { width: 2px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); }
 
 /* Selection */
-::selection {
-  background: var(--accent);
-  color: #000;
-}
+::selection { background: var(--accent); color: #000; }
 
-img,
-video {
-  display: block;
-  max-width: 100%;
-}
+img, video { display: block; max-width: 100%; }
 
-/* Container utility */
+/* Container */
 .container-wide {
   max-width: 1440px;
   margin-inline: auto;
   padding-inline: clamp(20px, 4vw, 64px);
 }
 
-/* Label / eyebrow text */
+/* ─── TYPOGRAPHY ─── */
+
 .label {
   font-family: var(--font-dm-sans), system-ui, sans-serif;
   font-size: 10px;
@@ -78,7 +67,6 @@ video {
   text-transform: uppercase;
 }
 
-/* Display headline */
 .display {
   font-family: var(--font-syne), system-ui, sans-serif;
   font-size: clamp(68px, 9.5vw, 148px);
@@ -87,7 +75,6 @@ video {
   letter-spacing: -0.03em;
 }
 
-/* Section headline */
 .headline {
   font-family: var(--font-syne), system-ui, sans-serif;
   font-size: clamp(40px, 5vw, 80px);
@@ -96,7 +83,6 @@ video {
   letter-spacing: -0.025em;
 }
 
-/* Sub headline */
 .subheadline {
   font-family: var(--font-syne), system-ui, sans-serif;
   font-size: clamp(22px, 2.4vw, 36px);
@@ -105,47 +91,83 @@ video {
   letter-spacing: -0.015em;
 }
 
-/* Body large */
 .body-lg {
-  font-size: clamp(16px, 1.2vw, 19px);
-  line-height: 1.7;
+  font-size: clamp(16px, 1.25vw, 20px);
+  line-height: 1.72;
   font-weight: 300;
 }
 
-/* Body */
 .body {
-  font-size: clamp(14px, 1vw, 16px);
-  line-height: 1.7;
+  font-size: clamp(14px, 1.05vw, 17px);
+  line-height: 1.72;
   font-weight: 300;
 }
 
-/* Grid line background */
-.grid-bg {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 80px 80px;
+/* ─── GLASS SYSTEM — Emil Kowalski: backdrop-filter für depth ─── */
+
+/* Light glass card — scrolling elements (light blur OK for marketing sites) */
+.glass {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 4px 24px rgba(0, 0, 0, 0.18);
 }
 
-/* Horizontal rule */
-.hr {
-  border: none;
-  border-top: 1px solid var(--border);
+/* Glass with blur — use on fixed/sticky only per Emil's performance rule */
+.glass-blur {
+  background: rgba(8, 8, 8, 0.82);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
-/* Number counter style */
-.counter {
-  font-family: var(--font-syne), system-ui, sans-serif;
-  font-size: clamp(80px, 12vw, 180px);
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: -0.04em;
-  color: rgba(255, 255, 255, 0.04);
+/* Strong glass — for floating elements */
+.glass-strong {
+  background: rgba(14, 14, 14, 0.88);
+  backdrop-filter: blur(28px) saturate(200%);
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 16px 48px rgba(0, 0, 0, 0.6);
+}
+
+/* Double-Bezel outer shell (Emil/soft-skill pattern) */
+.bezel-outer {
+  padding: 2px;
+  border-radius: calc(var(--bezel-radius, 16px) + 2px);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+.bezel-inner {
+  border-radius: var(--bezel-radius, 16px);
+  background: rgba(12, 12, 12, 0.95);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.08);
+}
+
+/* ─── AMBIENT ORBS ─── */
+.orb {
+  position: absolute;
+  border-radius: 50%;
   pointer-events: none;
   user-select: none;
+  filter: blur(60px);
 }
 
-/* Underline link hover */
+/* ─── GRID BACKGROUND ─── */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+/* ─── LINKS & BUTTONS ─── */
+
 .link-underline {
   position: relative;
 }
@@ -163,7 +185,7 @@ video {
   width: 100%;
 }
 
-/* Premium button */
+/* Primary CTA — sharp architectural */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -175,15 +197,14 @@ video {
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 16px 28px;
-  transition: background 0.25s ease, transform 0.2s ease;
+  padding: 15px 26px;
+  transition: background 0.2s var(--ease-spring), transform 0.16s var(--ease-spring);
   cursor: pointer;
   border: none;
 }
-.btn-primary:hover {
-  background: #7dd18d;
-  transform: translateY(-1px);
-}
+/* Emil: button active scale(0.97) */
+.btn-primary:hover  { background: #7dd18d; transform: translateY(-1px); }
+.btn-primary:active { transform: scale(0.97); }
 
 .btn-secondary {
   display: inline-flex;
@@ -196,38 +217,61 @@ video {
   font-weight: 400;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 15px 27px;
+  padding: 14px 26px;
   border: 1px solid rgba(255, 255, 255, 0.14);
-  transition: border-color 0.25s ease, transform 0.2s ease;
+  transition: border-color 0.25s ease, transform 0.16s var(--ease-spring);
   cursor: pointer;
 }
-.btn-secondary:hover {
-  border-color: rgba(255, 255, 255, 0.35);
-  transform: translateY(-1px);
-}
+.btn-secondary:hover  { border-color: rgba(255,255,255,0.35); transform: translateY(-1px); }
+.btn-secondary:active { transform: scale(0.98); }
 
-/* Transition utility */
-.transition-colors {
-  transition-property: color, background-color, border-color;
-  transition-timing-function: var(--ease-out-expo);
-  transition-duration: 0.25s;
-}
-
-/* Tag/badge */
-.tag {
+/* Pill CTA — for use inside glass nav */
+.btn-pill {
   display: inline-flex;
   align-items: center;
+  gap: 6px;
+  background: var(--accent);
+  color: #000;
   font-family: var(--font-dm-sans), system-ui, sans-serif;
   font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 0.16em;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 5px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  color: var(--ink-3);
+  padding: 8px 16px;
+  border-radius: 9999px;
+  transition: background 0.2s var(--ease-spring), transform 0.16s var(--ease-spring);
+  cursor: pointer;
+  border: none;
+}
+.btn-pill:hover  { background: #7dd18d; }
+.btn-pill:active { transform: scale(0.96); }
+
+/* Icon wrapper inside button (Button-in-Button pattern) */
+.btn-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+  /* Emil: icons never naked in premium CTAs */
 }
 
-/* Form inputs */
+/* ─── COUNTERS ─── */
+.counter {
+  font-family: var(--font-syne), system-ui, sans-serif;
+  font-size: clamp(80px, 12vw, 180px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: rgba(255, 255, 255, 0.03);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ─── FORM INPUTS ─── */
 .input {
   width: 100%;
   background: transparent;
@@ -242,9 +286,24 @@ video {
   transition: border-color 0.3s ease;
   caret-color: var(--accent);
 }
-.input::placeholder {
-  color: var(--ink-3);
+.input::placeholder { color: var(--ink-3); }
+.input:focus { border-color: var(--accent); }
+
+/* ─── MISC UTILITIES ─── */
+.hr {
+  border: none;
+  border-top: 1px solid var(--border);
 }
-.input:focus {
-  border-color: var(--accent);
+
+/* Emil: @starting-style for native CSS enter transitions */
+@supports (animation-timeline: scroll()) {
+  .fade-in-native {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms var(--ease-spring), transform 500ms var(--ease-spring);
+    @starting-style {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+  }
 }
