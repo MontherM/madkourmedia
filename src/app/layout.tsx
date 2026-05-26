@@ -17,12 +17,12 @@ const syne = Syne({
 })
 
 export const metadata: Metadata = {
-  title: "MadkourMedia — Branding. Content. Design.",
+  title: "MadkourMedia: Branding. Content. Design.",
   description:
     "Strategie, Content & Design für Unternehmen, die wachsen wollen. Ganzheitliche Markenkommunikation aus Zürich.",
   keywords: ["Branding", "Content", "Design", "Agentur", "Zürich", "Schweiz", "Marketing"],
   openGraph: {
-    title: "MadkourMedia — Branding. Content. Design.",
+    title: "MadkourMedia: Branding. Content. Design.",
     description: "Strategie, Content & Design für Unternehmen, die wachsen wollen.",
     url: "https://www.madkourmedia.com",
     siteName: "MadkourMedia",

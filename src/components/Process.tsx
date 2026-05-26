@@ -6,17 +6,17 @@ const steps = [
   {
     num: "01",
     title: "Verstehen",
-    desc: "Kein Strich vor dem Briefing. Wir analysieren Zielgruppe, Wettbewerbsumfeld und Markenkern — bevor wir gestalten.",
+    desc: "Kein Strich vor dem Briefing. Wir analysieren Zielgruppe, Wettbewerbsumfeld und Markenkern. Erst dann gestalten wir.",
   },
   {
     num: "02",
     title: "Konzipieren",
-    desc: "Strategie und Kreativkonzept als Einheit. Erst Antworten — dann Design. Kein Template, keine Abkürzung.",
+    desc: "Strategie und Kreativkonzept als Einheit. Erst Antworten. Dann Design. Kein Template, keine Abkürzung.",
   },
   {
     num: "03",
     title: "Umsetzen",
-    desc: "Design, Content und Produktion mit handwerklicher Präzision. Jedes Detail ist bewusst — nichts ist zufällig.",
+    desc: "Design, Content und Produktion mit handwerklicher Präzision. Jedes Detail ist bewusst. Nichts ist zufällig.",
   },
   {
     num: "04",
@@ -47,7 +47,7 @@ export default function Process() {
           GLASS PROCESS CELLS
           Gap-px grid determinism (brutalist-skill):
           bg-white/[0.05] parent + bg-bg children = 1px dividers without border declarations
-          Emil: transitions are interruptible — using CSS transitions on hover bg, not keyframes
+          Emil: transitions are interruptible : using CSS transitions on hover bg, not keyframes
         */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-px bg-white/[0.06]">
           {steps.map((step, i) => (

@@ -37,11 +37,11 @@ export default function Hero() {
       <div className="absolute inset-0 grid-bg" aria-hidden />
 
       {/*
-        AMBIENT ORBS — Taste-Skill Ethereal Glass / soft-skill
+        AMBIENT ORBS : Taste-Skill Ethereal Glass / soft-skill
         Radial mesh gradients for depth. GPU layer via will-change.
         Fixed pseudo-elements: no scroll repaint.
       */}
-      {/* Primary orb — brand green, bottom-left */}
+      {/* Primary orb : brand green, bottom-left */}
       <div
         className="orb"
         style={{
@@ -54,7 +54,7 @@ export default function Hero() {
         }}
         aria-hidden
       />
-      {/* Secondary orb — cool lavender, top-right */}
+      {/* Secondary orb : cool lavender, top-right */}
       <div
         className="orb"
         style={{
@@ -68,7 +68,7 @@ export default function Hero() {
         aria-hidden
       />
 
-      {/* Large M watermark — architectural identity anchor */}
+      {/* Large M watermark : architectural identity anchor */}
       <div
         className="absolute right-[-5%] bottom-[-3%] pointer-events-none select-none"
         aria-hidden
@@ -111,9 +111,9 @@ export default function Hero() {
           </span>
         </motion.div>
 
-        {/* Main content — bottom anchored */}
+        {/* Main content : bottom anchored */}
         <div className="container-wide mt-auto w-full pb-12 md:pb-16">
-          {/* Headline — Emil word-reveal (lines clip from bottom, never from 0) */}
+          {/* Headline : Emil word-reveal (lines clip from bottom, never from 0) */}
           <h1 className="display mb-10 md:mb-14" aria-label="Wir machen Marken, die bleiben.">
             {headlineLines.map((line, lineIdx) => (
               <div key={lineIdx} className="overflow-hidden">

@@ -1,4 +1,4 @@
-// Madkour Media — Architectural M mark
+// Madkour Media : Architectural M mark
 // Recreated from brand identity: two stepped columns forming an M silhouette
 
 interface LogoMarkProps {

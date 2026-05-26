@@ -41,7 +41,7 @@ export default function Navigation() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="pointer-events-auto w-full max-w-[780px]"
         >
-          {/* Outer bezel ring — Double-Bezel pattern (soft-skill) */}
+          {/* Outer bezel ring : Double-Bezel pattern (soft-skill) */}
           <div
             style={{
               padding: "1.5px",
@@ -91,7 +91,7 @@ export default function Navigation() {
                     style={{ transitionTimingFunction: "var(--ease-spring)" }}
                   >
                     {link.label}
-                    {/* Underline dot on hover — Emil micro-interaction */}
+                    {/* Underline dot on hover : Emil micro-interaction */}
                     <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" style={{ transitionTimingFunction: "var(--ease-spring)" }} />
                   </Link>
                 ))}

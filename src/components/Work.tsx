@@ -11,7 +11,7 @@ const projects = [
     name: "Dani Sparn Entertainment",
     category: "Branding & OOH-Kampagne",
     year: "2024",
-    desc: "Ganzheitliche Markenkommunikation für eine Eventfirma — von der CI bis zur Outdoor-Kampagne.",
+    desc: "Ganzheitliche Markenkommunikation für eine Eventfirma. Von der CI bis zur Outdoor-Kampagne.",
     featured: true,
     // Picsum: deterministic photo seed, warm stage/performance tones
     img: "https://picsum.photos/seed/performer-stage/1400/600",
@@ -73,7 +73,7 @@ function ProjectCard({
         style={{ transform: hovered ? "scale(1.04)" : "scale(1)" }}
       />
 
-      {/* Gradient overlay — always present for legibility */}
+      {/* Gradient overlay : always present for legibility */}
       <div
         className="absolute inset-0 transition-opacity duration-500"
         style={{
@@ -105,7 +105,7 @@ function ProjectCard({
         <div className="flex justify-between items-start">
           <span className="label text-white/30">{project.id}</span>
 
-          {/* Arrow icon — appears on hover */}
+          {/* Arrow icon : appears on hover */}
           <motion.div
             animate={{ opacity: hovered ? 1 : 0, x: hovered ? 0 : -8 }}
             transition={{ duration: 0.25 }}
@@ -135,7 +135,7 @@ function ProjectCard({
               {project.name}
             </h3>
 
-            {/* Description — slides in on hover */}
+            {/* Description : slides in on hover */}
             <motion.p
               animate={{ opacity: hovered ? 1 : 0, height: hovered ? "auto" : 0 }}
               transition={{ duration: 0.3 }}

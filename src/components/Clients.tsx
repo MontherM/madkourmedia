@@ -22,7 +22,7 @@ export default function Clients() {
     <section className="py-28 md:py-36 border-y border-white/[0.06]">
       <div className="container-wide">
 
-        {/* Editorial statement — the scroll stopper */}
+        {/* Editorial statement : the scroll stopper */}
         <FadeIn>
           <div className="mb-16 md:mb-20 pb-14 md:pb-16 border-b border-white/[0.06]">
             <p

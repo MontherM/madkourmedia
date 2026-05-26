@@ -6,7 +6,7 @@ const services = [
   {
     num: "01",
     name: "Brand Identity",
-    desc: "Logo, Farbe, Typografie, Bildsprache — eine vollständige visuelle Identität, die sofort erkannt wird und langfristig trägt.",
+    desc: "Logo, Farbe, Typografie, Bildsprache: eine vollständige visuelle Identität, die sofort erkannt wird und langfristig trägt.",
     tags: ["Logo", "CI", "Styleguide"],
     // Accent line color on hover
     accentFrom: "rgba(109,187,125,0.6)",
@@ -23,7 +23,7 @@ const services = [
   {
     num: "03",
     name: "Digital Design",
-    desc: "Web, App, Social — digitale Auftritte, die auf Performance und ästhetischen Anspruch gleichermaßen ausgelegt sind.",
+    desc: "Web, App, Social. Digitale Auftritte, die auf Performance und ästhetischen Anspruch gleichermaßen ausgelegt sind.",
     tags: ["Web", "UI/UX", "Print"],
     accentFrom: "rgba(200,170,100,0.6)",
     accentTo: "rgba(200,170,100,0)",
@@ -31,7 +31,7 @@ const services = [
   {
     num: "04",
     name: "Motion & Film",
-    desc: "Bewegtbild, das Aufmerksamkeit hält. Reels, Brand Films, Animationen und Eventproduktionen — emotional und präzise.",
+    desc: "Bewegtbild, das Aufmerksamkeit hält. Reels, Brand Films, Animationen und Eventproduktionen. Emotional und präzise.",
     tags: ["Video", "Animation", "Events"],
     accentFrom: "rgba(180,110,200,0.6)",
     accentTo: "rgba(180,110,200,0)",
@@ -50,7 +50,7 @@ export default function Services() {
           </FadeIn>
           <FadeIn delay={0.1} className="md:col-span-6 md:col-start-6">
             <p className="body-lg text-ink-2 max-w-lg">
-              Wir verbinden strategisches Denken mit visueller Kraft — von der
+              Wir verbinden strategisches Denken mit visueller Kraft. Von der
               ersten Idee bis zum vollständigen digitalen Auftritt.
             </p>
           </FadeIn>
@@ -60,7 +60,7 @@ export default function Services() {
           2 × 2 GLASS CARD GRID
           Emil Kowalski: glass cards with backdrop-filter,
           spring hover (translateY + scale on active),
-          accent highlight line uses CSS transition (not keyframes — interruptible)
+          accent highlight line uses CSS transition (not keyframes : interruptible)
           Stagger: 80ms between items (Emil: 30–80ms)
         */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -76,14 +76,14 @@ export default function Services() {
               whileTap={{ scale: 0.985 }}
               className="group relative overflow-hidden cursor-default"
               style={{
-                /* Glass card — Emil: .glass class, subtle backdrop-blur on scroll */
+                /* Glass card : Emil: .glass class, subtle backdrop-blur on scroll */
                 background: "rgba(255,255,255,0.022)",
                 border: "1px solid rgba(255,255,255,0.07)",
                 boxShadow: "inset 0 1px 0 rgba(255,255,255,0.05), 0 4px 20px rgba(0,0,0,0.12)",
                 transition: "background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease",
               }}
             >
-              {/* Hover background fill — Emil: css transition (interruptible) */}
+              {/* Hover background fill : Emil: css transition (interruptible) */}
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 pointer-events-none"
                 style={{
@@ -92,7 +92,7 @@ export default function Services() {
                 }}
               />
 
-              {/* Top accent line — slides in on hover (clip-path animation, Emil) */}
+              {/* Top accent line : slides in on hover (clip-path animation, Emil) */}
               <div
                 className="absolute top-0 left-0 right-0 h-px pointer-events-none"
                 style={{
@@ -101,7 +101,7 @@ export default function Services() {
                   transformOrigin: "left center",
                   transition: "transform 0.45s cubic-bezier(0.23,1,0.32,1)",
                 }}
-                /* Emil: transform-origin matters — scale from left gives directional feel */
+                /* Emil: transform-origin matters : scale from left gives directional feel */
                 ref={(el) => {
                   if (!el) return
                   const parent = el.closest(".group")
@@ -113,7 +113,7 @@ export default function Services() {
                 }}
               />
 
-              {/* Ghost number — large background decoration */}
+              {/* Ghost number : large background decoration */}
               <span
                 className="absolute top-4 right-5 font-display font-bold text-ink pointer-events-none select-none"
                 style={{
@@ -132,7 +132,7 @@ export default function Services() {
                 {/* Number label */}
                 <span className="label text-ink-4">{s.num}</span>
 
-                {/* Service name — bigger, Emil subheadline */}
+                {/* Service name : bigger, Emil subheadline */}
                 <h3
                   className="font-display font-bold text-ink group-hover:text-ink transition-colors duration-300"
                   style={{
@@ -144,12 +144,12 @@ export default function Services() {
                   {s.name}
                 </h3>
 
-                {/* Description — body-lg, bumped contrast (#B8B8B8) */}
+                {/* Description : body-lg, bumped contrast (#B8B8B8) */}
                 <p className="body-lg text-ink-2 leading-relaxed flex-grow">
                   {s.desc}
                 </p>
 
-                {/* Tags row — at bottom of card */}
+                {/* Tags row : at bottom of card */}
                 <div className="flex flex-wrap gap-2 pt-5 border-t border-white/[0.06]">
                   {s.tags.map((tag) => (
                     <span
@@ -164,7 +164,7 @@ export default function Services() {
                     </span>
                   ))}
 
-                  {/* Arrow — appears on hover, Emil: opacity transition not display */}
+                  {/* Arrow : appears on hover, Emil: opacity transition not display */}
                   <span
                     className="ml-auto label text-ink-4 flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     style={{ transitionTimingFunction: "var(--ease-spring)" }}

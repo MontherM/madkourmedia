@@ -9,7 +9,7 @@
   --border: rgba(255, 255, 255, 0.07);
   --border-strong: rgba(255, 255, 255, 0.14);
   --ink: #F0F0F0;
-  --ink-2: #B8B8B8;   /* was #A0A0A0 — bumped for legibility */
+  --ink-2: #B8B8B8;   /* was #A0A0A0 : bumped for legibility */
   --ink-3: #646464;
   --ink-4: #323232;
   --accent: #6DBB7D;
@@ -103,9 +103,9 @@ img, video { display: block; max-width: 100%; }
   font-weight: 300;
 }
 
-/* ─── GLASS SYSTEM — Emil Kowalski: backdrop-filter für depth ─── */
+/* ─── GLASS SYSTEM : Emil Kowalski: backdrop-filter für depth ─── */
 
-/* Light glass card — scrolling elements (light blur OK for marketing sites) */
+/* Light glass card : scrolling elements (light blur OK for marketing sites) */
 .glass {
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(255, 255, 255, 0.075);
@@ -114,7 +114,7 @@ img, video { display: block; max-width: 100%; }
     0 4px 24px rgba(0, 0, 0, 0.18);
 }
 
-/* Glass with blur — use on fixed/sticky only per Emil's performance rule */
+/* Glass with blur : use on fixed/sticky only per Emil's performance rule */
 .glass-blur {
   background: rgba(8, 8, 8, 0.82);
   backdrop-filter: blur(20px) saturate(180%);
@@ -125,7 +125,7 @@ img, video { display: block; max-width: 100%; }
     0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
-/* Strong glass — for floating elements */
+/* Strong glass : for floating elements */
 .glass-strong {
   background: rgba(14, 14, 14, 0.88);
   backdrop-filter: blur(28px) saturate(200%);
@@ -185,7 +185,7 @@ img, video { display: block; max-width: 100%; }
   width: 100%;
 }
 
-/* Primary CTA — sharp architectural */
+/* Primary CTA : sharp architectural */
 .btn-primary {
   display: inline-flex;
   align-items: center;
@@ -225,7 +225,7 @@ img, video { display: block; max-width: 100%; }
 .btn-secondary:hover  { border-color: rgba(255,255,255,0.35); transform: translateY(-1px); }
 .btn-secondary:active { transform: scale(0.98); }
 
-/* Pill CTA — for use inside glass nav */
+/* Pill CTA : for use inside glass nav */
 .btn-pill {
   display: inline-flex;
   align-items: center;

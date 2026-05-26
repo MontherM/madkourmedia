@@ -46,7 +46,7 @@ export default function Contact() {
             <FadeIn delay={0.1}>
               <p className="body-lg text-ink-2 leading-relaxed mb-10 max-w-sm">
                 Wir nehmen uns Zeit für jede Anfrage. Schildern Sie uns Ihre
-                Idee — wir melden uns innerhalb von 24 Stunden.
+                Idee. Wir melden uns innerhalb von 24 Stunden.
               </p>
             </FadeIn>
 

@@ -52,7 +52,7 @@ export default function About() {
             "Marken werden nicht gemacht.
             <br />
             <span className="text-ink-2">
-              Sie wachsen — mit der richtigen Pflege."
+              Sie wachsen. Mit der richtigen Pflege."
             </span>
           </blockquote>
         </FadeIn>
@@ -74,7 +74,7 @@ export default function About() {
             </FadeIn>
             <FadeIn delay={0.14}>
               <p className="body-lg text-ink-2 leading-relaxed">
-                Wir verbinden strategisches Denken mit visueller Kraft — von der
+                Wir verbinden strategisches Denken mit visueller Kraft. Von der
                 Idee über das Design bis zum digitalen Auftritt. Jede Zusammenarbeit
                 ist persönlich, durchdacht und auf Wirkung ausgerichtet.
               </p>
@@ -88,15 +88,15 @@ export default function About() {
             </FadeIn>
             <FadeIn delay={0.18}>
               <p className="body-lg text-ink-2 leading-relaxed mb-6">
-                Wir glauben, dass starke Marken Klarheit schaffen — im Auftritt wie
-                in der Identität. Unsere Arbeit beginnt mit Zuhören: Wer seid ihr?
+                Wir glauben, dass starke Marken Klarheit schaffen: im Auftritt wie
+                in der Identität. Unsere Arbeit beginnt mit Zuhören. Wer seid ihr?
                 Was wollt ihr ausdrücken?
               </p>
             </FadeIn>
             <FadeIn delay={0.24}>
               <p className="body-lg text-ink-2 leading-relaxed">
                 Unser Antrieb ist es, Unternehmen in ihrer Einzigartigkeit sichtbar
-                zu machen — mit strategischem Gespür, ästhetischem Anspruch und
+                zu machen. Mit strategischem Gespür, ästhetischem Anspruch und
                 einem klaren Fokus auf langfristige Markenwirkung.
               </p>
             </FadeIn>
