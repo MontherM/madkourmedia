@@ -37,6 +37,13 @@ body {
   overflow-x: hidden;
 }
 
+/* Hide native cursor on desktop (custom cursor takes over) */
+@media (min-width: 768px) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 2px;
@@ -175,7 +182,7 @@ video {
   text-transform: uppercase;
   padding: 16px 28px;
   transition: background 0.25s ease, transform 0.2s ease;
-  cursor: pointer;
+  cursor: none;
   border: none;
 }
 .btn-primary:hover {
@@ -197,7 +204,7 @@ video {
   padding: 15px 27px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   transition: border-color 0.25s ease, transform 0.2s ease;
-  cursor: pointer;
+  cursor: none;
 }
 .btn-secondary:hover {
   border-color: rgba(255, 255, 255, 0.35);
