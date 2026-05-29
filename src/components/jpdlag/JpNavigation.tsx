@@ -36,7 +36,7 @@ export default function JpNavigation() {
         <Link href="/jpdlag" className="flex items-center gap-3 group">
           <div className="w-7 h-7 bg-jp-accent flex items-center justify-center flex-shrink-0">
             <span
-              className="font-display font-bold text-white"
+              className="font-jp-display font-bold text-white"
               style={{ fontSize: "10px", letterSpacing: "0.05em" }}
             >
               JP
@@ -44,7 +44,7 @@ export default function JpNavigation() {
           </div>
           <div className="leading-none">
             <span
-              className="font-display font-bold text-jp-ink block"
+              className="font-jp-display font-bold text-jp-ink block"
               style={{ fontSize: "13px", letterSpacing: "0.14em" }}
             >
               JP DL AG

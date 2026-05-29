@@ -18,7 +18,7 @@ export default function JpIntro() {
             </JpFadeIn>
             <JpFadeIn delay={0.08}>
               <h2
-                className="font-display font-bold text-jp-ink leading-none"
+                className="font-jp-display font-bold text-jp-ink leading-none"
                 style={{ fontSize: "clamp(38px, 4.5vw, 68px)", letterSpacing: "-0.025em", lineHeight: 1.0 }}
               >
                 Wo Architektur

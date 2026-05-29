@@ -61,7 +61,7 @@ export default function JpServices() {
               Was wir tun
             </span>
             <h2
-              className="font-display font-bold text-jp-ink"
+              className="font-jp-display font-bold text-jp-ink"
               style={{ fontSize: "clamp(36px, 4vw, 60px)", letterSpacing: "-0.025em", lineHeight: 1.0 }}
             >
               Leistungen
@@ -98,7 +98,7 @@ export default function JpServices() {
 
               <div className="col-span-10 md:col-span-3">
                 <h3
-                  className="font-display font-bold text-jp-ink group-hover:text-jp-accent transition-colors duration-300"
+                  className="font-jp-display font-bold text-jp-ink group-hover:text-jp-accent transition-colors duration-300"
                   style={{ fontSize: "clamp(18px, 1.6vw, 24px)", letterSpacing: "-0.015em" }}
                 >
                   {s.name}

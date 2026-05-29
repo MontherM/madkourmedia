@@ -47,7 +47,7 @@ export default function JpWhy() {
               Warum JP DL AG
             </span>
             <h2
-              className="font-display font-bold text-jp-ink"
+              className="font-jp-display font-bold text-jp-ink"
               style={{ fontSize: "clamp(38px, 4.5vw, 68px)", letterSpacing: "-0.025em", lineHeight: 1.0 }}
             >
               Sechs Grunde, die
@@ -71,7 +71,7 @@ export default function JpWhy() {
                   {r.num}
                 </span>
                 <h3
-                  className="font-display font-bold text-jp-ink group-hover:text-jp-accent transition-colors duration-300"
+                  className="font-jp-display font-bold text-jp-ink group-hover:text-jp-accent transition-colors duration-300"
                   style={{ fontSize: "clamp(18px, 1.5vw, 22px)", letterSpacing: "-0.01em", lineHeight: 1.2 }}
                 >
                   {r.title}

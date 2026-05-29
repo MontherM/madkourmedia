@@ -30,7 +30,7 @@ export default function JpFooter() {
                 style={{ background: "rgba(255,255,255,0.1)" }}
               >
                 <span
-                  className="font-display font-bold text-white"
+                  className="font-jp-display font-bold text-white"
                   style={{ fontSize: "10px", letterSpacing: "0.05em" }}
                 >
                   JP
@@ -38,7 +38,7 @@ export default function JpFooter() {
               </div>
               <div className="leading-none">
                 <span
-                  className="font-display font-bold text-white block"
+                  className="font-jp-display font-bold text-white block"
                   style={{ fontSize: "12px", letterSpacing: "0.14em" }}
                 >
                   JP DL AG

@@ -40,7 +40,7 @@ export default function JpContact() {
                 Kontakt
               </span>
               <h2
-                className="font-display font-bold text-jp-ink leading-none mb-8"
+                className="font-jp-display font-bold text-jp-ink leading-none mb-8"
                 style={{ fontSize: "clamp(38px, 4.5vw, 68px)", letterSpacing: "-0.025em" }}
               >
                 Starten Sie
@@ -111,7 +111,7 @@ export default function JpContact() {
                     </svg>
                   </div>
                   <h3
-                    className="font-display font-bold text-jp-ink"
+                    className="font-jp-display font-bold text-jp-ink"
                     style={{ fontSize: "clamp(22px, 2vw, 32px)", letterSpacing: "-0.015em" }}
                   >
                     Nachricht erhalten.

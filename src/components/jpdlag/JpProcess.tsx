@@ -65,7 +65,7 @@ export default function JpProcess() {
                 Wie wir arbeiten
               </span>
               <h2
-                className="font-display font-bold text-jp-ink"
+                className="font-jp-display font-bold text-jp-ink"
                 style={{ fontSize: "clamp(38px, 4.5vw, 68px)", letterSpacing: "-0.025em", lineHeight: 1.0 }}
               >
                 Unser Prozess.
@@ -95,7 +95,7 @@ export default function JpProcess() {
               {/* Number + icon row */}
               <div className="flex items-start justify-between">
                 <span
-                  className="font-display font-bold text-jp-ink-4"
+                  className="font-jp-display font-bold text-jp-ink-4"
                   style={{ fontSize: "clamp(32px, 3.5vw, 48px)", letterSpacing: "-0.03em", lineHeight: 1 }}
                 >
                   {step.num}
@@ -111,7 +111,7 @@ export default function JpProcess() {
               {/* Content */}
               <div className="flex flex-col gap-3">
                 <h3
-                  className="font-display font-bold text-jp-ink"
+                  className="font-jp-display font-bold text-jp-ink"
                   style={{ fontSize: "clamp(20px, 1.7vw, 26px)", letterSpacing: "-0.015em" }}
                 >
                   {step.title}

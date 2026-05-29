@@ -1,17 +1,11 @@
 import type { Metadata, Viewport } from "next"
-import { DM_Sans, Syne } from "next/font/google"
+import { DM_Sans } from "next/font/google"
+import "./korb.css"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-dm-sans",
   weight: ["300", "400", "500"],
-  display: "swap",
-})
-
-const syne = Syne({
-  subsets: ["latin"],
-  variable: "--font-syne",
-  weight: ["700", "800"],
   display: "swap",
 })
 
@@ -44,7 +38,7 @@ export const viewport: Viewport = {
 
 export default function JpLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="de" className={`${dmSans.variable} ${syne.variable}`}>
+    <html lang="de" className={dmSans.variable}>
       <body style={{ background: "#F9F8F5", color: "#111111" }}>{children}</body>
     </html>
   )

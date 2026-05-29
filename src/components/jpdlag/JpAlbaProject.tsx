@@ -31,7 +31,7 @@ export default function JpAlbaProject() {
                 Projekt Highlight
               </span>
               <h2
-                className="font-display font-bold text-jp-ink"
+                className="font-jp-display font-bold text-jp-ink"
                 style={{ fontSize: "clamp(42px, 5.5vw, 84px)", letterSpacing: "-0.03em", lineHeight: 0.96 }}
               >
                 ALBA Haus
@@ -72,7 +72,7 @@ export default function JpAlbaProject() {
                 {/* Large ALBA text */}
                 <div className="relative text-center">
                   <div
-                    className="font-display font-bold"
+                    className="font-jp-display font-bold"
                     style={{
                       fontSize: "clamp(80px, 12vw, 160px)",
                       letterSpacing: "-0.04em",
@@ -154,7 +154,7 @@ export default function JpAlbaProject() {
                       {fact.label}
                     </span>
                     <span
-                      className="font-display font-bold text-jp-ink"
+                      className="font-jp-display font-bold text-jp-ink"
                       style={{ fontSize: "16px", letterSpacing: "-0.01em" }}
                     >
                       {fact.value}
@@ -218,7 +218,7 @@ export default function JpAlbaProject() {
         <div
           className="text-right mt-8 select-none pointer-events-none"
           style={{
-            fontFamily: "var(--font-syne), system-ui, sans-serif",
+            fontFamily: "Korb, system-ui, sans-serif",
             fontSize: "clamp(100px, 16vw, 240px)",
             fontWeight: 800,
             letterSpacing: "-0.04em",

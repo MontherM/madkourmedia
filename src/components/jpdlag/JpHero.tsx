@@ -63,7 +63,7 @@ export default function JpHero() {
                   variants={lineVariants}
                   initial="hidden"
                   animate="visible"
-                  className="block font-display font-bold text-jp-ink"
+                  className="block font-jp-display font-bold text-jp-ink"
                   style={{
                     fontSize: "clamp(54px, 7vw, 110px)",
                     lineHeight: 0.96,
@@ -135,7 +135,7 @@ export default function JpHero() {
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col gap-1">
                 <span
-                  className="font-display font-bold text-jp-ink"
+                  className="font-jp-display font-bold text-jp-ink"
                   style={{ fontSize: "clamp(22px, 2.4vw, 32px)", letterSpacing: "-0.02em" }}
                 >
                   {stat.value}

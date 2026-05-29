@@ -96,7 +96,7 @@ function ArchitecturalPlaceholder() {
           y="96"
           textAnchor="middle"
           fill="rgba(255,255,255,0.7)"
-          style={{ fontFamily: "var(--font-syne), system-ui, sans-serif", fontSize: "13px", fontWeight: 700, letterSpacing: "0.3em" }}
+          style={{ fontFamily: "Korb, system-ui, sans-serif", fontSize: "13px", fontWeight: 700, letterSpacing: "0.3em" }}
         >
           ALBA
         </text>
