@@ -34,7 +34,7 @@ export default function JpAlbaProject() {
                 className="font-jp-display font-bold text-jp-ink"
                 style={{ fontSize: "clamp(42px, 5.5vw, 84px)", letterSpacing: "-0.03em", lineHeight: 0.96 }}
               >
-                ALBA Haus
+                ALBA HAUS
               </h2>
             </div>
             <span
@@ -116,7 +116,7 @@ export default function JpAlbaProject() {
                 {/* Image placeholder note */}
                 <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between">
                   <span style={{ fontSize: "9px", letterSpacing: "0.2em", color: "rgba(255,255,255,0.25)", textTransform: "uppercase" }}>
-                    Visualisierung ALBA Haus
+                    Visualisierung ALBA HAUS
                   </span>
                   <span style={{ fontSize: "9px", letterSpacing: "0.2em", color: "rgba(255,255,255,0.15)", textTransform: "uppercase" }}>
                     3D-Modell in Vorbereitung
@@ -133,7 +133,7 @@ export default function JpAlbaProject() {
                 className="text-jp-ink-2"
                 style={{ fontSize: "clamp(15px, 1.1vw, 18px)", lineHeight: 1.8, fontWeight: 300 }}
               >
-                Das ALBA Haus steht fur die Haltung von JP DL AG: Architektur,
+                Das ALBA HAUS steht fur die Haltung von JP DL AG: Architektur,
                 die bleibt. Ein Projekt, das Wohnen und Arbeiten neu denkt und
                 dabei wirtschaftliche Nachhaltigkeit konsequent mitdenkt.
               </p>
@@ -187,7 +187,7 @@ export default function JpAlbaProject() {
                     className="text-jp-ink-3"
                     style={{ fontSize: "12px", fontWeight: 300, lineHeight: 1.6 }}
                   >
-                    Ein interaktives Spline-Modell des ALBA Hauses ist in
+                    Ein interaktives Spline-Modell des ALBA HAUSes ist in
                     Vorbereitung. Nehmen Sie Kontakt auf fur aktuelle
                     Visualisierungen.
                   </span>

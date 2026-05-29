@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "Immobilienberatung",
     "Basel",
     "Herzog de Meuron",
-    "ALBA Haus",
+    "ALBA HAUS",
   ],
   openGraph: {
     title: "JP DL AG — Real Estate Development & Consulting",

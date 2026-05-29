@@ -22,151 +22,217 @@ export default function JpHero() {
   const headlineLines = ["Bauen was", "bleibt.", "Basel."]
 
   return (
-    <section className="relative min-h-screen flex flex-col bg-jp-bg overflow-hidden">
-      {/* Subtle warm texture */}
+    <section
+      className="relative bg-jp-bg overflow-hidden"
+      style={{ minHeight: "100svh", display: "grid", gridTemplateRows: "1fr auto" }}
+    >
+      {/* Warm radial tint */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage:
-            "radial-gradient(ellipse at 60% 40%, rgba(27,45,30,0.04) 0%, transparent 60%)",
+            "radial-gradient(ellipse at 65% 50%, rgba(27,45,30,0.03) 0%, transparent 55%)",
         }}
       />
 
-      <div className="container-wide flex-1 flex flex-col lg:flex-row lg:items-center gap-0 pt-32 lg:pt-24 pb-0">
-        {/* Left: content */}
-        <div className="flex-1 lg:flex-[0_0_50%] flex flex-col justify-center py-12 lg:py-20 lg:pr-12">
-          {/* Eyebrow */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.05 }}
-            className="flex items-center gap-3 mb-10"
-          >
-            <div
-              className="w-5 h-px"
-              style={{ background: "#1B2D1E" }}
-            />
-            <span
-              className="text-jp-ink-3"
-              style={{ fontSize: "10px", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 400 }}
+      {/* Main grid: 45 / 55 split, full bleed on right */}
+      <div
+        className="relative w-full"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr",
+          minHeight: "100svh",
+        }}
+      >
+        {/* Desktop: side-by-side */}
+        <div
+          className="hidden lg:grid w-full"
+          style={{
+            gridTemplateColumns: "45% 55%",
+            minHeight: "100svh",
+          }}
+        >
+          {/* Left column */}
+          <div className="flex flex-col justify-center px-[clamp(20px,4vw,64px)] pt-28 pb-16">
+            {/* Eyebrow */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.05 }}
+              className="flex items-center gap-3 mb-10"
             >
-              Bauherrenvertretung &amp; Projektentwicklung, Basel
-            </span>
-          </motion.div>
+              <div className="w-5 h-px" style={{ background: "#1B2D1E" }} />
+              <span
+                className="text-jp-ink-3"
+                style={{ fontSize: "10px", letterSpacing: "0.22em", textTransform: "uppercase" }}
+              >
+                Bauherrenvertretung &amp; Projektentwicklung, Basel
+              </span>
+            </motion.div>
 
-          {/* Headline */}
-          <h1 className="mb-10" aria-label="Bauen was bleibt. Basel.">
-            {headlineLines.map((line, i) => (
-              <div key={i} className="overflow-hidden">
-                <motion.div
-                  custom={i}
-                  variants={lineVariants}
-                  initial="hidden"
-                  animate="visible"
-                  className="block font-jp-display font-bold text-jp-ink"
-                  style={{
-                    fontSize: "clamp(54px, 7vw, 110px)",
-                    lineHeight: 0.96,
-                    letterSpacing: "-0.03em",
-                  }}
+            {/* Headline */}
+            <h1 className="mb-10" aria-label="Bauen was bleibt. Basel.">
+              {headlineLines.map((line, i) => (
+                <div key={i} className="overflow-hidden">
+                  <motion.div
+                    custom={i}
+                    variants={lineVariants}
+                    initial="hidden"
+                    animate="visible"
+                    className="block font-jp-display font-bold text-jp-ink"
+                    style={{ fontSize: "clamp(52px, 5.5vw, 96px)", lineHeight: 0.97, letterSpacing: "-0.03em" }}
+                  >
+                    {line}
+                  </motion.div>
+                </div>
+              ))}
+            </h1>
+
+            {/* Subline + CTAs */}
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+              className="flex flex-col gap-9"
+            >
+              <p
+                className="text-jp-ink-2"
+                style={{ fontSize: "clamp(15px, 1.1vw, 17px)", lineHeight: 1.8, fontWeight: 300, maxWidth: "340px" }}
+              >
+                Bauherrenvertretung, Projektentwicklung und Immobilienberatung
+                aus Basel. Mit den Wurzeln bei Herzog &amp; de Meuron.
+              </p>
+
+              <div className="flex flex-wrap items-center gap-3">
+                <Link
+                  href="#kontakt"
+                  className="inline-flex items-center gap-2 text-white bg-jp-accent hover:bg-jp-accent-hover transition-colors duration-300"
+                  style={{ fontSize: "11px", fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", padding: "15px 28px" }}
                 >
-                  {line}
-                </motion.div>
+                  Kontakt aufnehmen <ArrowUpRight />
+                </Link>
+                <Link
+                  href="#leistungen"
+                  className="inline-flex items-center gap-2 text-jp-ink border border-black/[0.14] hover:border-black/30 transition-all duration-300"
+                  style={{ fontSize: "11px", fontWeight: 400, letterSpacing: "0.14em", textTransform: "uppercase", padding: "14px 27px" }}
+                >
+                  Leistungen <ArrowUpRight />
+                </Link>
               </div>
-            ))}
-          </h1>
+            </motion.div>
 
-          {/* Subline + CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.65, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col gap-10"
-          >
-            <p
-              className="text-jp-ink-2 max-w-[360px]"
-              style={{ fontSize: "clamp(15px, 1.1vw, 18px)", lineHeight: 1.75, fontWeight: 300 }}
+            {/* Stats */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.0, duration: 0.7 }}
+              className="flex items-center gap-8 mt-14 pt-8 border-t border-black/[0.07]"
             >
-              Bauherrenvertretung, Projektentwicklung und Immobilienberatung
-              aus Basel. Mit den Wurzeln bei Herzog &amp; de Meuron.
-            </p>
+              {[
+                { value: "Seit 2016", label: "Erfahrung aufgebaut" },
+                { value: "H&dM", label: "Herkunft & Netzwerk" },
+                { value: "Basel", label: "Standort" },
+              ].map((s) => (
+                <div key={s.label} className="flex flex-col gap-1">
+                  <span
+                    className="font-jp-display font-bold text-jp-ink"
+                    style={{ fontSize: "clamp(18px, 2vw, 26px)", letterSpacing: "-0.02em" }}
+                  >
+                    {s.value}
+                  </span>
+                  <span
+                    className="text-jp-ink-3"
+                    style={{ fontSize: "9px", letterSpacing: "0.16em", textTransform: "uppercase" }}
+                  >
+                    {s.label}
+                  </span>
+                </div>
+              ))}
+            </motion.div>
+          </div>
 
-            <div className="flex flex-wrap items-center gap-3">
-              <Link
-                href="#kontakt"
-                className="inline-flex items-center gap-2 text-white bg-jp-accent hover:bg-jp-accent-hover transition-colors duration-300"
-                style={{
-                  fontSize: "11px",
-                  fontWeight: 500,
-                  letterSpacing: "0.14em",
-                  textTransform: "uppercase",
-                  padding: "15px 28px",
-                }}
-              >
-                Kontakt aufnehmen <ArrowUpRight />
-              </Link>
-              <Link
-                href="#leistungen"
-                className="inline-flex items-center gap-2 text-jp-ink border border-black/[0.14] hover:border-black/30 transition-all duration-300"
-                style={{
-                  fontSize: "11px",
-                  fontWeight: 400,
-                  letterSpacing: "0.14em",
-                  textTransform: "uppercase",
-                  padding: "14px 27px",
-                }}
-              >
-                Leistungen <ArrowUpRight />
-              </Link>
-            </div>
-          </motion.div>
-
-          {/* Key metrics */}
+          {/* Right column: full-bleed visual, no padding */}
           <motion.div
+            className="relative"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.0, duration: 0.7 }}
-            className="flex items-center gap-8 mt-16 pt-8 border-t border-black/[0.07]"
+            transition={{ duration: 1.1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           >
-            {[
-              { value: "Seit 2016", label: "Kompetenz aufgebaut" },
-              { value: "H&dM", label: "Herkunft & Netzwerk" },
-              { value: "Basel", label: "Standort" },
-            ].map((stat) => (
-              <div key={stat.label} className="flex flex-col gap-1">
-                <span
-                  className="font-jp-display font-bold text-jp-ink"
-                  style={{ fontSize: "clamp(22px, 2.4vw, 32px)", letterSpacing: "-0.02em" }}
-                >
-                  {stat.value}
-                </span>
-                <span
-                  className="text-jp-ink-3"
-                  style={{ fontSize: "10px", letterSpacing: "0.16em", textTransform: "uppercase" }}
-                >
-                  {stat.label}
-                </span>
-              </div>
-            ))}
+            <AlbaHeroVisual
+              // Uncomment when Spline is ready:
+              // splineUrl="https://prod.spline.design/YOUR_SCENE_ID/scene.splinecode"
+            />
           </motion.div>
         </div>
 
-        {/* Right: 3D visual */}
-        <motion.div
-          className="flex-1 lg:flex-[0_0_50%] relative lg:self-stretch"
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.0, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-          style={{ minHeight: "480px" }}
-        >
-          {/* Slight background shift for the visual area */}
-          <div className="absolute inset-0 lg:-right-[clamp(20px,4vw,64px)]">
-            <AlbaHeroVisual
-              // Uncomment and add your Spline URL here when ready:
-              // splineUrl="https://prod.spline.design/YOUR_SCENE_ID/scene.splinecode"
-            />
+        {/* Mobile: stacked */}
+        <div className="lg:hidden flex flex-col">
+          <div className="container-wide pt-28 pb-10">
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.05 }}
+              className="flex items-center gap-3 mb-8"
+            >
+              <div className="w-5 h-px" style={{ background: "#1B2D1E" }} />
+              <span className="text-jp-ink-3" style={{ fontSize: "10px", letterSpacing: "0.2em", textTransform: "uppercase" }}>
+                Bauherrenvertretung, Basel
+              </span>
+            </motion.div>
+
+            <h1 className="mb-8" aria-label="Bauen was bleibt. Basel.">
+              {headlineLines.map((line, i) => (
+                <div key={i} className="overflow-hidden">
+                  <motion.div
+                    custom={i}
+                    variants={lineVariants}
+                    initial="hidden"
+                    animate="visible"
+                    className="block font-jp-display font-bold text-jp-ink"
+                    style={{ fontSize: "clamp(48px, 12vw, 72px)", lineHeight: 0.97, letterSpacing: "-0.03em" }}
+                  >
+                    {line}
+                  </motion.div>
+                </div>
+              ))}
+            </h1>
+
+            <motion.div
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.7 }}
+              className="flex flex-col gap-7"
+            >
+              <p className="text-jp-ink-2" style={{ fontSize: "15px", lineHeight: 1.8, fontWeight: 300 }}>
+                Bauherrenvertretung aus Basel. Mit den Wurzeln bei Herzog &amp; de Meuron.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link href="#kontakt"
+                  className="inline-flex items-center gap-2 text-white bg-jp-accent"
+                  style={{ fontSize: "11px", fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", padding: "14px 24px" }}
+                >
+                  Kontakt <ArrowUpRight />
+                </Link>
+                <Link href="#leistungen"
+                  className="inline-flex items-center gap-2 text-jp-ink border border-black/[0.14]"
+                  style={{ fontSize: "11px", letterSpacing: "0.14em", textTransform: "uppercase", padding: "13px 23px" }}
+                >
+                  Leistungen <ArrowUpRight />
+                </Link>
+              </div>
+            </motion.div>
           </div>
-        </motion.div>
+
+          {/* Mobile visual */}
+          <motion.div
+            style={{ height: "55vw", minHeight: "280px", maxHeight: "420px" }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.9 }}
+          >
+            <AlbaHeroVisual />
+          </motion.div>
+        </div>
       </div>
 
       {/* Scroll indicator */}
@@ -174,9 +240,9 @@ export default function JpHero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.6 }}
-        className="absolute bottom-8 left-[clamp(20px,4vw,64px)] flex items-center gap-2.5"
+        className="absolute bottom-7 left-[clamp(20px,4vw,64px)] flex items-center gap-2.5"
       >
-        <div className="w-px h-8 overflow-hidden relative">
+        <div className="w-px h-7 overflow-hidden relative">
           <motion.div
             className="absolute inset-0"
             style={{ background: "linear-gradient(to bottom, transparent, #1B2D1E, transparent)" }}
@@ -186,7 +252,7 @@ export default function JpHero() {
         </div>
         <span
           className="text-jp-ink-4"
-          style={{ fontSize: "10px", letterSpacing: "0.22em", textTransform: "uppercase" }}
+          style={{ fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase" }}
         >
           Scroll
         </span>
