@@ -52,8 +52,8 @@ export default function JpHero() {
             minHeight: "100svh",
           }}
         >
-          {/* Left column */}
-          <div className="flex flex-col justify-center px-[clamp(20px,4vw,64px)] pt-28 pb-16">
+          {/* Left column — respects container padding left + right gutter */}
+          <div className="flex flex-col justify-center pl-[clamp(20px,4vw,64px)] pr-10 pt-28 pb-16">
             {/* Eyebrow */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -151,17 +151,20 @@ export default function JpHero() {
             </motion.div>
           </div>
 
-          {/* Right column: full-bleed visual, no padding */}
+          {/* Right column: slight padding so visual clears the nav and has breathing room */}
           <motion.div
             className="relative"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            style={{ paddingTop: "72px", paddingRight: "clamp(20px,4vw,64px)", paddingBottom: "32px" }}
           >
-            <AlbaHeroVisual
-              // Uncomment when Spline is ready:
-              // splineUrl="https://prod.spline.design/YOUR_SCENE_ID/scene.splinecode"
-            />
+            <div className="w-full h-full rounded-sm overflow-hidden" style={{ minHeight: "520px" }}>
+              <AlbaHeroVisual
+                // Uncomment when Spline is ready:
+                // splineUrl="https://prod.spline.design/YOUR_SCENE_ID/scene.splinecode"
+              />
+            </div>
           </motion.div>
         </div>
 
