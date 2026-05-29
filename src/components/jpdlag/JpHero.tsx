@@ -52,8 +52,8 @@ export default function JpHero() {
             minHeight: "100svh",
           }}
         >
-          {/* Left column — respects container padding left + right gutter */}
-          <div className="flex flex-col justify-center pl-[clamp(20px,4vw,64px)] pr-10 pt-28 pb-16">
+          {/* Left column */}
+          <div className="flex flex-col justify-center pl-[clamp(40px,6vw,96px)] pr-12 pt-32 pb-20">
             {/* Eyebrow */}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
@@ -157,9 +157,9 @@ export default function JpHero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            style={{ paddingTop: "72px", paddingRight: "clamp(20px,4vw,64px)", paddingBottom: "32px" }}
+            style={{ paddingTop: "96px", paddingRight: "clamp(40px,6vw,96px)", paddingBottom: "48px", paddingLeft: "8px" }}
           >
-            <div className="w-full h-full rounded-sm overflow-hidden" style={{ minHeight: "520px" }}>
+            <div className="w-full h-full rounded-sm overflow-hidden" style={{ minHeight: "500px" }}>
               <AlbaHeroVisual
                 // Uncomment when Spline is ready:
                 // splineUrl="https://prod.spline.design/YOUR_SCENE_ID/scene.splinecode"
