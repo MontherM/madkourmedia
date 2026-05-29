@@ -19,7 +19,7 @@ const ArrowUpRight = () => (
 )
 
 export default function JpHero() {
-  const headlineLines = ["Raum fur", "Wertvolles.", "Schaffen."]
+  const headlineLines = ["Bauen was", "bleibt.", "Basel."]
 
   return (
     <section className="relative min-h-screen flex flex-col bg-jp-bg overflow-hidden">
@@ -50,12 +50,12 @@ export default function JpHero() {
               className="text-jp-ink-3"
               style={{ fontSize: "10px", letterSpacing: "0.22em", textTransform: "uppercase", fontWeight: 400 }}
             >
-              Real Estate Development &amp; Consulting
+              Bauherrenvertretung &amp; Projektentwicklung, Basel
             </span>
           </motion.div>
 
           {/* Headline */}
-          <h1 className="mb-10" aria-label="Raum fur Wertvolles. Schaffen.">
+          <h1 className="mb-10" aria-label="Bauen was bleibt. Basel.">
             {headlineLines.map((line, i) => (
               <div key={i} className="overflow-hidden">
                 <motion.div
@@ -87,8 +87,8 @@ export default function JpHero() {
               className="text-jp-ink-2 max-w-[360px]"
               style={{ fontSize: "clamp(15px, 1.1vw, 18px)", lineHeight: 1.75, fontWeight: 300 }}
             >
-              JP DL AG entwickelt und berät bei Immobilienprojekten mit
-              architektonischem Anspruch und wirtschaftlicher Prazision.
+              Bauherrenvertretung, Projektentwicklung und Immobilienberatung
+              aus Basel. Mit den Wurzeln bei Herzog &amp; de Meuron.
             </p>
 
             <div className="flex flex-wrap items-center gap-3">
@@ -129,9 +129,9 @@ export default function JpHero() {
             className="flex items-center gap-8 mt-16 pt-8 border-t border-black/[0.07]"
           >
             {[
-              { value: "15+", label: "Jahre Erfahrung" },
-              { value: "40+", label: "Projekte realisiert" },
-              { value: "CH", label: "Standort Schweiz" },
+              { value: "Seit 2016", label: "Kompetenz aufgebaut" },
+              { value: "H&dM", label: "Herkunft & Netzwerk" },
+              { value: "Basel", label: "Standort" },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col gap-1">
                 <span

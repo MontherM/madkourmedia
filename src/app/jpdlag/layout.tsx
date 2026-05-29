@@ -12,14 +12,14 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "JP DL AG — Real Estate Development & Consulting",
   description:
-    "JP DL AG entwickelt und berät bei Immobilienprojekten mit architektonischem Anspruch und wirtschaftlicher Präzision. Standort Schweiz.",
+    "J P DL AG ist Bauherrenvertreter, Projektentwickler und Immobilienberatung in Basel. Mit den Wurzeln bei Herzog & de Meuron.",
   keywords: [
-    "Immobilienentwicklung",
+    "Bauherrenvertretung",
     "Projektentwicklung",
     "Immobilienberatung",
-    "Schweiz",
+    "Basel",
+    "Herzog de Meuron",
     "ALBA Haus",
-    "Real Estate",
   ],
   openGraph: {
     title: "JP DL AG — Real Estate Development & Consulting",

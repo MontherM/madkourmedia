@@ -45,7 +45,7 @@ export default function JpContact() {
               >
                 Starten Sie
                 <br />
-                Ihr nachstes
+                Ihr nächstes
                 <br />
                 <span style={{ color: "#1B2D1E" }}>Projekt.</span>
               </h2>
@@ -55,8 +55,8 @@ export default function JpContact() {
                 className="text-jp-ink-2 mb-10 max-w-sm"
                 style={{ fontSize: "clamp(15px, 1.1vw, 17px)", lineHeight: 1.75, fontWeight: 300 }}
               >
-                Wir nehmen uns Zeit fur jede Anfrage. Schildern Sie uns Ihr
-                Vorhaben, wir melden uns innerhalb von 24 Stunden.
+                J P DL freut sich auf den Kontakt mit Ihnen. Schildern Sie
+                uns Ihr Vorhaben.
               </p>
             </JpFadeIn>
             <JpFadeIn delay={0.15}>
@@ -65,9 +65,7 @@ export default function JpContact() {
                   href="mailto:info@jpdlag.ch"
                   className="flex items-center gap-3 group"
                 >
-                  <div
-                    className="w-8 h-8 border border-black/[0.1] flex items-center justify-center flex-shrink-0 group-hover:border-jp-accent/50 transition-colors duration-300"
-                  >
+                  <div className="w-8 h-8 border border-black/[0.1] flex items-center justify-center flex-shrink-0 group-hover:border-jp-accent/50 transition-colors duration-300">
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
                       <rect x="0.5" y="0.5" width="11" height="9" rx="0.5" stroke="#909090" strokeWidth="0.75" />
                       <path d="M0.5 1.5L6 5.5L11.5 1.5" stroke="#909090" strokeWidth="0.75" />
@@ -80,6 +78,22 @@ export default function JpContact() {
                     info@jpdlag.ch
                   </span>
                 </a>
+                <a
+                  href="tel:+41615014490"
+                  className="flex items-center gap-3 group"
+                >
+                  <div className="w-8 h-8 border border-black/[0.1] flex items-center justify-center flex-shrink-0 group-hover:border-jp-accent/50 transition-colors duration-300">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
+                      <path d="M1 1.5C1 1.5 2.5 1 3 2.5L3.5 4C3.5 4 3.5 4.5 3 5L2.5 5.5C2.5 5.5 3.5 8 6.5 9L7 8.5C7 8.5 7.5 8 8 8L9.5 8.5C11 9 10.5 10.5 10.5 10.5C10.5 10.5 9.5 11 8 10C4 8 1 4 1 1.5Z" stroke="#909090" strokeWidth="0.75" fill="none" />
+                    </svg>
+                  </div>
+                  <span
+                    className="text-jp-ink-3 group-hover:text-jp-ink transition-colors duration-300"
+                    style={{ fontSize: "12px", letterSpacing: "0.06em" }}
+                  >
+                    +41 61 501 44 90
+                  </span>
+                </a>
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 border border-black/[0.1] flex items-center justify-center flex-shrink-0">
                     <svg width="8" height="12" viewBox="0 0 8 12" fill="none">
@@ -90,7 +104,7 @@ export default function JpContact() {
                     className="text-jp-ink-3"
                     style={{ fontSize: "12px", letterSpacing: "0.06em" }}
                   >
-                    Schweiz
+                    St. Jakobs-Strasse 54, 4052 Basel
                   </span>
                 </div>
               </div>

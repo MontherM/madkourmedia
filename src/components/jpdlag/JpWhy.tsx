@@ -3,33 +3,33 @@ import JpFadeIn from "./JpFadeIn"
 const reasons = [
   {
     num: "01",
-    title: "Klare Prozesse",
-    desc: "Transparente Strukturen, definierte Meilensteine und eindeutige Verantwortlichkeiten. Von Beginn an.",
+    title: "Herzog & de Meuron",
+    desc: "Entstanden als internes Kompetenzcenter bei einem der bedeutendsten Architekturbüros der Welt. Dieses Fundament prägt jeden Auftrag.",
   },
   {
     num: "02",
-    title: "Architekturverstandnis",
-    desc: "Wir denken wie Architekten und rechnen wie Unternehmer. Diese Verbindung schafft Projekte, die bestehen.",
+    title: "Persönliche Begleitung",
+    desc: "Individuelle Beratung über die gesamte Projektdauer. Kein Mandat wird delegiert. Sie arbeiten direkt mit den Entscheidungsträgern.",
   },
   {
     num: "03",
-    title: "Wirtschaftliches Denken",
-    desc: "Jede Entscheidung wird auf ihre okonomische Wirkung gepruft. Schonheit und Rentabilitat schliessen sich nicht aus.",
+    title: "Ganzheitlicher Blick",
+    desc: "Von der ersten Idee bis zur Fertigstellung: ein Partner, eine Verantwortung. Kein Bruch in der Projektkontinuität.",
   },
   {
     num: "04",
-    title: "Starkes Netzwerk",
-    desc: "Jahrelange Beziehungen zu Architekten, Behorden, Investoren und Handwerkern in der Schweiz.",
+    title: "Breite Auftraggeber",
+    desc: "Erfahrung mit Eigentümern, Gesellschaften, Investoren und der öffentlichen Hand. Jede Konstellation hat ihre eigene Logik.",
   },
   {
     num: "05",
-    title: "Umsetzungserfahrung",
-    desc: "Wir kennen die Klippen. Und wir wissen, wie man ihnen ausweicht. Erfahrung, die sich auszahlt.",
+    title: "Wirtschaftliche Präzision",
+    desc: "Projektkalkulation und Mietzinskalkulation auf solider Grundlage. Schönheit und Rentabilität schliessen sich nicht aus.",
   },
   {
     num: "06",
-    title: "Individuelle Beratung",
-    desc: "Keine Standardlosungen. Jedes Projekt, jeder Auftraggeber bekommt die Aufmerksamkeit, die er verdient.",
+    title: "Starke Referenzen",
+    desc: "Eine Arbeit, die für sich spricht. Fragen Sie nach unseren Referenzen. Wir teilen sie gerne im persönlichen Gespräch.",
   },
 ]
 
@@ -50,11 +50,11 @@ export default function JpWhy() {
               className="font-jp-display font-bold text-jp-ink"
               style={{ fontSize: "clamp(38px, 4.5vw, 68px)", letterSpacing: "-0.025em", lineHeight: 1.0 }}
             >
-              Sechs Grunde, die
+              Sechs Gründe,
               <br />
-              den Unterschied
+              die den Unter-
               <br />
-              machen.
+              schied machen.
             </h2>
           </div>
         </JpFadeIn>

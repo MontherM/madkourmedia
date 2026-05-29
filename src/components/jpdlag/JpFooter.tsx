@@ -52,10 +52,10 @@ export default function JpFooter() {
               </div>
             </div>
             <p
-              style={{ fontSize: "13px", fontWeight: 300, lineHeight: 1.7, color: "rgba(255,255,255,0.4)", maxWidth: "220px" }}
+              style={{ fontSize: "13px", fontWeight: 300, lineHeight: 1.7, color: "rgba(255,255,255,0.4)", maxWidth: "240px" }}
             >
-              Immobilienentwicklung und Beratung mit architektonischem
-              Anspruch. Standort Schweiz.
+              Bauherrenvertretung, Projektentwicklung und Immobilienberatung.
+              Mit den Wurzeln bei Herzog &amp; de Meuron, Basel.
             </p>
           </div>
 
@@ -109,8 +109,17 @@ export default function JpFooter() {
             >
               info@jpdlag.ch
             </a>
+            <a
+              href="tel:+41615014490"
+              className="hover:text-white transition-colors duration-200"
+              style={{ fontSize: "12px", fontWeight: 300, color: "rgba(255,255,255,0.45)" }}
+            >
+              +41 61 501 44 90
+            </a>
             <span style={{ fontSize: "12px", fontWeight: 300, color: "rgba(255,255,255,0.35)" }}>
-              Schweiz
+              St. Jakobs-Strasse 54
+              <br />
+              4052 Basel
             </span>
             <Link
               href="#kontakt"
