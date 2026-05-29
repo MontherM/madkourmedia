@@ -18,6 +18,16 @@ const config: Config = {
         "ink-2": "#A0A0A0",
         "ink-3": "#5C5C5C",
         "ink-4": "#2E2E2E",
+        /* JP DL AG light-mode palette */
+        "jp-bg": "#F9F8F5",
+        "jp-surface": "#F2EFE8",
+        "jp-surface-2": "#EAE6DC",
+        "jp-ink": "#111111",
+        "jp-ink-2": "#555555",
+        "jp-ink-3": "#909090",
+        "jp-ink-4": "#C4BDB2",
+        "jp-accent": "#1B2D1E",
+        "jp-accent-hover": "#2D4830",
       },
       fontFamily: {
         sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
