@@ -63,8 +63,14 @@ export default function Navigation() {
             </Link>
           ))}
           <Link
+            href="/visualizer"
+            className="label text-ink-2 hover:text-ink border border-ink-4 hover:border-ink-3 px-4 py-2.5 transition-all duration-300"
+          >
+            KI-Visualisierung
+          </Link>
+          <Link
             href="#kontakt"
-            className="label text-black bg-accent px-5 py-2.5 hover:bg-[#7dd18d] transition-colors duration-300 ml-2"
+            className="label text-black bg-accent px-5 py-2.5 hover:bg-[#7dd18d] transition-colors duration-300"
           >
             Projekt starten
           </Link>
