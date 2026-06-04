@@ -83,15 +83,20 @@ export default function VisualizerClient() {
   const activeCategory = CATEGORIES.find((c) => c.id === selectedCategory)
   const activeSubcategory = activeCategory?.subcategories.find((s) => s.id === selectedSubcategory)
 
+  const isLocalhost = typeof window !== 'undefined' && window.location.hostname === 'localhost'
+
+  const storeAndRedirect = (sessionId: string) => {
+    sessionStorage.setItem('viz_image', imageBase64!)
+    sessionStorage.setItem('viz_category', selectedCategory!)
+    sessionStorage.setItem('viz_subcategory', selectedSubcategory!)
+    window.location.href = `/visualizer/success?session_id=${sessionId}&category=${selectedCategory}&subcategory=${selectedSubcategory}`
+  }
+
   const handlePay = async () => {
     if (!selectedCategory || !selectedSubcategory || !imageBase64) return
     setIsLoading(true)
     setError(null)
     try {
-      sessionStorage.setItem('viz_image', imageBase64)
-      sessionStorage.setItem('viz_category', selectedCategory)
-      sessionStorage.setItem('viz_subcategory', selectedSubcategory)
-
       const res = await fetch('/api/checkout', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -99,6 +104,9 @@ export default function VisualizerClient() {
       })
       const data = await res.json()
       if (data.url) {
+        sessionStorage.setItem('viz_image', imageBase64)
+        sessionStorage.setItem('viz_category', selectedCategory)
+        sessionStorage.setItem('viz_subcategory', selectedSubcategory)
         window.location.href = data.url
       } else {
         setError('Fehler beim Erstellen der Zahlung. Bitte erneut versuchen.')
@@ -108,6 +116,11 @@ export default function VisualizerClient() {
       setError('Netzwerkfehler. Bitte erneut versuchen.')
       setIsLoading(false)
     }
+  }
+
+  const handleTestBypass = () => {
+    if (!selectedCategory || !selectedSubcategory || !imageBase64) return
+    storeAndRedirect('TEST_SESSION')
   }
 
   return (
@@ -332,6 +345,14 @@ export default function VisualizerClient() {
                       )}
                     </button>
                     <p className="text-ink-3 text-xs">Sichere Zahlung via Stripe</p>
+                    {isLocalhost && (
+                      <button
+                        onClick={handleTestBypass}
+                        className="label text-ink-4 hover:text-ink-2 transition-colors underline underline-offset-2 text-[10px]"
+                      >
+                        Test-Modus (ohne Zahlung)
+                      </button>
+                    )}
                   </div>
                 </div>
               </motion.div>
