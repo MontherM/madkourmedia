@@ -145,15 +145,15 @@ export default function VisualizerClient() {
         </div>
       </header>
 
-      <main className="pt-32 pb-24">
-        <div className="container-wide max-w-4xl mx-auto px-6">
+      <main className="pt-28 pb-24">
+        <div className="container-wide" style={{ maxWidth: 960 }}>
 
           {/* Hero */}
           <motion.div
             variants={fadeUp}
             initial="hidden"
             animate="show"
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
             <span className="label text-accent mb-4 block">KI-Raumvisualisierung</span>
             <h1 className="font-display text-[clamp(40px,6vw,80px)] font-bold leading-[1.05] tracking-tight text-ink mb-6">
@@ -233,7 +233,7 @@ export default function VisualizerClient() {
               >
                 <p className="label text-ink-3 mb-5">Welcher Raumtyp soll entstehen?</p>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
-                  {CATEGORIES.map((cat) => (
+                  {CATEGORIES.map((cat, i) => (
                     <button
                       key={cat.id}
                       onClick={() => {
@@ -241,15 +241,15 @@ export default function VisualizerClient() {
                         setSelectedSubcategory(null)
                         setStep('subcategory')
                       }}
-                      className={`p-4 text-left border transition-all duration-200 ${
+                      className={`p-3 sm:p-4 text-left border transition-all duration-200 ${
                         selectedCategory === cat.id
                           ? 'border-accent bg-accent/10 text-ink'
                           : 'border-ink-4 bg-surface hover:border-ink-3 text-ink-2'
-                      }`}
+                      } ${i === CATEGORIES.length - 1 && CATEGORIES.length % 2 !== 0 ? 'col-span-2 sm:col-span-1' : ''}`}
                     >
                       <CategoryIcon id={cat.id} />
                       <p className="font-medium text-sm mt-3 leading-tight">{cat.label}</p>
-                      <p className="text-ink-3 text-[11px] mt-1 leading-tight">{cat.description}</p>
+                      <p className="text-ink-3 text-[11px] mt-1 leading-tight hidden sm:block">{cat.description}</p>
                     </button>
                   ))}
                 </div>

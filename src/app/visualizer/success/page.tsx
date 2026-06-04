@@ -113,8 +113,8 @@ function SuccessContent() {
   }
 
   return (
-    <main className="pt-32 pb-24">
-      <div className="container-wide max-w-4xl mx-auto px-6">
+    <main className="pt-28 pb-24">
+      <div className="container-wide" style={{ maxWidth: 960 }}>
 
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -139,9 +139,9 @@ function SuccessContent() {
                 Etwas ist schiefgelaufen
               </h1>
               <p className="text-ink-2 mb-6">{errorMsg}</p>
-              <div className="flex gap-4 justify-center">
-                <Link href="/visualizer" className="btn-secondary">Erneut versuchen</Link>
-                <a href="mailto:info@madkourmedia.com" className="btn-primary">Support kontaktieren</a>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Link href="/visualizer" className="btn-secondary w-full sm:w-auto justify-center">Erneut versuchen</Link>
+                <a href="mailto:info@madkourmedia.com" className="btn-primary w-full sm:w-auto justify-center">Support kontaktieren</a>
               </div>
             </>
           ) : (
