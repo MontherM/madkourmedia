@@ -83,7 +83,7 @@ export default function VisualizerClient() {
   const activeCategory = CATEGORIES.find((c) => c.id === selectedCategory)
   const activeSubcategory = activeCategory?.subcategories.find((s) => s.id === selectedSubcategory)
 
-  const isLocalhost = typeof window !== 'undefined' && window.location.hostname === 'localhost'
+  const isTestMode = process.env.NODE_ENV === 'development'
 
   const storeAndRedirect = (sessionId: string) => {
     sessionStorage.setItem('viz_image', imageBase64!)
@@ -345,7 +345,7 @@ export default function VisualizerClient() {
                       )}
                     </button>
                     <p className="text-ink-3 text-xs">Sichere Zahlung via Stripe</p>
-                    {isLocalhost && (
+                    {isTestMode && (
                       <button
                         onClick={handleTestBypass}
                         className="label text-ink-4 hover:text-ink-2 transition-colors underline underline-offset-2 text-[10px]"

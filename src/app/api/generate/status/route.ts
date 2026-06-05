@@ -12,6 +12,20 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: 'Keine IDs angegeben' }, { status: 400 })
   }
 
+  // Test-Modus: alle IDs sind test-* → sofort mit Placeholder-Bildern antworten
+  if (process.env.NODE_ENV !== 'production' && ids.every((id) => id.startsWith('test-'))) {
+    const placeholders = [
+      'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
+      'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80',
+      'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80',
+    ]
+    return NextResponse.json({
+      statuses: ids.map((id, i) => ({ id, status: 'succeeded', output: placeholders[i], error: null })),
+      allDone: true,
+      images: placeholders,
+    })
+  }
+
   const replicate = getReplicate()
   const results = await Promise.all(ids.map((id) => replicate.predictions.get(id)))
 

@@ -23,12 +23,15 @@ export async function POST(req: NextRequest) {
   }
 
   const isTestSession = sessionId === 'TEST_SESSION' && process.env.NODE_ENV !== 'production'
-  if (!isTestSession) {
-    const stripe = getStripe()
-    const session = await stripe.checkout.sessions.retrieve(sessionId)
-    if (session.payment_status !== 'paid') {
-      return NextResponse.json({ error: 'Zahlung nicht bestätigt' }, { status: 402 })
-    }
+
+  if (isTestSession) {
+    return NextResponse.json({ predictionIds: ['test-1', 'test-2', 'test-3'] })
+  }
+
+  const stripe = getStripe()
+  const session = await stripe.checkout.sessions.retrieve(sessionId)
+  if (session.payment_status !== 'paid') {
+    return NextResponse.json({ error: 'Zahlung nicht bestätigt' }, { status: 402 })
   }
 
   const sub = getSubcategoryById(category, subcategory)
