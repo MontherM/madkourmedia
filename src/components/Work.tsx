@@ -140,12 +140,15 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
 
 export default function Work() {
   return (
-    <section id="portfolio" className="py-32 md:py-44">
+    <section id="portfolio" className="py-32 md:py-44 overflow-hidden">
       <div className="container-wide">
         {/* Section header */}
         <div className="flex flex-col md:flex-row justify-between md:items-end mb-12 md:mb-16 gap-4">
           <FadeIn>
-            <h2 className="headline text-ink">
+            <h2
+              className="headline text-ink"
+              style={{ fontSize: 'clamp(32px, 8.5vw, 80px)' }}
+            >
               Ausgewählte
               <br />
               Arbeiten

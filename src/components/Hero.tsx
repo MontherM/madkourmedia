@@ -57,19 +57,23 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.1, duration: 0.6 }}
-          className="container-wide absolute top-24 left-0 right-0 flex justify-between items-center"
+          className="container-wide absolute top-[6.5rem] md:top-24 left-0 right-0 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1.5 sm:gap-0"
         >
-          <span className="label text-ink-3">Branding · Content · Design</span>
-          <span className="label text-accent flex items-center gap-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse-slow" />
+          <span className="label text-ink-3 whitespace-nowrap">Branding · Content · Design</span>
+          <span className="label text-accent flex items-center gap-2 whitespace-nowrap">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse-slow flex-shrink-0" />
             Verfügbar für Projekte
           </span>
         </motion.div>
 
-        {/* Main content — anchored bottom */}
-        <div className="container-wide mt-auto w-full pb-10 md:pb-14">
+        {/* Main content — mobile: upper-half; desktop: anchored bottom */}
+        <div className="container-wide mt-[160px] sm:mt-[200px] md:mt-auto w-full pb-10 md:pb-14">
           {/* Headline */}
-          <h1 className="display mb-10 md:mb-14" aria-label="Wir bauen Marken, die gesehen werden.">
+          <h1
+            className="display mb-8 md:mb-14"
+            aria-label="Wir bauen Marken, die gesehen werden."
+            style={{ fontSize: "clamp(42px, 11vw, 148px)" }}
+          >
             {headlineLines.map((line, lineIdx) => (
               <div key={lineIdx} className="overflow-hidden">
                 <motion.div
