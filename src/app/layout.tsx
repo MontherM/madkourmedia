@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next"
 import { DM_Sans, Syne } from "next/font/google"
 import "./globals.css"
+import PageLoader from "@/components/ui/PageLoader"
+import CustomCursor from "@/components/ui/CustomCursor"
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -43,7 +45,15 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="de" className={`${dmSans.variable} ${syne.variable}`}>
-      <body>{children}</body>
+      {/*
+        md:cursor-none hides the native cursor on desktop so
+        CustomCursor can take over via mix-blend-difference.
+      */}
+      <body className="md:cursor-none">
+        <PageLoader />
+        <CustomCursor />
+        {children}
+      </body>
     </html>
   )
 }
