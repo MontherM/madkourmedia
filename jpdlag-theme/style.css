@@ -1,0 +1,14 @@
+/*
+Theme Name: JP DL AG
+Theme URI: https://jpdlag.ch
+Author: MadkourMedia
+Author URI: https://madkourmedia.com
+Description: Premium Real Estate WordPress Theme für JP DL AG Basel
+Version: 1.0.0
+License: Private
+Text Domain: jpdlag
+*/
+
+/* Base reset - full styles in assets/css/main.css */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #F9F8F5; color: #111111; font-family: 'DM Sans', sans-serif; }
