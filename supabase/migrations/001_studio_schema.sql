@@ -52,8 +52,36 @@ CREATE TRIGGER studio_projects_updated_at
   BEFORE UPDATE ON studio_projects
   FOR EACH ROW EXECUTE FUNCTION studio_set_updated_at();
 
--- Storage buckets (run separately if needed)
--- INSERT INTO storage.buckets (id, name, public) VALUES ('studio-audio', 'studio-audio', false) ON CONFLICT DO NOTHING;
--- CREATE POLICY "Users can manage their own audio files"
---   ON storage.objects FOR ALL
---   USING (auth.uid()::text = (storage.foldername(name))[1]);
+-- ============================================================
+-- Storage bucket + RLS policies for the `studio-audio` bucket
+-- Files are uploaded under  <user_id>/<project_id>/<beat|vocal>.<ext>
+-- so each user may only touch objects whose first path segment
+-- equals their own auth.uid().
+-- ============================================================
+
+-- Create the (private) bucket if it does not exist yet.
+INSERT INTO storage.buckets (id, name, public)
+VALUES ('studio-audio', 'studio-audio', false)
+ON CONFLICT (id) DO NOTHING;
+
+DROP POLICY IF EXISTS "studio-audio: read own"   ON storage.objects;
+DROP POLICY IF EXISTS "studio-audio: insert own" ON storage.objects;
+DROP POLICY IF EXISTS "studio-audio: update own" ON storage.objects;
+DROP POLICY IF EXISTS "studio-audio: delete own" ON storage.objects;
+
+CREATE POLICY "studio-audio: read own"
+  ON storage.objects FOR SELECT TO authenticated
+  USING (bucket_id = 'studio-audio' AND auth.uid()::text = (storage.foldername(name))[1]);
+
+CREATE POLICY "studio-audio: insert own"
+  ON storage.objects FOR INSERT TO authenticated
+  WITH CHECK (bucket_id = 'studio-audio' AND auth.uid()::text = (storage.foldername(name))[1]);
+
+CREATE POLICY "studio-audio: update own"
+  ON storage.objects FOR UPDATE TO authenticated
+  USING (bucket_id = 'studio-audio' AND auth.uid()::text = (storage.foldername(name))[1])
+  WITH CHECK (bucket_id = 'studio-audio' AND auth.uid()::text = (storage.foldername(name))[1]);
+
+CREATE POLICY "studio-audio: delete own"
+  ON storage.objects FOR DELETE TO authenticated
+  USING (bucket_id = 'studio-audio' AND auth.uid()::text = (storage.foldername(name))[1]);
