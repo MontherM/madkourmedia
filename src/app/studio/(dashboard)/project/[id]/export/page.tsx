@@ -52,7 +52,9 @@ async function encodeToMp3(wavBuffer: ArrayBuffer, bitrate: string): Promise<Blo
   await ffmpeg.writeFile(inFile, new Uint8Array(wavBuffer));
   await ffmpeg.exec(['-i', inFile, '-b:a', `${bitrate}k`, '-q:a', '2', outFile]);
   const data = await ffmpeg.readFile(outFile);
-  return new Blob([data], { type: 'audio/mpeg' });
+  // FFmpeg returns FileData (Uint8Array | string); copy into a fresh ArrayBuffer-backed array for Blob
+  const bytes = typeof data === 'string' ? new TextEncoder().encode(data) : new Uint8Array(data);
+  return new Blob([bytes], { type: 'audio/mpeg' });
 }
 
 export default function ExportPage() {

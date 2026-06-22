@@ -2,10 +2,20 @@ import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 import type { Project, AIFeedback } from '@/types/studio';
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
 
 export async function POST(req: NextRequest) {
   try {
+    const apiKey = process.env.OPENAI_API_KEY;
+    if (!apiKey) {
+      return NextResponse.json(
+        { error: 'OPENAI_API_KEY is not configured on the server.' },
+        { status: 500 }
+      );
+    }
+    const openai = new OpenAI({ apiKey });
+
     const project: Project = await req.json();
 
     const systemPrompt = `You are an expert music producer and vocal coach specializing in ${project.genre} music.
