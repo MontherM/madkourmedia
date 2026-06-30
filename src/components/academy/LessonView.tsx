@@ -258,7 +258,9 @@ export default function LessonView({
               <p className="mt-2 text-sm" style={{ color: "var(--ac-ink-2)" }}>
                 Teste dein Wissen und sichere dir Bonus-XP, bevor du weitergehst.
               </p>
-              <button className="ac-btn ac-btn-ghost mt-4 w-full">Quiz starten</button>
+              <Link href={`/academy/quiz/${lesson.levelId}`} className="ac-btn ac-btn-ghost mt-4 w-full">
+                Quiz starten
+              </Link>
             </div>
           )}
 

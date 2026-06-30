@@ -12,6 +12,8 @@ import type {
   UserProgress,
   PricingTier,
   ResourceItem,
+  Quiz,
+  Certificate,
 } from "./types"
 
 // ── Prompts ───────────────────────────────────────────────────────────────
@@ -437,6 +439,152 @@ export const user: UserProgress = {
   weeklyDone: 3,
 }
 
+// ── Quizzes (one Abschluss-Quiz per Level) ─────────────────────────────────
+export const quizzes: Quiz[] = [
+  {
+    id: "quiz-l1",
+    levelId: "l1",
+    title: "Abschluss-Quiz: AI Basics",
+    passScore: 0.7,
+    xp: 150,
+    questions: [
+      {
+        id: "q1",
+        type: "single",
+        prompt: "Was beschreibt ein großes Sprachmodell (LLM) am besten?",
+        options: [
+          { id: "a", text: "Eine Datenbank mit allen richtigen Antworten" },
+          { id: "b", text: "Ein System, das das nächste wahrscheinlichste Wort vorhersagt" },
+          { id: "c", text: "Eine Suchmaschine mit Live-Zugriff aufs Internet" },
+          { id: "d", text: "Ein Taschenrechner für Sprache" },
+        ],
+        correct: ["b"],
+        explanation:
+          "Ein LLM erzeugt Text, indem es Schritt für Schritt das wahrscheinlichste nächste Token vorhersagt – es ist kein Faktenspeicher.",
+      },
+      {
+        id: "q2",
+        type: "multiple",
+        prompt: "Welche Maßnahmen reduzieren Halluzinationen? (Mehrfachauswahl)",
+        options: [
+          { id: "a", text: "Quellen oder Kontext mitgeben" },
+          { id: "b", text: "Nach Begründung und Unsicherheit fragen" },
+          { id: "c", text: "Möglichst vage Fragen stellen" },
+          { id: "d", text: "Antworten kritisch gegenprüfen" },
+        ],
+        correct: ["a", "b", "d"],
+        explanation:
+          "Kontext, Nachfragen nach Begründung und eigenes Gegenprüfen senken das Risiko. Vage Fragen erhöhen es.",
+      },
+      {
+        id: "q3",
+        type: "single",
+        prompt: "Welche Daten solltest du einer öffentlichen KI NICHT anvertrauen?",
+        options: [
+          { id: "a", text: "Eine erfundene Beispieladresse" },
+          { id: "b", text: "Sensible Kunden- oder Gesundheitsdaten" },
+          { id: "c", text: "Einen öffentlichen Blogtext" },
+          { id: "d", text: "Eine allgemeine Wissensfrage" },
+        ],
+        correct: ["b"],
+        explanation: "Personenbezogene und vertrauliche Daten gehören nicht in öffentliche Tools.",
+      },
+      {
+        id: "f1",
+        type: "flashcard",
+        prompt: "Die 5 Bausteine eines guten Prompts?",
+        back: "Rolle · Kontext · Aufgabe · Format · Beispiel.",
+      },
+    ],
+  },
+  {
+    id: "quiz-l2",
+    levelId: "l2",
+    title: "Abschluss-Quiz: AI Productivity",
+    passScore: 0.7,
+    xp: 180,
+    questions: [
+      {
+        id: "q1",
+        type: "single",
+        prompt: "Was ist der schnellste KI-Weg zu einer komplexen Excel-Formel?",
+        options: [
+          { id: "a", text: "Ziel + Spaltenstruktur beschreiben und Formel generieren lassen" },
+          { id: "b", text: "Solange raten, bis es passt" },
+          { id: "c", text: "Die ganze Datei als Bild hochladen" },
+        ],
+        correct: ["a"],
+        explanation: "Klares Ziel + Datenstruktur liefert zuverlässige, erklärte Formeln.",
+      },
+      {
+        id: "q2",
+        type: "multiple",
+        prompt: "Was gehört in ein gutes Meeting-Protokoll aus KI? (Mehrfachauswahl)",
+        options: [
+          { id: "a", text: "Kernentscheidungen" },
+          { id: "b", text: "Aufgaben mit Verantwortlichen und Fristen" },
+          { id: "c", text: "Wörtliches Komplett-Transkript ohne Struktur" },
+          { id: "d", text: "Offene Fragen" },
+        ],
+        correct: ["a", "b", "d"],
+        explanation: "Entscheidungen, klare To-dos und offene Punkte – nicht das rohe Transkript.",
+      },
+      {
+        id: "f1",
+        type: "flashcard",
+        prompt: "Warum eine eigene Prompt-Bibliothek aufbauen?",
+        back: "Wiederholbare Ergebnisse, weniger Tippen, konstante Qualität über Zeit.",
+      },
+    ],
+  },
+  {
+    id: "quiz-l3",
+    levelId: "l3",
+    title: "Abschluss-Quiz: AI Master",
+    passScore: 0.7,
+    xp: 220,
+    questions: [
+      {
+        id: "q1",
+        type: "single",
+        prompt: "Was unterscheidet einen KI-Agenten von einem einfachen Prompt?",
+        options: [
+          { id: "a", text: "Er nutzt Werkzeuge und handelt über mehrere Schritte eigenständig" },
+          { id: "b", text: "Er ist einfach ein längerer Prompt" },
+          { id: "c", text: "Er braucht kein Sprachmodell" },
+        ],
+        correct: ["a"],
+        explanation: "Ein Agent plant, nutzt Tools/APIs und führt mehrere Schritte aus, um ein Ziel zu erreichen.",
+      },
+      {
+        id: "q2",
+        type: "multiple",
+        prompt: "Worauf solltest du beim Absichern eines Agenten achten? (Mehrfachauswahl)",
+        options: [
+          { id: "a", text: "Rechte minimal halten (least privilege)" },
+          { id: "b", text: "Aktionen protokollieren" },
+          { id: "c", text: "Unbegrenzte Schleifen ohne Limits erlauben" },
+          { id: "d", text: "Kritische Schritte bestätigen lassen" },
+        ],
+        correct: ["a", "b", "d"],
+        explanation: "Minimale Rechte, Logging und Bestätigungen schützen – ungebremste Schleifen sind ein Risiko.",
+      },
+    ],
+  },
+]
+
+// ── Certificates (verifizierbar) ───────────────────────────────────────────
+export const certificates: Certificate[] = [
+  {
+    id: "AC-2026-1A7F3D",
+    levelId: "l1",
+    levelTitle: "AI Basics",
+    recipient: "Monther Madkour",
+    issuedAt: "2026-05-12",
+    score: 0.92,
+  },
+]
+
 // ── Pricing ────────────────────────────────────────────────────────────────
 export const pricingTiers: PricingTier[] = [
   {
@@ -506,5 +654,11 @@ export const getUser = () => user
 export const getPrompts = () => prompts
 export const getTools = () => tools
 export const getPricing = () => pricingTiers
+export const getQuizzes = () => quizzes
+export const getQuizForLevel = (levelId: string) => quizzes.find((q) => q.levelId === levelId)
+export const getCertificates = () => certificates
+export const getCertificate = (id: string) => certificates.find((c) => c.id === id)
+export const getCertificateForLevel = (levelId: string) =>
+  certificates.find((c) => c.levelId === levelId)
 
 export const totalLessonCount = lessons.length

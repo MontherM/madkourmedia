@@ -8,6 +8,7 @@ const groups = [
       { href: "/academy/curriculum", label: "Lehrplan" },
       { href: "/academy/prompts", label: "Prompt-Bibliothek" },
       { href: "/academy/tools", label: "AI-Tool-Bibliothek" },
+      { href: "/academy/certificates", label: "Zertifikate" },
       { href: "/academy/dashboard", label: "Dashboard" },
     ],
   },

@@ -1,8 +1,15 @@
 import Link from "next/link"
 import Reveal from "@/components/academy/ui/Reveal"
 import ProgressBar from "@/components/academy/ui/ProgressBar"
-import { Check, Lock, Play } from "@/components/academy/ui/Icons"
-import { getLevels, getChaptersForLevel, getLessonsForChapter, getUser } from "@/lib/academy/data"
+import { Check, Lock, Play, Trophy } from "@/components/academy/ui/Icons"
+import {
+  getLevels,
+  getChaptersForLevel,
+  getLessonsForChapter,
+  getUser,
+  getQuizForLevel,
+  getCertificateForLevel,
+} from "@/lib/academy/data"
 import { levelProgress } from "@/lib/academy/progress"
 
 export default function CurriculumPage() {
@@ -24,6 +31,8 @@ export default function CurriculumPage() {
         {levels.map((level) => {
           const chapters = getChaptersForLevel(level.id)
           const progress = levelProgress(user, level.id)
+          const quiz = getQuizForLevel(level.id)
+          const cert = getCertificateForLevel(level.id)
           return (
             <Reveal key={level.id}>
               <section>
@@ -102,6 +111,35 @@ export default function CurriculumPage() {
                     )
                   })}
                 </div>
+
+                {(quiz || cert) && (
+                  <div
+                    className="mt-5 flex flex-wrap items-center justify-between gap-4 rounded-2xl p-5"
+                    style={{ background: "var(--ac-surface-2)" }}
+                  >
+                    <div className="flex items-center gap-3">
+                      <Trophy width={18} height={18} style={{ color: "var(--ac-primary)" }} />
+                      <span className="text-sm" style={{ color: "var(--ac-ink-2)" }}>
+                        Abschluss-Quiz bestehen und Zertifikat sichern.
+                      </span>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {quiz && (
+                        <Link href={`/academy/quiz/${level.id}`} className="ac-btn ac-btn-ghost !py-2 !px-4 !text-[13px]">
+                          Quiz starten
+                        </Link>
+                      )}
+                      {cert && (
+                        <Link
+                          href={`/academy/certificates/${cert.id}`}
+                          className="ac-btn ac-btn-primary !py-2 !px-4 !text-[13px]"
+                        >
+                          Zertifikat
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+                )}
               </section>
             </Reveal>
           )

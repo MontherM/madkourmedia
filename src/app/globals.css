@@ -401,3 +401,18 @@ video {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Clean print output: keep only the certificate. */
+@media print {
+  .academy header,
+  .academy footer {
+    display: none !important;
+  }
+  .academy,
+  .academy[data-theme] {
+    background: #fff !important;
+  }
+  #certificate {
+    box-shadow: none !important;
+  }
+}

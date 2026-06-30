@@ -2,7 +2,7 @@ import Link from "next/link"
 import Reveal from "@/components/academy/ui/Reveal"
 import ProgressBar from "@/components/academy/ui/ProgressBar"
 import { ArrowRight, Bolt, Flame, Trophy, Book, Play, Star } from "@/components/academy/ui/Icons"
-import { getUser, getLesson, getAllLessons } from "@/lib/academy/data"
+import { getUser, getLesson, getAllLessons, getCertificates } from "@/lib/academy/data"
 import { rankFor, levelStats, overallProgress } from "@/lib/academy/progress"
 
 export default function DashboardPage() {
@@ -12,6 +12,7 @@ export default function DashboardPage() {
   const overall = overallProgress(user)
   const cont = getLesson(user.continueLessonId)
   const bookmarks = user.bookmarkedLessons.map((id) => getAllLessons().find((l) => l.id === id)).filter(Boolean)
+  const certificates = getCertificates()
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-12 sm:px-8">
@@ -138,6 +139,33 @@ export default function DashboardPage() {
                   </div>
                 ))}
               </div>
+            </div>
+          </Reveal>
+
+          {/* Certificates */}
+          <Reveal>
+            <div className="ac-card p-6">
+              <h3 className="ac-h3 flex items-center gap-2"><Trophy width={16} height={16} style={{ color: "var(--ac-primary)" }} /> Zertifikate</h3>
+              {certificates.length > 0 ? (
+                <ul className="mt-4 space-y-1">
+                  {certificates.map((c) => (
+                    <li key={c.id}>
+                      <Link
+                        href={`/academy/certificates/${c.id}`}
+                        className="flex items-center justify-between rounded-lg px-3 py-2.5 text-sm transition-colors hover:bg-[var(--ac-surface-2)]"
+                      >
+                        <span className="truncate">{c.levelTitle}</span>
+                        <ArrowRight width={15} height={15} style={{ color: "var(--ac-ink-3)", flexShrink: 0 }} />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-3 text-sm" style={{ color: "var(--ac-ink-3)" }}>Noch keine – bestehe ein Abschluss-Quiz.</p>
+              )}
+              <Link href="/academy/certificates" className="mt-3 inline-flex items-center gap-1 text-sm" style={{ color: "var(--ac-primary)" }}>
+                Alle ansehen <ArrowRight width={14} height={14} />
+              </Link>
             </div>
           </Reveal>
 

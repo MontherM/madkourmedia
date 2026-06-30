@@ -117,6 +117,53 @@ export interface UserProgress {
   weeklyDone: number
 }
 
+// ── Quiz ───────────────────────────────────────────────────────────────────
+export type QuestionType = "single" | "multiple" | "flashcard"
+
+export interface QuizOption {
+  id: string
+  text: string
+}
+
+export interface QuizQuestion {
+  id: string
+  type: QuestionType
+  /** Question text (single/multiple) or the card front (flashcard). */
+  prompt: string
+  /** Options for single/multiple choice. */
+  options?: QuizOption[]
+  /** Correct option ids for single/multiple choice. */
+  correct?: string[]
+  /** Shown after answering. */
+  explanation?: string
+  /** Flashcard back side. */
+  back?: string
+}
+
+export interface Quiz {
+  id: string
+  levelId: string
+  title: string
+  /** Minimum ratio (0..1) of correct answers to pass. */
+  passScore: number
+  /** XP awarded on passing. */
+  xp: number
+  questions: QuizQuestion[]
+}
+
+// ── Certificate ─────────────────────────────────────────────────────────────
+export interface Certificate {
+  /** Public verification code (also the URL slug). */
+  id: string
+  levelId: string
+  levelTitle: string
+  recipient: string
+  /** ISO date string. */
+  issuedAt: string
+  /** Achieved score 0..1. */
+  score: number
+}
+
 export interface PricingTier {
   plan: Plan
   name: string
