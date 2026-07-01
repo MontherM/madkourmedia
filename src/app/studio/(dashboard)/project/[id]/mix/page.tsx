@@ -2,15 +2,19 @@
 
 import { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
+import { Wand2 } from 'lucide-react';
 import { Button } from '@/components/studio/ui/button';
 import { ChannelStrip } from '@/components/studio/mix/ChannelStrip';
 import { EffectsRack } from '@/components/studio/mix/EffectsRack';
+import { useToast } from '@/components/studio/ui/toast';
 import { getProject, updateProject } from '@/lib/studio/db/projects';
-import type { Project, ProjectEffects } from '@/types/studio';
+import { getPreset } from '@/lib/studio/ai/presets';
+import type { Project, ProjectEffects, GenreValue } from '@/types/studio';
 
 export default function MixPage() {
   const { id } = useParams<{ id: string }>();
   const router = useRouter();
+  const { toast } = useToast();
   const [project, setProject] = useState<Project | null>(null);
   const [saving, setSaving] = useState(false);
   const [beatMuted, setBeatMuted] = useState(false);
@@ -34,6 +38,18 @@ export default function MixPage() {
     });
   }, [id]);
 
+  function applyPreset() {
+    if (!project?.genre) return;
+    const preset = getPreset(project.genre as GenreValue);
+    setEffects((prev) => ({
+      ...prev,
+      ...(preset.eq !== undefined ? { eq: preset.eq ?? null } : {}),
+      ...(preset.compressor !== undefined ? { compressor: preset.compressor ?? null } : {}),
+      ...(preset.reverb !== undefined ? { reverb: preset.reverb ?? null } : {}),
+      ...(preset.autotune !== undefined ? { autotune: preset.autotune ?? null } : {}),
+    }));
+  }
+
   async function saveMix() {
     if (!project) return;
     setSaving(true);
@@ -44,6 +60,9 @@ export default function MixPage() {
         status: 'mixing',
       });
       setProject(updated);
+      toast('Mix & effects saved');
+    } catch {
+      toast('Failed to save mix', 'error');
     } finally {
       setSaving(false);
     }
@@ -51,9 +70,17 @@ export default function MixPage() {
 
   return (
     <div className="p-6 max-w-3xl mx-auto space-y-8">
-      <div>
-        <h2 className="text-lg font-semibold text-foreground">Mix</h2>
-        <p className="text-sm text-muted-foreground mt-1">Adjust levels, panning, and apply effects to your vocal.</p>
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <h2 className="text-lg font-semibold text-foreground">Mix</h2>
+          <p className="text-sm text-muted-foreground mt-1">Adjust levels, panning, and apply effects to your vocal.</p>
+        </div>
+        {project?.genre && (
+          <Button variant="outline" size="sm" onClick={applyPreset} className="shrink-0 gap-1.5">
+            <Wand2 className="h-3.5 w-3.5" />
+            Apply {project.genre} Preset
+          </Button>
+        )}
       </div>
 
       {/* Channel strips */}
