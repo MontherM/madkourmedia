@@ -1,146 +1,257 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useParams } from 'next/navigation';
-import { Download, FileAudio } from 'lucide-react';
+import { Download, Loader2, CheckCircle2, Music2 } from 'lucide-react';
 import { Button } from '@/components/studio/ui/button';
 import { getProject, updateProject } from '@/lib/studio/db/projects';
-import { renderMix, type ExportOptions } from '@/lib/studio/audio/export';
-import type { Project } from '@/types/studio';
+import { AudioEngine, type PlaybackEffects } from '@/lib/studio/audio/engine';
+import type { Project, ExportRecord } from '@/types/studio';
+import { cn } from '@/lib/utils';
+
+type Format = 'wav' | 'mp3';
+type WavQuality = '16bit' | '24bit';
+type Mp3Bitrate = '128' | '192' | '320';
+type ExportState = 'idle' | 'loading' | 'rendering' | 'encoding' | 'done' | 'error';
+
+function toPlaybackEffects(project: Project): PlaybackEffects {
+  return {
+    beatVolume: project.mix?.beat_volume ?? 0.8,
+    vocalVolume: project.mix?.vocal_volume ?? 0.9,
+    beatPan: project.mix?.beat_pan ?? 0,
+    vocalPan: project.mix?.vocal_pan ?? 0,
+    eq: project.effects?.eq?.enabled
+      ? { low: project.effects.eq.low_gain, mid: project.effects.eq.mid_gain, high: project.effects.eq.high_gain }
+      : null,
+    compressor: project.effects?.compressor?.enabled
+      ? {
+          threshold: project.effects.compressor.threshold,
+          ratio: project.effects.compressor.ratio,
+          attack: project.effects.compressor.attack,
+          release: project.effects.compressor.release,
+          makeup: project.effects.compressor.makeup_gain,
+        }
+      : null,
+    reverb: project.effects?.reverb?.enabled
+      ? { decay: project.effects.reverb.decay, wet: project.effects.reverb.wet_level }
+      : null,
+  };
+}
+
+async function encodeToMp3(wavBuffer: ArrayBuffer, bitrate: string): Promise<Blob> {
+  const { FFmpeg } = await import('@ffmpeg/ffmpeg');
+  const { fetchFile } = await import('@ffmpeg/util');
+
+  const ffmpeg = new FFmpeg();
+  await ffmpeg.load({
+    coreURL: 'https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd/ffmpeg-core.js',
+  });
+
+  const inFile = 'input.wav';
+  const outFile = 'output.mp3';
+  await ffmpeg.writeFile(inFile, new Uint8Array(wavBuffer));
+  await ffmpeg.exec(['-i', inFile, '-b:a', `${bitrate}k`, '-q:a', '2', outFile]);
+  const data = await ffmpeg.readFile(outFile);
+  // FFmpeg returns FileData (Uint8Array | string); copy into a fresh ArrayBuffer-backed array for Blob
+  const bytes = typeof data === 'string' ? new TextEncoder().encode(data) : new Uint8Array(data);
+  return new Blob([bytes], { type: 'audio/mpeg' });
+}
 
 export default function ExportPage() {
   const { id } = useParams<{ id: string }>();
   const [project, setProject] = useState<Project | null>(null);
-  const [format, setFormat] = useState<'wav' | 'mp3'>('wav');
-  const [includeBeat, setIncludeBeat] = useState(true);
-  const [includeVocal, setIncludeVocal] = useState(true);
-  const [exporting, setExporting] = useState(false);
+  const [format, setFormat] = useState<Format>('wav');
+  const [wavQuality] = useState<WavQuality>('16bit');
+  const [mp3Bitrate, setMp3Bitrate] = useState<Mp3Bitrate>('320');
+  const [exportState, setExportState] = useState<ExportState>('idle');
   const [progress, setProgress] = useState('');
-  const [pct, setPct] = useState(0);
   const [downloadUrl, setDownloadUrl] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [fileName, setFileName] = useState('');
+  const [exportError, setExportError] = useState<string | null>(null);
+  const [pastExports, setPastExports] = useState<ExportRecord[]>([]);
+
+  const engineRef = useRef<AudioEngine | null>(null);
 
   useEffect(() => {
-    getProject(id).then(setProject);
+    engineRef.current = new AudioEngine();
+    getProject(id).then(async (p) => {
+      if (!p) return;
+      setProject(p);
+      setPastExports(p.exports ?? []);
+      if (p.beat?.file_url) await engineRef.current!.loadBeat(p.beat.file_url);
+      if (p.vocal?.file_url) await engineRef.current!.loadVocal(p.vocal.file_url);
+    });
+    return () => {
+      engineRef.current?.dispose();
+      if (downloadUrl) URL.revokeObjectURL(downloadUrl);
+    };
   }, [id]);
 
-  async function handleExport() {
-    if (!project) return;
-    setExporting(true);
-    setError(null);
+  async function doExport() {
+    if (!project || !engineRef.current) return;
+    setExportState('rendering');
+    setExportError(null);
     setDownloadUrl(null);
-    setPct(0);
 
     try {
-      const blob = await renderMix(
-        project,
-        { format, includeBeat, includeVocal },
-        (stage, p) => { setProgress(stage); setPct(p); }
+      setProgress('Rendering audio mix…');
+      const wavBuffer = await engineRef.current.renderToWav(
+        project.vocal?.offset_ms ?? 0,
+        toPlaybackEffects(project)
       );
+
+      let blob: Blob;
+      let ext: string;
+
+      if (format === 'mp3') {
+        setExportState('encoding');
+        setProgress(`Encoding MP3 at ${mp3Bitrate}kbps…`);
+        blob = await encodeToMp3(wavBuffer, mp3Bitrate);
+        ext = 'mp3';
+      } else {
+        blob = new Blob([wavBuffer], { type: 'audio/wav' });
+        ext = 'wav';
+      }
+
+      const name = `${project.name.replace(/\s+/g, '_')}_demo.${ext}`;
       const url = URL.createObjectURL(blob);
       setDownloadUrl(url);
+      setFileName(name);
+      setExportState('done');
 
-      // Save export record to project
-      const record = {
+      // Save export record
+      const record: ExportRecord = {
         id: crypto.randomUUID(),
         format,
-        quality: format === 'wav' ? '44.1kHz/16bit' : '320kbps',
-        url,
+        quality: format === 'mp3' ? `${mp3Bitrate}kbps` : wavQuality,
+        url: '',
         created_at: new Date().toISOString(),
         settings_snapshot: { mix: project.mix, effects: project.effects },
       };
-      const updated = await updateProject(id, {
-        exports: [...(project.exports ?? []), record],
-        status: 'exported',
-      });
+      const newExports = [record, ...(project.exports ?? [])].slice(0, 10);
+      const updated = await updateProject(id, { exports: newExports, status: 'exported' });
       setProject(updated);
+      setPastExports(updated.exports ?? []);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Export failed');
-    } finally {
-      setExporting(false);
+      setExportError(err instanceof Error ? err.message : 'Export failed');
+      setExportState('error');
     }
   }
 
-  const canExport = project && (project.beat?.file_url || project.vocal?.file_url);
+  const hasBeat = !!project?.beat?.file_url;
 
   return (
-    <div className="p-6 max-w-xl mx-auto space-y-6">
+    <div className="p-6 max-w-2xl mx-auto space-y-8">
       <div>
         <h2 className="text-lg font-semibold text-foreground">Export</h2>
-        <p className="text-sm text-muted-foreground mt-1">Render your mix and download the demo.</p>
+        <p className="text-sm text-muted-foreground mt-1">Render and download your demo.</p>
       </div>
 
-      {/* Settings */}
-      <div className="rounded-xl border border-border bg-card p-5 space-y-4">
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-foreground">Format</label>
-          <div className="flex gap-2">
-            {(['wav', 'mp3'] as const).map((f) => (
-              <button
-                key={f}
-                onClick={() => setFormat(f)}
-                className={`flex-1 rounded-md border py-2 text-sm font-medium transition-colors ${
-                  format === f ? 'border-primary bg-primary/10 text-primary' : 'border-border text-muted-foreground hover:text-foreground'
-                }`}
-              >
-                {f === 'wav' ? 'WAV (Lossless)' : 'MP3 (320kbps)'}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-foreground">Include</label>
-          <div className="flex flex-col gap-2">
-            {[
-              { label: 'Beat', value: includeBeat, set: setIncludeBeat },
-              { label: 'Vocal', value: includeVocal, set: setIncludeVocal },
-            ].map(({ label, value, set }) => (
-              <label key={label} className="flex items-center gap-2 cursor-pointer">
-                <input type="checkbox" checked={value} onChange={(e) => set(e.target.checked)}
-                  className="accent-primary" />
-                <span className="text-sm text-foreground">{label}</span>
-              </label>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Progress */}
-      {exporting && (
-        <div className="space-y-1">
-          <div className="h-2 rounded-full bg-muted overflow-hidden">
-            <div className="h-full bg-primary transition-all duration-300 rounded-full" style={{ width: `${pct}%` }} />
-          </div>
-          <p className="text-xs text-muted-foreground">{progress}</p>
+      {!hasBeat && (
+        <div className="flex flex-col items-center gap-3 rounded-xl border border-border bg-card py-16 text-center">
+          <Music2 className="h-10 w-10 text-muted-foreground" />
+          <p className="text-sm text-muted-foreground">Upload a beat on the Setup tab first.</p>
         </div>
       )}
 
-      {error && <p className="text-sm text-destructive">{error}</p>}
+      {hasBeat && (
+        <>
+          {/* Format selection */}
+          <section className="space-y-3">
+            <h3 className="text-sm font-medium text-foreground">Format</h3>
+            <div className="grid grid-cols-2 gap-3">
+              {(['wav', 'mp3'] as Format[]).map((f) => (
+                <button
+                  key={f}
+                  onClick={() => setFormat(f)}
+                  className={cn(
+                    'rounded-xl border p-4 text-left transition-colors',
+                    format === f ? 'border-primary bg-primary/5' : 'border-border bg-card hover:border-border/80'
+                  )}
+                >
+                  <p className="font-medium text-foreground uppercase">{f}</p>
+                  <p className="mt-0.5 text-xs text-muted-foreground">
+                    {f === 'wav' ? 'Lossless · 16-bit · Studio quality' : 'Compressed · Smaller file size'}
+                  </p>
+                </button>
+              ))}
+            </div>
+          </section>
 
-      {/* Download */}
-      {downloadUrl && (
-        <div className="flex items-center gap-3 rounded-xl border border-primary/30 bg-primary/5 p-4">
-          <FileAudio className="h-6 w-6 text-primary shrink-0" />
-          <div className="flex-1">
-            <p className="text-sm font-medium text-foreground">Export ready</p>
-            <p className="text-xs text-muted-foreground">{format.toUpperCase()}</p>
-          </div>
-          <a href={downloadUrl} download={`demo-${id}.${format}`}>
-            <Button size="sm">
-              <Download className="h-3.5 w-3.5 mr-1.5" />
-              Download
+          {/* MP3 bitrate */}
+          {format === 'mp3' && (
+            <section className="space-y-3">
+              <h3 className="text-sm font-medium text-foreground">Bitrate</h3>
+              <div className="flex gap-3">
+                {(['128', '192', '320'] as Mp3Bitrate[]).map((b) => (
+                  <button
+                    key={b}
+                    onClick={() => setMp3Bitrate(b)}
+                    className={cn(
+                      'rounded-lg border px-4 py-2 text-sm transition-colors',
+                      mp3Bitrate === b ? 'border-primary bg-primary/5 text-foreground' : 'border-border text-muted-foreground hover:text-foreground'
+                    )}
+                  >
+                    {b}kbps
+                  </button>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Export button / progress */}
+          {exportState === 'idle' || exportState === 'error' ? (
+            <Button className="w-full" onClick={doExport} size="lg">
+              <Download className="h-4 w-4 mr-2" />
+              Export {format.toUpperCase()}
             </Button>
-          </a>
-        </div>
-      )}
+          ) : exportState === 'done' ? (
+            <div className="space-y-3">
+              <div className="rounded-xl border border-primary/40 bg-primary/5 p-5 flex items-center gap-4">
+                <CheckCircle2 className="h-8 w-8 text-primary shrink-0" />
+                <div>
+                  <p className="font-medium text-foreground">Export ready!</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{fileName}</p>
+                </div>
+                <a href={downloadUrl!} download={fileName} className="ml-auto">
+                  <Button size="sm">
+                    <Download className="h-3.5 w-3.5 mr-1.5" /> Download
+                  </Button>
+                </a>
+              </div>
+              <Button variant="outline" className="w-full" onClick={() => { setExportState('idle'); setDownloadUrl(null); }}>
+                Export Another Format
+              </Button>
+            </div>
+          ) : (
+            <div className="flex flex-col items-center gap-4 py-10">
+              <Loader2 className="h-10 w-10 animate-spin text-primary" />
+              <p className="text-sm text-muted-foreground">{progress}</p>
+            </div>
+          )}
 
-      <Button onClick={handleExport} disabled={exporting || !canExport} className="w-full">
-        {exporting ? `${progress} (${pct}%)` : 'Export Demo'}
-      </Button>
+          {exportError && (
+            <p className="text-xs text-destructive">{exportError}</p>
+          )}
 
-      {!canExport && (
-        <p className="text-xs text-muted-foreground text-center">Upload a beat or record a vocal first.</p>
+          {/* Past exports */}
+          {pastExports.length > 0 && (
+            <section className="space-y-3">
+              <h3 className="text-sm font-medium text-foreground">Export History</h3>
+              <div className="divide-y divide-border rounded-xl border border-border bg-card overflow-hidden">
+                {pastExports.map((ex) => (
+                  <div key={ex.id} className="flex items-center gap-3 px-4 py-3">
+                    <Download className="h-4 w-4 text-muted-foreground shrink-0" />
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-foreground uppercase">{ex.format}</p>
+                      <p className="text-xs text-muted-foreground">{ex.quality} · {new Date(ex.created_at).toLocaleString()}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+        </>
       )}
     </div>
   );
