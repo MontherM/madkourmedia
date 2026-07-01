@@ -1,0 +1,23 @@
+{
+  "name": "AI Academy — MadkourMedia",
+  "short_name": "AI Academy",
+  "description": "KI verstehen, anwenden und automatisieren. Kurse, Prompts, Tools, Quiz und Zertifikate.",
+  "start_url": "/academy?source=pwa",
+  "scope": "/academy",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "categories": ["education", "productivity"],
+  "lang": "de",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Lehrplan", "url": "/academy/curriculum" },
+    { "name": "Prompts", "url": "/academy/prompts" },
+    { "name": "Dashboard", "url": "/academy/dashboard" }
+  ]
+}

@@ -322,7 +322,9 @@ video {
   box-shadow: var(--ac-shadow);
 }
 
-/* Buttons */
+/* Buttons + pills live in the components layer so Tailwind utilities
+   (hidden, flex, !-overrides) always win over their display rules. */
+@layer components {
 .ac-btn {
   display: inline-flex;
   align-items: center;
@@ -368,6 +370,7 @@ video {
   background: var(--ac-surface-2);
   border: 1px solid var(--ac-border);
   color: var(--ac-ink-2);
+}
 }
 
 /* Inputs */
