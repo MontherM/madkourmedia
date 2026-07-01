@@ -1,5 +1,5 @@
-import Link from "next/link"
 import Reveal from "@/components/academy/ui/Reveal"
+import PlanButton from "@/components/academy/PlanButton"
 import { Check, Sparkles } from "@/components/academy/ui/Icons"
 import { getPricing } from "@/lib/academy/data"
 
@@ -52,12 +52,7 @@ export default function PricingPage() {
                 <span className="text-sm" style={{ color: "var(--ac-ink-3)" }}>{t.cadence}</span>
               </div>
 
-              <Link
-                href="#"
-                className={`ac-btn mt-5 w-full ${t.highlighted ? "ac-btn-primary" : "ac-btn-ghost"}`}
-              >
-                {t.cta}
-              </Link>
+              <PlanButton plan={t.plan} cta={t.cta} highlighted={t.highlighted} />
 
               <ul className="mt-6 space-y-2.5">
                 {t.features.map((f) => (

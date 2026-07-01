@@ -3,8 +3,10 @@
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import CopyButton from "./CopyButton"
+import UpgradeGate from "./UpgradeGate"
 import { Play, Check, Download, ArrowRight, Star, Lock } from "./ui/Icons"
 import type { Lesson } from "@/lib/academy/types"
+import { canAccess } from "@/lib/academy/progress"
 import { useAcademy, toggleLessonComplete, toggleBookmark, visitLesson } from "@/lib/academy/store"
 
 interface Neighbour {
@@ -61,6 +63,10 @@ export default function LessonView({ lesson, levelTitle, chapterTitle, prev, nex
     } catch {
       /* ignore */
     }
+  }
+
+  if (!canAccess(user.plan, lesson.access)) {
+    return <UpgradeGate lesson={lesson} />
   }
 
   return (
