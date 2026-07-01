@@ -4,12 +4,14 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 import ThemeToggle from "./ThemeToggle"
+import CommandPalette from "./CommandPalette"
 import { Menu, Sparkles } from "./ui/Icons"
 
 const links = [
   { href: "/academy/curriculum", label: "Lehrplan" },
   { href: "/academy/prompts", label: "Prompts" },
   { href: "/academy/tools", label: "AI-Tools" },
+  { href: "/academy/community", label: "Community" },
   { href: "/academy/pricing", label: "Preise" },
 ]
 
@@ -53,6 +55,7 @@ export default function AcademyNav() {
         </div>
 
         <div className="flex items-center gap-2.5">
+          <CommandPalette />
           <ThemeToggle />
           <Link href="/academy/dashboard" className="ac-btn ac-btn-ghost hidden sm:inline-flex !py-2 !px-4 !text-[13px]">
             Dashboard
