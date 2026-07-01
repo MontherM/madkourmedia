@@ -14,6 +14,7 @@ import type {
   ResourceItem,
   Quiz,
   Certificate,
+  ForumThread,
 } from "./types"
 
 // ── Prompts ───────────────────────────────────────────────────────────────
@@ -585,6 +586,120 @@ export const certificates: Certificate[] = [
   },
 ]
 
+// ── Community (Seed-Threads) ───────────────────────────────────────────────
+export const forumCategories = [
+  "Alle",
+  "Prompting",
+  "Automatisierung",
+  "Tools",
+  "Business",
+  "Feedback",
+] as const
+
+export const forumThreads: ForumThread[] = [
+  {
+    id: "th-welcome",
+    title: "Willkommen in der Community – so holst du am meisten raus",
+    body: "Kurz vorgestellt, Fragen gestellt, Wissen geteilt: Hier findest du Mitlernende vom ersten Prompt bis zum eigenen Agenten. Bitte bleib respektvoll, teile Kontext zu deinen Fragen (Tool, Ziel, was du probiert hast) – dann bekommst du die besten Antworten.",
+    author: "AI Academy Team",
+    authorRole: "team",
+    category: "Feedback",
+    createdAt: "2026-06-01",
+    likes: 48,
+    pinned: true,
+    replies: [
+      {
+        id: "r-w1",
+        author: "Sandra K.",
+        body: "Super Start! Die Struktur der Lektionen ist genau das, was mir bei YouTube-Tutorials immer gefehlt hat.",
+        createdAt: "2026-06-02",
+        likes: 12,
+      },
+    ],
+  },
+  {
+    id: "th-prompt-laenge",
+    title: "Sind lange Prompts wirklich besser?",
+    body: "In Level 1 heißt es Rolle · Kontext · Aufgabe · Format · Beispiel. Aber manchmal bekomme ich mit einem Zweizeiler bessere Ergebnisse als mit einem halben Roman. Woran liegt das?",
+    author: "Marco B.",
+    category: "Prompting",
+    createdAt: "2026-06-18",
+    likes: 23,
+    solved: true,
+    replies: [
+      {
+        id: "r-p1",
+        author: "AI Academy Team",
+        authorRole: "team",
+        body: "Gute Beobachtung! Länge ist kein Ziel, Präzision schon. Die 5 Bausteine helfen dir zu prüfen, ob nichts Wichtiges fehlt – nicht, den Prompt aufzublähen. Bei einfachen Aufgaben reichen 2 Bausteine völlig.",
+        createdAt: "2026-06-18",
+        likes: 19,
+      },
+      {
+        id: "r-p2",
+        author: "Julia R.",
+        body: "Mir hilft es, den Prompt erst lang zu schreiben und dann zu kürzen bis er kippt. So findet man das Minimum.",
+        createdAt: "2026-06-19",
+        likes: 8,
+      },
+    ],
+  },
+  {
+    id: "th-n8n-mail",
+    title: "n8n: Agent soll Mails zusammenfassen – wo anfangen?",
+    body: "Ich habe Lektion „Dein erster KI-Agent“ durch und will jetzt meine Morgen-Mails automatisch zusammenfassen lassen. IMAP-Node → KI-Node → Slack? Hat jemand einen funktionierenden Workflow?",
+    author: "Deniz A.",
+    category: "Automatisierung",
+    createdAt: "2026-06-24",
+    likes: 17,
+    replies: [
+      {
+        id: "r-n1",
+        author: "Tobias F.",
+        body: "Genau die Kette. Wichtig: im KI-Node ein striktes Ausgabeformat verlangen (max. 5 Bullet Points), sonst wird der Slack-Post riesig.",
+        createdAt: "2026-06-24",
+        likes: 9,
+      },
+      {
+        id: "r-n2",
+        author: "AI Academy Team",
+        authorRole: "team",
+        body: "In den Ressourcen der Agenten-Lektion liegt ein Workflow-Export (JSON), der fast genau das macht – importieren und den Mail-Trigger anpassen.",
+        createdAt: "2026-06-25",
+        likes: 11,
+      },
+    ],
+  },
+  {
+    id: "th-tool-bild",
+    title: "Midjourney vs. DALL·E für Immobilien-Exposés?",
+    body: "Ich brauche fotorealistische Visualisierungen für Exposés. Midjourney sieht besser aus, aber das Handling über Discord nervt. Lohnt sich der Umstieg trotzdem?",
+    author: "Petra S.",
+    category: "Tools",
+    createdAt: "2026-06-27",
+    likes: 9,
+    replies: [
+      {
+        id: "r-t1",
+        author: "Marco B.",
+        body: "Für Fotorealismus ist Midjourney aktuell klar vorn. Mit der Web-App brauchst du Discord kaum noch.",
+        createdAt: "2026-06-28",
+        likes: 5,
+      },
+    ],
+  },
+  {
+    id: "th-kmu-angebot",
+    title: "KI-Angebotserstellung im Handwerksbetrieb – Erfahrungen?",
+    body: "Wir schreiben pro Woche ~15 Angebote, jedes dauert 30–45 Min. Ich will mit den Level-2-Methoden eine Vorlage bauen, die aus Stichpunkten ein fertiges Angebot macht. Hat das schon jemand produktiv im Einsatz?",
+    author: "Stefan M.",
+    category: "Business",
+    createdAt: "2026-06-29",
+    likes: 14,
+    replies: [],
+  },
+]
+
 // ── Pricing ────────────────────────────────────────────────────────────────
 export const pricingTiers: PricingTier[] = [
   {
@@ -656,6 +771,8 @@ export const getTools = () => tools
 export const getPricing = () => pricingTiers
 export const getQuizzes = () => quizzes
 export const getQuizForLevel = (levelId: string) => quizzes.find((q) => q.levelId === levelId)
+export const getForumThreads = () =>
+  [...forumThreads].sort((a, b) => Number(b.pinned ?? false) - Number(a.pinned ?? false))
 export const getCertificates = () => certificates
 export const getCertificate = (id: string) => certificates.find((c) => c.id === id)
 export const getCertificateForLevel = (levelId: string) =>

@@ -164,6 +164,32 @@ export interface Certificate {
   score: number
 }
 
+// ── Community ───────────────────────────────────────────────────────────────
+export interface ForumReply {
+  id: string
+  author: string
+  /** "team" gets a highlighted badge. */
+  authorRole?: "team" | "member"
+  body: string
+  /** ISO date string. */
+  createdAt: string
+  likes: number
+}
+
+export interface ForumThread {
+  id: string
+  title: string
+  body: string
+  author: string
+  authorRole?: "team" | "member"
+  category: string
+  createdAt: string
+  likes: number
+  replies: ForumReply[]
+  pinned?: boolean
+  solved?: boolean
+}
+
 export interface PricingTier {
   plan: Plan
   name: string
