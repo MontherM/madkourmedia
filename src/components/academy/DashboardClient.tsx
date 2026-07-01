@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import OnboardingDialog from "@/components/academy/OnboardingDialog"
 import Reveal from "@/components/academy/ui/Reveal"
 import ProgressBar from "@/components/academy/ui/ProgressBar"
 import { ArrowRight, Bolt, Flame, Trophy, Book, Play, Star } from "@/components/academy/ui/Icons"
@@ -22,6 +23,7 @@ export default function DashboardClient() {
 
   return (
     <div className="mx-auto max-w-6xl px-5 py-12 sm:px-8">
+      <OnboardingDialog />
       <Reveal>
         <p className="text-sm" style={{ color: "var(--ac-ink-3)" }}>Dashboard</p>
         <h1 className="ac-h2 mt-1">{user.name ? `Hallo ${user.name} 👋` : "Willkommen 👋"}</h1>

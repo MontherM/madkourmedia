@@ -57,9 +57,10 @@ Praxis → Automatisierung → Business-Nutzen** – nicht nur „schreib diesen
 | Analytics      | PostHog                       | Product Analytics, Funnels, Feature Flags             |
 | Deployment     | Vercel                        | Edge, Preview-Deploys, ISR                            |
 
-> **Aktueller Stand (dieser Branch):** Frontend-Foundation + CMS-artige Content-Schicht
-> mit getypten Mock-Daten (`src/lib/academy`). Externe Services (Supabase/Stripe/Mux …)
-> werden hinter Service-Interfaces eingezogen, ohne die UI zu ändern – siehe §6.
+> **Aktueller Stand (dieser Branch):** Voll funktionsfähiges Frontend-Produkt.
+> Fortschritt (XP, Streaks, Badges, Zertifikate, Plan) läuft über einen
+> localStorage-Store (`src/lib/academy/store.ts`) mit derselben API, die später
+> Supabase bedient – Backend einziehen heißt nur `load`/`persist` austauschen.
 
 ---
 
@@ -153,21 +154,25 @@ Datentypen sind in `src/lib/academy/types.ts` als Single Source of Truth definie
 
 ## 8. Feature-Matrix → Status
 
-| Bereich               | Geplant | Foundation in diesem Branch          |
-| --------------------- | :-----: | ------------------------------------ |
-| Marketing-Landing     |   ✔     | ✔ implementiert                      |
-| Lehrplan / Levels     |   ✔     | ✔ implementiert                      |
-| Dashboard (XP/Streak) |   ✔     | ✔ implementiert (Mock-Progress)      |
-| Lektions-/Videoseite  |   ✔     | ✔ implementiert (Player-Shell)       |
-| Prompt-Bibliothek     |   ✔     | ✔ implementiert (Filter/Suche/Copy)  |
-| AI-Tool-Bibliothek    |   ✔     | ✔ implementiert                      |
-| Pricing / Abos        |   ✔     | ✔ implementiert (UI)                 |
-| Light/Dark Theme      |   ✔     | ✔ implementiert                      |
-| Quiz / Zertifikate    |   ✔     | ⏳ Modell vorhanden, UI folgt        |
-| Community / Forum      |   ✔     | ⏳ geplant                            |
-| Admin / CMS           |   ✔     | ⏳ geplant                            |
-| Auth · Payments · DB  |   ✔     | ⏳ Service-Interfaces, dann Supabase  |
-| i18n (DE/EN)          |   ✔     | ⏳ Texte zentralisiert, dann next-intl|
+| Bereich                  | Geplant | Stand in diesem Branch                                  |
+| ------------------------ | :-----: | ------------------------------------------------------- |
+| Marketing-Landing        |   ✔     | ✔ implementiert                                          |
+| Lehrplan / Levels        |   ✔     | ✔ implementiert, live Fortschritt & Lock-Status          |
+| Dashboard (XP/Streak)    |   ✔     | ✔ live (localStorage-Store, echte Streaks & Badges)      |
+| Lektions-/Videoseite     |   ✔     | ✔ implementiert (Player-Shell, Notizen, Abschluss-XP)    |
+| Prompt-Bibliothek        |   ✔     | ✔ implementiert (Filter/Suche/Copy, Copy-Zähler → Badge) |
+| AI-Tool-Bibliothek       |   ✔     | ✔ implementiert                                          |
+| Pricing / Abos           |   ✔     | ✔ UI + Demo-Plan-Aktivierung (Stripe folgt)              |
+| Light/Dark Theme         |   ✔     | ✔ implementiert                                          |
+| Quiz / Zertifikate       |   ✔     | ✔ Engine + echte, verifizierbare Zertifikatsausstellung  |
+| Gating / Paywall         |   ✔     | ✔ UpgradeGate pro Lektion, Plan-Ränge zentral            |
+| Globale Suche (⌘K)       |   –     | ✔ Command-Palette über Lektionen/Prompts/Tools/Seiten    |
+| Onboarding               |   –     | ✔ Erstbesuch: Name (für Zertifikate) + Wochenziel        |
+| Community / Forum        |   ✔     | ✔ UI mit Seed-Threads, Antworten/Likes (Persistenz: DB)  |
+| Admin / CMS              |   ✔     | ✔ CMS-Vorschau (read-only) + Demo-Daten-Reset            |
+| SEO (Sitemap/Robots)     |   ✔     | ✔ sitemap.ts, robots.ts, Metadata pro Seite              |
+| Auth · Payments · DB     |   ✔     | ⏳ Store-API steht; Supabase/Stripe austauschbar          |
+| i18n (DE/EN)             |   ✔     | ⏳ Texte zentralisiert, dann next-intl                    |
 
 ---
 
