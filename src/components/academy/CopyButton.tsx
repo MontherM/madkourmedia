@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
 import { Copy, Check } from "./ui/Icons"
+import { recordPromptCopy } from "@/lib/academy/store"
 
 export default function CopyButton({
   text,
@@ -16,6 +17,7 @@ export default function CopyButton({
   const onCopy = async () => {
     try {
       await navigator.clipboard.writeText(text)
+      recordPromptCopy()
       setCopied(true)
       setTimeout(() => setCopied(false), 1600)
     } catch {

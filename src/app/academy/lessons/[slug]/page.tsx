@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import LessonView from "@/components/academy/LessonView"
-import { getLesson, getAllLessons, getNeighbours, getLevel, getChapter, getUser } from "@/lib/academy/data"
+import { getLesson, getAllLessons, getNeighbours, getLevel, getChapter } from "@/lib/academy/data"
 
 export function generateStaticParams() {
   return getAllLessons().map((l) => ({ slug: l.slug }))
@@ -20,7 +20,6 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
   const level = getLevel(lesson.levelId)
   const chapter = getChapter(lesson.chapterId)
   const { prev, next } = getNeighbours(lesson.slug)
-  const user = getUser()
 
   return (
     <LessonView
@@ -29,8 +28,6 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
       chapterTitle={chapter?.title ?? ""}
       prev={prev ? { slug: prev.slug, title: prev.title } : undefined}
       next={next ? { slug: next.slug, title: next.title } : undefined}
-      initiallyCompleted={user.completedLessons.includes(lesson.id)}
-      initiallyBookmarked={user.bookmarkedLessons.includes(lesson.id)}
     />
   )
 }

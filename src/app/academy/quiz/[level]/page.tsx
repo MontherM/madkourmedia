@@ -2,7 +2,7 @@ import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import Link from "next/link"
 import QuizRunner from "@/components/academy/QuizRunner"
-import { getQuizzes, getQuizForLevel, getLevel, getCertificateForLevel } from "@/lib/academy/data"
+import { getQuizzes, getQuizForLevel, getLevel } from "@/lib/academy/data"
 
 export function generateStaticParams() {
   return getQuizzes().map((q) => ({ level: q.levelId }))
@@ -18,8 +18,6 @@ export default function QuizPage({ params }: { params: { level: string } }) {
   const level = getLevel(params.level)
   if (!quiz || !level) notFound()
 
-  const cert = getCertificateForLevel(level.id)
-
   return (
     <div className="mx-auto max-w-3xl px-5 py-14 sm:px-8">
       <div className="mb-10 text-center">
@@ -33,7 +31,7 @@ export default function QuizPage({ params }: { params: { level: string } }) {
         </p>
       </div>
 
-      <QuizRunner quiz={quiz} levelTitle={level.title} certificateId={cert?.id} />
+      <QuizRunner quiz={quiz} levelTitle={level.title} />
     </div>
   )
 }

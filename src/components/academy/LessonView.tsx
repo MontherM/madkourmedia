@@ -5,6 +5,7 @@ import Link from "next/link"
 import CopyButton from "./CopyButton"
 import { Play, Check, Download, ArrowRight, Star, Lock } from "./ui/Icons"
 import type { Lesson } from "@/lib/academy/types"
+import { useAcademy, toggleLessonComplete, toggleBookmark, visitLesson } from "@/lib/academy/store"
 
 interface Neighbour {
   slug: string
@@ -17,8 +18,6 @@ interface Props {
   chapterTitle: string
   prev?: Neighbour
   next?: Neighbour
-  initiallyCompleted: boolean
-  initiallyBookmarked: boolean
 }
 
 const tabs = ["Notizen", "Kapitel", "Prompts", "Ressourcen"] as const
@@ -35,31 +34,25 @@ const resourceLabel: Record<string, string> = {
   mindmap: "Mindmap",
 }
 
-export default function LessonView({
-  lesson,
-  levelTitle,
-  chapterTitle,
-  prev,
-  next,
-  initiallyCompleted,
-  initiallyBookmarked,
-}: Props) {
+export default function LessonView({ lesson, levelTitle, chapterTitle, prev, next }: Props) {
+  const { user } = useAcademy()
   const [tab, setTab] = useState<Tab>("Notizen")
-  const [completed, setCompleted] = useState(initiallyCompleted)
-  const [bookmarked, setBookmarked] = useState(initiallyBookmarked)
   const [playing, setPlaying] = useState(false)
   const [notes, setNotes] = useState("")
   const [activeMark, setActiveMark] = useState(0)
 
-  // Persist notes + state locally (stands in for the backend).
+  const completed = user.completedLessons.includes(lesson.id)
+  const bookmarked = user.bookmarkedLessons.includes(lesson.id)
+
+  // Notes stay per-lesson in localStorage; progress lives in the store.
   useEffect(() => {
     try {
       setNotes(localStorage.getItem(`ac-notes-${lesson.slug}`) ?? "")
-      setCompleted(localStorage.getItem(`ac-done-${lesson.slug}`) === "1" || initiallyCompleted)
     } catch {
       /* ignore */
     }
-  }, [lesson.slug, initiallyCompleted])
+    visitLesson(lesson.slug)
+  }, [lesson.slug])
 
   const onNotes = (v: string) => {
     setNotes(v)
@@ -68,18 +61,6 @@ export default function LessonView({
     } catch {
       /* ignore */
     }
-  }
-
-  const toggleComplete = () => {
-    setCompleted((c) => {
-      const next = !c
-      try {
-        localStorage.setItem(`ac-done-${lesson.slug}`, next ? "1" : "0")
-      } catch {
-        /* ignore */
-      }
-      return next
-    })
   }
 
   return (
@@ -237,14 +218,14 @@ export default function LessonView({
             </div>
 
             <button
-              onClick={toggleComplete}
+              onClick={() => toggleLessonComplete(lesson.id)}
               className={`ac-btn mt-4 w-full ${completed ? "ac-btn-ghost" : "ac-btn-primary"}`}
             >
-              {completed ? <><Check width={16} height={16} /> Abgeschlossen</> : "Als erledigt markieren"}
+              {completed ? <><Check width={16} height={16} /> Abgeschlossen</> : `Abschließen · +${lesson.xp} XP`}
             </button>
 
             <button
-              onClick={() => setBookmarked((b) => !b)}
+              onClick={() => toggleBookmark(lesson.id)}
               className="ac-btn ac-btn-ghost mt-2 w-full"
               style={{ color: bookmarked ? "var(--ac-primary)" : undefined }}
             >

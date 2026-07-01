@@ -5,11 +5,11 @@ import Link from "next/link"
 import { Check, ArrowRight, Trophy, Bolt } from "./ui/Icons"
 import Bar from "./ui/ProgressBar"
 import type { Quiz, QuizQuestion } from "@/lib/academy/types"
+import { recordQuizResult } from "@/lib/academy/store"
 
 interface Props {
   quiz: Quiz
   levelTitle: string
-  certificateId?: string
 }
 
 type Answers = Record<string, string[]>
@@ -22,11 +22,12 @@ function isCorrect(q: QuizQuestion, ans: string[] = []): boolean {
   return arraysEqual(ans, q.correct ?? [])
 }
 
-export default function QuizRunner({ quiz, levelTitle, certificateId }: Props) {
+export default function QuizRunner({ quiz, levelTitle }: Props) {
   const [step, setStep] = useState(0)
   const [answers, setAnswers] = useState<Answers>({})
   const [flipped, setFlipped] = useState(false)
   const [done, setDone] = useState(false)
+  const [certificateId, setCertificateId] = useState<string>()
 
   const total = quiz.questions.length
   const q = quiz.questions[step]
@@ -59,6 +60,9 @@ export default function QuizRunner({ quiz, levelTitle, certificateId }: Props) {
       setStep((s) => s + 1)
       setFlipped(false)
     } else {
+      // Persist the attempt; on a pass this issues the level certificate.
+      const cert = recordQuizResult(quiz, result.score)
+      setCertificateId(cert?.id)
       setDone(true)
     }
   }
