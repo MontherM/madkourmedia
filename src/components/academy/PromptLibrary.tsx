@@ -2,8 +2,9 @@
 
 import { useMemo, useState } from "react"
 import CopyButton from "./CopyButton"
-import { Search, Star } from "./ui/Icons"
+import { Search, Star, Download } from "./ui/Icons"
 import type { Prompt } from "@/lib/academy/types"
+import { promptToMarkdown, libraryToMarkdown, downloadMarkdown } from "@/lib/academy/markdown"
 
 export default function PromptLibrary({ prompts }: { prompts: Prompt[] }) {
   const [query, setQuery] = useState("")
@@ -62,9 +63,18 @@ export default function PromptLibrary({ prompts }: { prompts: Prompt[] }) {
         </div>
       </div>
 
-      <p className="mt-6 text-sm" style={{ color: "var(--ac-ink-3)" }}>
-        {filtered.length} {filtered.length === 1 ? "Prompt" : "Prompts"}
-      </p>
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
+        <p className="text-sm" style={{ color: "var(--ac-ink-3)" }}>
+          {filtered.length} {filtered.length === 1 ? "Prompt" : "Prompts"}
+        </p>
+        <button
+          onClick={() => downloadMarkdown("ai-academy-prompt-bibliothek", libraryToMarkdown(filtered.length ? filtered : prompts))}
+          className="ac-btn ac-btn-ghost !py-2 !px-3.5 !text-[13px]"
+          title="Aktuelle Auswahl als Markdown-Datei (Obsidian/Notion) herunterladen"
+        >
+          <Download width={14} height={14} /> Als .md exportieren
+        </button>
+      </div>
 
       <div className="mt-4 grid gap-4 md:grid-cols-2">
         {filtered.map((p) => (
@@ -86,9 +96,19 @@ export default function PromptLibrary({ prompts }: { prompts: Prompt[] }) {
                 <span key={t} className="ac-pill !py-0.5 !px-2.5 !text-[11px]">{t}</span>
               ))}
             </div>
-            <div className="mt-4 flex items-center justify-between border-t pt-4" style={{ borderColor: "var(--ac-border)" }}>
-              <span className="text-xs" style={{ color: "var(--ac-ink-3)" }}>{p.recommendedModel ?? p.category}</span>
-              <CopyButton text={p.body} />
+            <div className="mt-4 flex items-center justify-between gap-2 border-t pt-4" style={{ borderColor: "var(--ac-border)" }}>
+              <span className="min-w-0 truncate text-xs" style={{ color: "var(--ac-ink-3)" }}>{p.recommendedModel ?? p.category}</span>
+              <div className="flex flex-shrink-0 items-center gap-2">
+                <button
+                  onClick={() => downloadMarkdown(p.title, promptToMarkdown(p))}
+                  className="ac-btn ac-btn-ghost !py-2 !px-3 !text-[13px]"
+                  title="Diesen Prompt als .md-Datei herunterladen"
+                  aria-label={`${p.title} als Markdown herunterladen`}
+                >
+                  <Download width={14} height={14} /> .md
+                </button>
+                <CopyButton text={p.body} label="Kopieren" />
+              </div>
             </div>
           </div>
         ))}
