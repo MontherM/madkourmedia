@@ -17,6 +17,7 @@ const syne = Syne({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.madkourmedia.com"),
   title: "MadkourMedia — Branding. Content. Design.",
   description:
     "Strategie, Content & Design für Unternehmen, die wachsen wollen. Ganzheitliche Markenkommunikation aus Zürich.",

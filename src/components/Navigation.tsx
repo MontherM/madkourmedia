@@ -63,6 +63,12 @@ export default function Navigation() {
             </Link>
           ))}
           <Link
+            href="/academy"
+            className="label text-accent hover:text-ink transition-colors duration-300 link-underline"
+          >
+            AI Academy
+          </Link>
+          <Link
             href="#kontakt"
             className="label text-black bg-accent px-5 py-2.5 hover:bg-[#7dd18d] transition-colors duration-300 ml-2"
           >
