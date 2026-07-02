@@ -102,6 +102,12 @@ export default function LessonView({ lesson, levelTitle, chapterTitle, prev, nex
 
           <h1 className="ac-h2 mt-6" style={{ fontSize: "clamp(24px,3vw,36px)" }}>{lesson.title}</h1>
           <p className="mt-2 text-lg" style={{ color: "var(--ac-ink-2)" }}>{lesson.summary}</p>
+          <p
+            className="mt-4 rounded-xl px-4 py-3 text-sm leading-relaxed"
+            style={{ background: "var(--ac-primary-soft)", color: "var(--ac-ink)", borderLeft: "3px solid var(--ac-primary)" }}
+          >
+            {lesson.outcome}
+          </p>
 
           {/* Tabs */}
           <div className="mt-8 flex gap-1 border-b" style={{ borderColor: "var(--ac-border)" }}>
