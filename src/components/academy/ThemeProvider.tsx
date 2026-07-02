@@ -16,15 +16,16 @@ export const useTheme = () => useContext(Ctx)
 const STORAGE_KEY = "academy-theme"
 
 export default function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("dark")
+  // Paper-light is the brand default; dark is an explicit choice (or OS pref).
+  const [theme, setTheme] = useState<Theme>("light")
 
   // Hydrate from storage (or OS preference) after mount.
   useEffect(() => {
     const stored = (typeof localStorage !== "undefined" && localStorage.getItem(STORAGE_KEY)) as Theme | null
     if (stored === "light" || stored === "dark") {
       setTheme(stored)
-    } else if (typeof window !== "undefined" && window.matchMedia("(prefers-color-scheme: light)").matches) {
-      setTheme("light")
+    } else if (typeof window !== "undefined" && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme("dark")
     }
   }, [])
 

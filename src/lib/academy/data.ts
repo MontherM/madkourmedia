@@ -266,7 +266,7 @@ export const levels: Level[] = [
     subtitle: "Für komplette Anfänger",
     description:
       "Verstehe, was KI wirklich ist, lerne die wichtigsten Tools kennen und stelle gute Fragen. Am Ende kann jeder KI sicher bedienen.",
-    gradient: ["#6366F1", "#8B5CF6"],
+    gradient: ["#E4572E", "#F2A65A"],
     outcomes: [
       "Du verstehst, wie KI denkt – und wo ihre Grenzen sind",
       "Du bedienst ChatGPT, Claude, Gemini & Perplexity souverän",
@@ -283,7 +283,7 @@ export const levels: Level[] = [
     subtitle: "Jetzt wird gearbeitet",
     description:
       "Wende KI auf echte Arbeit an: Excel, PowerPoint, Mails, Meetings, Recherche und deine erste Prompt-Bibliothek.",
-    gradient: ["#0EA5E9", "#22D3EE"],
+    gradient: ["#0F766E", "#2DD4BF"],
     outcomes: [
       "Du automatisierst wiederkehrende Büroarbeit",
       "Du baust dir eine persönliche Prompt-Bibliothek",
@@ -300,7 +300,7 @@ export const levels: Level[] = [
     subtitle: "Die gefragteste Fähigkeit 2026",
     description:
       "Vom Prompt zum System: Aufgaben zerlegen, eigene Assistenten bauen, Agenten mit n8n aufsetzen und ihnen das richtige Wissen geben.",
-    gradient: ["#F59E0B", "#F97316"],
+    gradient: ["#166534", "#22C55E"],
     outcomes: [
       "Du zerlegst echte Arbeit in automatisierbare Workflows",
       "Du baust eigene Assistenten (Custom GPTs & Claude Projects)",

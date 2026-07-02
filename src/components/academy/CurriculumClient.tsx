@@ -106,7 +106,11 @@ export default function CurriculumClient() {
                                     </span>
                                   </span>
                                   <span className="flex flex-shrink-0 items-center gap-3 text-xs" style={{ color: "var(--ac-ink-3)" }}>
-                                    {lesson.hasQuiz && <span className="ac-pill !py-0.5 !px-2 hidden sm:inline-flex">Quiz</span>}
+                                    {lesson.hasQuiz && (
+                                      <span className="hidden sm:inline">
+                                        <span className="ac-pill !py-0.5 !px-2">Quiz</span>
+                                      </span>
+                                    )}
                                     <span>{lesson.duration} Min</span>
                                   </span>
                                 </Link>

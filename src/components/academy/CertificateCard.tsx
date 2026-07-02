@@ -22,12 +22,12 @@ export default function CertificateCard({
       style={{ border: "1px solid rgba(15,15,25,0.1)", boxShadow: "var(--ac-shadow)" }}
     >
       {/* Top accent */}
-      <div className="h-2 w-full" style={{ background: "linear-gradient(90deg, #4f46e5, #8b5cf6)" }} />
+      <div className="h-2 w-full" style={{ background: "linear-gradient(90deg, #b53a0c, #e4572e)" }} />
 
       <div className="px-8 py-10 sm:px-12 sm:py-12">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 font-semibold">
-            <span className="grid h-7 w-7 place-items-center rounded-lg text-white" style={{ background: "linear-gradient(135deg, #4f46e5, #8b5cf6)" }}>
+            <span className="grid h-7 w-7 place-items-center rounded-lg text-white" style={{ background: "linear-gradient(135deg, #b53a0c, #e4572e)" }}>
               <Sparkles width={15} height={15} />
             </span>
             <span style={{ fontFamily: "var(--font-syne)" }}>AI&nbsp;Academy</span>
@@ -41,7 +41,7 @@ export default function CertificateCard({
             {cert.recipient}
           </p>
           <p className="mt-4 text-sm text-[#55555f]">erfolgreich abgeschlossen hat</p>
-          <p className="mt-2 text-xl font-semibold" style={{ color: "#6d28d9" }}>
+          <p className="mt-2 text-xl font-semibold" style={{ color: "#b53a0c" }}>
             {cert.levelTitle}
           </p>
         </div>
