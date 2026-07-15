@@ -1,96 +1,56 @@
-# AI Academy — Session-Übergabe (Stand: Juli 2026)
+# AI Academy — Session-Übergabe (Stand: 15. Juli 2026)
 
-> Kontext-Dokument für die nächste Arbeits-Session. Zusammen mit
-> `docs/PROJEKTPLAN.md` (Architektur/Roadmap) und `docs/CONTENT-STRATEGIE.md`
-> (Didaktik, Markt, Produktionsplan) ergibt das den vollständigen Projektstand.
+> Kontext-Dokument für die nächste Arbeits-Session. Die inhaltlichen Docs
+> (PROJEKTPLAN, CONTENT-STRATEGIE, Video-Skripte, DEPLOYMENT) liegen jetzt
+> **bei der Academy** unter `academy-app/docs/`.
 
-## Was das Projekt ist
+## Die grosse Änderung dieser Session: Repo-Trennung
 
-Deutschsprachige, tool-unabhängige KI-Lernplattform als Sub-Produkt von
-MadkourMedia unter `/academy` (Next.js App Router + TypeScript + Tailwind,
-Repo `MontherM/madkourmedia`). Positionierung: *„Von Rumprobieren zu
-Automatisieren – mit einem Menschen, nicht mit einem Avatar."*
-Differenzierung vs. OpenAI Academy: Deutsch, ChatGPT **und** Claude/Gemini/
-Perplexity/n8n, echtes Gesicht, Bestehens-Zertifikate mit Score, DACH-Community.
+Die AI Academy ist aus der MadkourMedia-Website **herausgelöst** und lebt als
+eigenständige Next.js-App im Ordner `academy-app/` (transfer-fertig, eigenes
+package.json, eigene Configs, Routen ohne `/academy`-Präfix, eigene
+Sitemap/Robots, Ziel-Domain `academy.madkourmedia.com`).
 
-## Was fertig ist (alles live bzw. auf main)
+**Warum noch als Ordner hier:** Die GitHub-App darf keine neuen Repos anlegen
+(403), und das Leeren des vorhandenen `MontherM/aiplattform`-Repos (alter
+Snapshot vom 02.07.) braucht Monthers Freigabe. Sobald die da ist:
+Ordner-Inhalt als Initial-Commit ins Ziel-Repo pushen, Vercel-Projekt anlegen
+(Anleitung: `academy-app/docs/DEPLOYMENT.md`), dann diesen Ordner hier löschen.
 
-**Plattform-Features**
-- Landing (`/academy`), Lehrplan, Lektions-Player-Shell, Dashboard,
-  Prompt-Bibliothek (mit **.md-Export**, einzeln + Bibliothek), AI-Tool-Bibliothek,
-  Pricing, Community-Forum (Seed-Threads), Admin-/CMS-Vorschau (`/academy/admin`,
-  noindex, mit Demo-Daten-Reset), Quiz-Engine (Single/Multiple/Flashcards),
-  **echte Zertifikatsausstellung** beim Quiz-Bestehen (Code + Name + QR + LinkedIn-Link).
-- **Live-Fortschritt** über localStorage-Store (`src/lib/academy/store.ts`):
-  XP, Streaks (aus Aktivitätstagen), 6 automatisch verdiente Badges, Wochenziel,
-  Bookmarks, Plan. Supabase später = nur `load`/`persist` austauschen.
-- **Plan-Gating**: UpgradeGate für Lektionen über dem Nutzerplan; Demo-Checkout
-  auf der Preisseite (Stripe folgt). Ränge: free < basic < pro < elite
-  (`canAccess` in `progress.ts`).
-- **⌘K Command-Palette** (globale Suche: Lektionen/Prompts/Tools/Seiten).
-- **Onboarding** beim ersten Dashboard-Besuch (Name → Zertifikate, Wochenziel).
-- SEO: sitemap.ts, robots.ts, Metadata pro Seite, metadataBase.
+**Auf madkourmedia-Seite ist die Trennung fertig:**
+- `src/app/academy`, `src/components/academy`, `src/lib/academy` entfernt
+  (per `git mv` nach `academy-app/`)
+- Navigation verlinkt extern auf `NEXT_PUBLIC_ACADEMY_URL`
+  (Default `https://academy.madkourmedia.com`)
+- `next.config.mjs`: 301-Redirects `/academy/:path*` → neue Domain
+- Sitemap/Robots bereinigt, `qrcode`-Dependency raus, tsconfig excludet `academy-app`
 
-**Content (nach Marktanalyse 2026 umgebaut)**
-- 13 Lektionen in 3 Levels; jede Lektion mit explizitem **Outcome-Versprechen**
-  („Danach kannst du …", Feld `outcome` im Datenmodell).
-- Level 3 neu positioniert: **„AI Workflows & Agenten"** (Workflow-Design,
-  Custom GPTs & Claude Projects, n8n-Agent, Context Engineering) – die
-  gefragteste Skill 2026. Level 2 mit Umsatz-Hebeln (Angebote, Recherche).
-- 14 Prompts in 6 Kategorien (inkl. Agenten-Briefing, Workflow-Zerlegung,
-  Kontext-Paket, Offerten-Generator).
+**Livegang-Reihenfolge (wichtig, kein Downtime):** Zuerst Academy-Repo
+deployen + Domain verbinden, DANN erst diesen Branch mergen.
 
-**Design („Warm Editorial", bewusst weg vom KI-Look)**
-- Papier-Optik hell (Default) / Espresso dunkel; Vermilion-Akzent `#d3450f`/`#ff6b3d`;
-  Tinten-Buttons mit harten Offset-Schatten; Film-Grain-Overlay; Marker-Highlight
-  statt Gradient-Text; Marquee-Bänder; Poster-Typografie (Syne); Sticker-Element;
-  Level-Farben Orange/Teal/Grün. Alle Tokens in `globals.css` unter `.academy`.
-- Landing erzählt die Transformation („Heute → Nach der Academy").
+## Was diese Session zusätzlich gebaut hat (alles in `academy-app/`)
 
-**Mobile**
-- Root-Cause-Fix: `.ac-btn`/`.ac-pill` setzen `display` nach den Tailwind-Utilities
-  und schlagen `hidden` → nie `hidden` mit diesen Klassen kombinieren, sondern
-  einen Wrapper ausblenden! (War Ursache für 131px-Overflow auf jeder Seite.)
-- Per Playwright bei 390px verifiziert: 0px horizontaler Überlauf, alle Seiten.
+1. **17 echte Download-Dateien** unter `public/downloads/` (Cheatsheets,
+   Checklisten, Vorlagen, n8n-Workflow-JSON) — verdrahtet über neues
+   `href`-Feld in `ResourceItem`, LessonView rendert echte Download-Links.
+2. **Video-Produktion gestartet:** `docs/video/DREHTAG-1-PLAN.md` (Setup,
+   Batch-Ablauf, Checkliste) + `docs/video/skript-was-ist-ki.md`
+   (komplettes 9-Min-Drehskript mit Shotlist, Screen-Demos, GFX-Liste).
+3. **Landing: „Der Mensch dahinter"-Sektion** (Monther, kein Avatar,
+   Portrait-Karte mit Monogramm — `public/monther.jpg` kann sie später ersetzen).
 
-## Architektur-Konventionen
+## Offene Punkte (nächste Session, priorisiert)
 
-- Domain-Typen: `src/lib/academy/types.ts` (Single Source of Truth).
-- Content/Seed: `src/lib/academy/data.ts` – UI greift NUR über die Accessors zu.
-  Prompts per `promptById("p-…")` referenzieren, nicht per Index.
-- Fortschritt: `store.ts` (Mutationen + `useAcademy()`-Hook), reine Ableitungen
-  in `progress.ts`. Server Components by default; Client-Seiten als
-  `XyzClient.tsx` mit Server-Wrapper-Page für Metadata.
-- Screenshots/Smoke-Tests: Playwright, Chromium unter
-  `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`.
-
-## Deployment
-
-- Vercel ist mit dem Repo verbunden; `main` deployt automatisch auf
-  `madkourmedia.vercel.app` → Academy unter `/academy`.
-- Arbeits-Branch-Konvention: `claude/ai-platform-academy-chat-*`, PR → main.
-
-## Offene Punkte (nächste Session, in dieser Reihenfolge)
-
-1. **Video-Produktion starten** (Empfehlung: Hybrid – Gesicht vorne, KI im
-   Maschinenraum; KEINE Avatare). Erster Drehtag = Level-1-Kapitel „KI verstehen"
-   (4 Lektionen). Pipeline pro Lektion in `CONTENT-STRATEGIE.md` §6:
-   Outcome festlegen → Claude schreibt Skript+Shotlist → Grafiken/Downloads →
-   Dreh im Batch → Schnitt → in Plattform verdrahten.
-2. **Echte Downloads hinterlegen**: Die in `data.ts` gelisteten Ressourcen
-   (Checklisten, Vorlagen, Workflow-JSONs) als echte Dateien erzeugen/verlinken.
-3. **Supabase**: Schema + RLS nach PROJEKTPLAN §4/§7, Store-Backend tauschen,
-   Auth (dann Onboarding → echtes Konto).
-4. **Stripe**: Produkte pro Plan, Checkout ersetzt Demo-`PlanButton`.
-5. **Video-Hosting**: Mux/Bunny, Player-Shell in `LessonView` ersetzen.
-6. Lead-Magnet-Funnel (Prompt-Bibliothek gegen Newsletter), Shorts-Repurposing.
-7. Branchen-Tracks als Elite-Level (Immobilien zuerst – Synergie mit JP DL AG).
+1. **Monthers Entscheid:** Ziel-Repo für `academy-app/` (aiplattform leeren
+   oder neues Repo `ai-academy`) → pushen, Vercel, Domain, dann mergen.
+2. Skript 1 mit Monther finalisieren → Dreh → danach Skripte 2–4
+   (Halluzinationen, Delegations-Check, Tool-Vergleich).
+3. GFX-Paket für Lektion 1 (4 SVGs, Liste im Skript).
+4. Supabase → Stripe → Mux (brauchen Zugänge), Lead-Magnet-Funnel,
+   Branchen-Tracks (Immobilien zuerst).
 
 ## Nutzer-Präferenzen (Monther)
 
-- Kommunikation auf Deutsch, Du-Form. Arbeitet reviewt viel am Handy.
-- Will „Loop-Modus": Claude soll eigenständig durcharbeiten, Kontrolle
-  übernehmen, Ende-zu-Ende liefern, dann kompakt berichten.
-- „Merge" als Kommando = PR erstellen und direkt nach main mergen (Vercel live).
-- Design-Anspruch: darf nicht „nach KI aussehen"; Referenzen: lovable.dev
-  Interactive-Guides; Konkurrenz-Benchmark: OpenAI Academy.
+- Deutsch, Du-Form; reviewt am Handy; „Merge" = direkt live schalten.
+- Eigenständiger Durcharbeits-Modus erwünscht; Design darf nicht nach KI
+  aussehen; Benchmark: OpenAI Academy.

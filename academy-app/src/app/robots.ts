@@ -6,8 +6,9 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        disallow: ["/admin"],
       },
     ],
-    sitemap: "https://www.madkourmedia.com/sitemap.xml",
+    sitemap: "https://academy.madkourmedia.com/sitemap.xml",
   }
 }

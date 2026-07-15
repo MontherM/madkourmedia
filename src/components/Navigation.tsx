@@ -62,12 +62,12 @@ export default function Navigation() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="/academy"
+          <a
+            href={process.env.NEXT_PUBLIC_ACADEMY_URL ?? "https://academy.madkourmedia.com"}
             className="label text-accent hover:text-ink transition-colors duration-300 link-underline"
           >
             AI Academy
-          </Link>
+          </a>
           <Link
             href="#kontakt"
             className="label text-black bg-accent px-5 py-2.5 hover:bg-[#7dd18d] transition-colors duration-300 ml-2"
