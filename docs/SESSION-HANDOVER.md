@@ -41,11 +41,17 @@ deployen + Domain verbinden, DANN erst diesen Branch mergen.
 
 ## Offene Punkte (nächste Session, priorisiert)
 
-1. **Monthers Entscheid:** Ziel-Repo für `academy-app/` (aiplattform leeren
-   oder neues Repo `ai-academy`) → pushen, Vercel, Domain, dann mergen.
-2. Skript 1 mit Monther finalisieren → Dreh → danach Skripte 2–4
-   (Halluzinationen, Delegations-Check, Tool-Vergleich).
-3. GFX-Paket für Lektion 1 (4 SVGs, Liste im Skript).
+1. **Monthers Entscheid nötig (Sicherheits-Gate, kann nicht delegiert
+   werden):** Ziel-Repo für `academy-app/`. Monther muss wörtlich sagen
+   „Nimm aiplattform" (dann dort pushen; alter Snapshot vom 02.07. wird
+   ersetzt) ODER neues Repo `ai-academy` anlegen + Claude-App-Zugriff geben.
+   Danach: Vercel-Projekt + Domain (docs/DEPLOYMENT.md), DANN erst mergen.
+   Push-Versuche nach aiplattform wurden vom Permission-System blockiert,
+   weil der Nutzer das Repo nie namentlich freigegeben hat.
+2. **Drehtag 1 ist komplett vorbereitet:** alle 4 Skripte in
+   `academy-app/docs/video/` + 4 SVG-Grafiken in `docs/video/gfx/`.
+   Nächster Schritt: Monthers Feedback zu den Skripten → Dreh.
+3. Nach dem Dreh: Schnitt-Support, Kapitelmarken, Untertitel, Shorts-Pläne.
 4. Supabase → Stripe → Mux (brauchen Zugänge), Lead-Magnet-Funnel,
    Branchen-Tracks (Immobilien zuerst).
 

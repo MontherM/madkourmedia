@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <!-- AI Academy · Lektion 1 · GFX 2: So entsteht eine Antwort — Wort für Wort -->
+  <defs>
+    <style>
+      .h { font-family: 'Syne', 'Arial Black', sans-serif; font-weight: 800; }
+      .b { font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif; font-weight: 500; }
+    </style>
+  </defs>
+  <rect width="1920" height="1080" fill="#f7f3ec"/>
+
+  <!-- Eyebrow + Title -->
+  <rect x="120" y="112" width="26" height="4" fill="#d3450f"/>
+  <text x="162" y="122" class="b" font-size="24" letter-spacing="5" fill="#d3450f">WAS WIRKLICH PASSIERT</text>
+  <text x="120" y="216" class="h" font-size="64" fill="#1b1917">Ein Sprachmodell rät das nächste Wort.</text>
+
+  <!-- Sentence card -->
+  <g>
+    <rect x="132" y="304" width="1668" height="172" rx="20" fill="#1b1917"/>
+    <rect x="120" y="292" width="1668" height="172" rx="20" fill="#fffdf8" stroke="#1b1917" stroke-width="3"/>
+    <text x="184" y="398" class="h" font-size="56" fill="#1b1917">Der Hund bellt und der <tspan fill="#d3450f">____</tspan></text>
+    <!-- blinking cursor look -->
+    <rect x="1004" y="352" width="8" height="56" fill="#d3450f"/>
+  </g>
+
+  <!-- Probability bars -->
+  <g class="b">
+    <!-- Briefträger -->
+    <text x="184" y="600" font-size="34" fill="#1b1917" class="mono">Briefträger</text>
+    <rect x="520" y="568" width="1000" height="46" rx="10" fill="#efe9df"/>
+    <rect x="520" y="568" width="620" height="46" rx="10" fill="#d3450f"/>
+    <text x="1560" y="600" font-size="32" fill="#1b1917" class="h">62 %</text>
+
+    <!-- Postbote -->
+    <text x="184" y="700" font-size="34" fill="#1b1917" class="mono">Postbote</text>
+    <rect x="520" y="668" width="1000" height="46" rx="10" fill="#efe9df"/>
+    <rect x="520" y="668" width="210" height="46" rx="10" fill="#e4926f"/>
+    <text x="1560" y="700" font-size="32" fill="#57504a" class="h">21 %</text>
+
+    <!-- Nachbar -->
+    <text x="184" y="800" font-size="34" fill="#1b1917" class="mono">Nachbar</text>
+    <rect x="520" y="768" width="1000" height="46" rx="10" fill="#efe9df"/>
+    <rect x="520" y="768" width="90" height="46" rx="10" fill="#eec3ae"/>
+    <text x="1560" y="800" font-size="32" fill="#8c847b" class="h">9 %</text>
+
+    <!-- Kühlschrank -->
+    <text x="184" y="900" font-size="34" fill="#8c847b" class="mono">Kühlschrank</text>
+    <rect x="520" y="868" width="1000" height="46" rx="10" fill="#efe9df"/>
+    <rect x="520" y="868" width="10" height="46" rx="5" fill="#d9cfc0"/>
+    <text x="1560" y="900" font-size="32" fill="#b3a99c" class="h">0,3 %</text>
+  </g>
+
+  <!-- Side note sticker -->
+  <g transform="rotate(-2 1700 520)">
+    <rect x="1560" y="486" width="248" height="68" rx="34" fill="#d3450f"/>
+    <text x="1684" y="530" text-anchor="middle" class="b" font-size="26" font-weight="600" fill="#ffffff">KEIN WISSEN</text>
+  </g>
+  <text x="1560" y="596" class="b" font-size="24" fill="#8c847b" transform="rotate(-2 1560 596)"></text>
+
+  <!-- Footer -->
+  <text x="120" y="1010" class="b" font-size="22" fill="#8c847b">AI Academy · Lektion 1 — Wahrscheinlichkeiten, kein Verstehen. Deshalb: plausibel ≠ wahr.</text>
+</svg>

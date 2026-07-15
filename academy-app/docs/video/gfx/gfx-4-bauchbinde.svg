@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <!-- AI Academy · Bauchbinde (Lower Third) — transparenter Hintergrund,
+       einblenden bei ~0:20, für alle Lektionen wiederverwendbar -->
+  <defs>
+    <style>
+      .h { font-family: 'Syne', 'Arial Black', sans-serif; font-weight: 800; }
+      .b { font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <g transform="rotate(-0.6 480 900)">
+    <!-- hard offset shadow -->
+    <rect x="132" y="852" width="700" height="140" rx="18" fill="#1b1917"/>
+    <!-- card -->
+    <rect x="120" y="840" width="700" height="140" rx="18" fill="#fffdf8" stroke="#1b1917" stroke-width="3"/>
+    <!-- vermilion logo block -->
+    <rect x="152" y="872" width="76" height="76" rx="16" fill="#d3450f"/>
+    <g stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+      <line x1="190" y1="890" x2="190" y2="930"/>
+      <line x1="170" y1="910" x2="210" y2="910"/>
+      <line x1="176" y1="896" x2="204" y2="924"/>
+      <line x1="204" y1="896" x2="176" y2="924"/>
+    </g>
+    <!-- name + role -->
+    <text x="256" y="920" class="h" font-size="40" fill="#1b1917">Monther Madkour</text>
+    <text x="256" y="958" class="b" font-size="24" fill="#57504a">AI Academy · academy.madkourmedia.com</text>
+  </g>
+</svg>

@@ -5,17 +5,18 @@
 
 ## Was gedreht wird
 
-| # | Lektion                              | Länge  | Skript                               | Status |
-| - | ------------------------------------ | ------ | ------------------------------------ | ------ |
-| 1 | Was ist KI – und was nicht?          | ~9 Min | `skript-was-ist-ki.md`               | ✅ fertig |
-| 2 | Halluzinationen & Datenschutz        | ~11 Min| folgt (gleiche Struktur)             | ⏳ |
-| 3 | Wann KI – und wann besser nicht?     | ~8 Min | folgt                                | ⏳ |
-| 4 | ChatGPT, Claude, Gemini & Perplexity | ~14 Min| folgt                                | ⏳ |
+| # | Lektion                              | Länge  | Skript                                  | Status |
+| - | ------------------------------------ | ------ | --------------------------------------- | ------ |
+| 1 | Was ist KI – und was nicht?          | ~9 Min | `skript-was-ist-ki.md`                  | ✅ fertig, GFX in `gfx/` |
+| 2 | Halluzinationen & Datenschutz        | ~11 Min| `skript-halluzinationen-datenschutz.md` | ✅ fertig |
+| 3 | Wann KI – und wann besser nicht?     | ~8 Min | `skript-wann-ki-wann-nicht.md`          | ✅ fertig |
+| 4 | ChatGPT, Claude, Gemini & Perplexity | ~14 Min| `skript-chatgpt-claude-gemini.md`       | ✅ fertig |
 
-Empfehlung: Erst Skript 1 gemeinsam finalisieren und **eine Lektion komplett
-produzieren** (Dreh → Schnitt → in Plattform einbinden). Erst wenn Ton, Tempo
-und Look sitzen, die Skripte 2–4 schreiben und den Rest im Batch drehen —
-so korrigieren wir Stilfragen an einem Video statt an vieren.
+Alle 4 Skripte + die 4 Grafiken für Lektion 1 (`gfx/`) sind fertig.
+Empfehlung bleibt: **Lektion 1 zuerst komplett produzieren** (Dreh → Schnitt →
+in Plattform einbinden). Erst wenn Ton, Tempo und Look sitzen, die Lektionen
+2–4 im Batch drehen — so korrigieren wir Stilfragen an einem Video statt an
+vieren. Feedback zu den Skripten einfach im Chat — ich arbeite es ein.
 
 ## Setup (einmal aufbauen, 4× nutzen)
 

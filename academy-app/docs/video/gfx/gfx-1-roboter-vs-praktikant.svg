@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <!-- AI Academy · Lektion 1 · GFX 1: Roboter vs. Praktikant -->
+  <defs>
+    <style>
+      .h { font-family: 'Syne', 'Arial Black', sans-serif; font-weight: 800; }
+      .b { font-family: 'DM Sans', 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+  </defs>
+  <rect width="1920" height="1080" fill="#f7f3ec"/>
+  <!-- dotted paper texture -->
+  <g fill="rgba(27,25,23,0.14)">
+    <circle cx="120" cy="90" r="2"/><circle cx="240" cy="90" r="2"/><circle cx="360" cy="90" r="2"/><circle cx="480" cy="90" r="2"/><circle cx="600" cy="90" r="2"/><circle cx="1320" cy="90" r="2"/><circle cx="1440" cy="90" r="2"/><circle cx="1560" cy="90" r="2"/><circle cx="1680" cy="90" r="2"/><circle cx="1800" cy="90" r="2"/>
+    <circle cx="120" cy="990" r="2"/><circle cx="240" cy="990" r="2"/><circle cx="360" cy="990" r="2"/><circle cx="480" cy="990" r="2"/><circle cx="600" cy="990" r="2"/><circle cx="1320" cy="990" r="2"/><circle cx="1440" cy="990" r="2"/><circle cx="1560" cy="990" r="2"/><circle cx="1680" cy="990" r="2"/><circle cx="1800" cy="990" r="2"/>
+  </g>
+
+  <!-- Eyebrow -->
+  <rect x="120" y="112" width="26" height="4" fill="#d3450f"/>
+  <text x="162" y="122" class="b" font-size="24" letter-spacing="5" fill="#d3450f">SO DENKST DU AB HEUTE ÜBER KI</text>
+
+  <!-- Title -->
+  <text x="120" y="212" class="h" font-size="64" fill="#1b1917">Was KI ist – und was nicht.</text>
+
+  <!-- Left card: Roboter (falsches Bild) -->
+  <g transform="rotate(-1 490 620)">
+    <rect x="140" y="316" width="700" height="580" rx="20" fill="#fffdf8" stroke="rgba(27,25,23,0.12)" stroke-width="2"/>
+    <rect x="152" y="328" width="700" height="580" rx="20" fill="none" stroke="rgba(27,25,23,0.10)" stroke-width="2"/>
+    <text x="200" y="420" font-size="56" class="b">🤖</text>
+    <text x="200" y="500" class="h" font-size="40" fill="#1b1917">„Roboter aus dem Film"</text>
+    <text x="200" y="544" class="b" font-size="26" fill="#8c847b">Das falsche Bild</text>
+    <g class="b" font-size="30" fill="#57504a">
+      <text x="248" y="632">Denkt wie ein Mensch</text>
+      <text x="248" y="712">Weiss, was wahr ist</text>
+      <text x="248" y="792">Kennt deine Firma und Kunden</text>
+    </g>
+    <g stroke="#d3450f" stroke-width="4" stroke-linecap="round">
+      <path d="M200 622 L226 644 M226 622 L200 644"/>
+      <path d="M200 702 L226 724 M226 702 L200 724"/>
+      <path d="M200 782 L226 804 M226 782 L200 804"/>
+    </g>
+    <line x1="196" y1="620" x2="700" y2="636" stroke="rgba(211,69,15,0.55)" stroke-width="5"/>
+    <line x1="196" y1="700" x2="660" y2="716" stroke="rgba(211,69,15,0.55)" stroke-width="5"/>
+    <line x1="196" y1="780" x2="760" y2="796" stroke="rgba(211,69,15,0.55)" stroke-width="5"/>
+  </g>
+
+  <!-- VS -->
+  <g transform="rotate(-3 960 610)">
+    <rect x="906" y="572" width="108" height="76" rx="38" fill="#d3450f"/>
+    <text x="960" y="623" text-anchor="middle" class="h" font-size="38" fill="#ffffff">VS</text>
+  </g>
+
+  <!-- Right card: Praktikant (richtiges Bild) -->
+  <g transform="rotate(1 1440 620)">
+    <rect x="1096" y="328" width="700" height="580" rx="20" fill="#1b1917"/>
+    <rect x="1084" y="316" width="700" height="580" rx="20" fill="#fffdf8" stroke="#1b1917" stroke-width="3"/>
+    <text x="1144" y="420" font-size="56" class="b">🎓</text>
+    <text x="1144" y="500" class="h" font-size="40" fill="#1b1917">Extrem belesener Praktikant</text>
+    <text x="1144" y="544" class="b" font-size="26" fill="#d3450f">Das Bild, das stimmt</text>
+    <g class="b" font-size="30" fill="#1b1917">
+      <text x="1192" y="632">Hat das halbe Internet gelesen</text>
+      <text x="1192" y="712">Schreibt schneller als jeder Mensch</text>
+      <text x="1192" y="792">Sagt lieber irgendwas Überzeugendes,</text>
+      <text x="1192" y="832">als „weiss ich nicht" zuzugeben</text>
+    </g>
+    <g stroke="#d3450f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M1144 626 L1154 638 L1174 612"/>
+      <path d="M1144 706 L1154 718 L1174 692"/>
+      <path d="M1144 786 L1154 798 L1174 772"/>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <text x="120" y="1010" class="b" font-size="22" fill="#8c847b">AI Academy · Lektion 1 — Was ist KI, und was nicht?</text>
+</svg>
