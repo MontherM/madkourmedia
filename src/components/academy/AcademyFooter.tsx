@@ -16,8 +16,8 @@ const groups = [
     title: "Plattform",
     links: [
       { href: "/academy/pricing", label: "Preise & Abos" },
+      { href: "/academy/community", label: "Community" },
       { href: "/academy#levels", label: "Levels" },
-      { href: "/academy#community", label: "Community" },
       { href: "/", label: "MadkourMedia" },
     ],
   },

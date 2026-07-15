@@ -43,6 +43,8 @@ export interface Lesson {
   title: string
   /** One-line "why this matters". */
   summary: string
+  /** The transformation promise: "Danach kannst du …". */
+  outcome: string
   /** Duration in minutes. */
   duration: number
   access: AccessTier

@@ -57,12 +57,15 @@ export default function AcademyNav() {
         <div className="flex items-center gap-2.5">
           <CommandPalette />
           <ThemeToggle />
-          <Link href="/academy/dashboard" className="ac-btn ac-btn-ghost hidden sm:inline-flex !py-2 !px-4 !text-[13px]">
-            Dashboard
-          </Link>
-          <Link href="/academy/pricing" className="ac-btn ac-btn-primary hidden sm:inline-flex !py-2 !px-4 !text-[13px]">
-            Jetzt starten
-          </Link>
+          {/* Wrapper controls visibility: .ac-btn sets display and would beat `hidden`. */}
+          <div className="hidden items-center gap-2.5 sm:flex">
+            <Link href="/academy/dashboard" className="ac-btn ac-btn-ghost !py-2 !px-4 !text-[13px]">
+              Dashboard
+            </Link>
+            <Link href="/academy/pricing" className="ac-btn ac-btn-primary !py-2 !px-4 !text-[13px]">
+              Jetzt starten
+            </Link>
+          </div>
           <button
             className="grid h-9 w-9 place-items-center rounded-full md:hidden"
             style={{ border: "1px solid var(--ac-border)", color: "var(--ac-ink-2)" }}

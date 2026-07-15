@@ -30,7 +30,7 @@ export default function UpgradeGate({ lesson }: { lesson: Lesson }) {
         {/* Blurred fake player as a teaser */}
         <div
           className="relative flex aspect-video w-full items-center justify-center"
-          style={{ background: "linear-gradient(135deg, #0f0f17, #1c1530)" }}
+          style={{ background: "linear-gradient(135deg, #1b1917, #33251c)" }}
         >
           <div className="ac-grid-bg absolute inset-0 opacity-30" style={{ filter: "blur(2px)" }} />
           <span

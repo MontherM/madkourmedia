@@ -84,13 +84,13 @@ export default function LessonView({ lesson, levelTitle, chapterTitle, prev, nex
           {/* Player */}
           <div
             className="relative flex aspect-video w-full items-center justify-center overflow-hidden rounded-2xl"
-            style={{ background: "linear-gradient(135deg, #0f0f17, #1c1530)", border: "1px solid var(--ac-border)" }}
+            style={{ background: "linear-gradient(135deg, #1b1917, #33251c)", border: "1px solid var(--ac-border)" }}
           >
             <div className="ac-grid-bg absolute inset-0 opacity-30" />
             <button
               onClick={() => setPlaying((p) => !p)}
               className="relative grid h-16 w-16 place-items-center rounded-full text-white transition-transform hover:scale-105"
-              style={{ background: "linear-gradient(135deg, var(--ac-primary-2), var(--ac-primary))", boxShadow: "0 10px 40px rgba(99,102,241,0.5)" }}
+              style={{ background: "linear-gradient(135deg, var(--ac-primary-2), var(--ac-primary))", boxShadow: "0 10px 40px rgba(228,87,46,0.45)" }}
               aria-label={playing ? "Pause" : "Abspielen"}
             >
               {playing ? <span className="text-2xl leading-none">❚❚</span> : <Play width={26} height={26} />}
@@ -102,6 +102,12 @@ export default function LessonView({ lesson, levelTitle, chapterTitle, prev, nex
 
           <h1 className="ac-h2 mt-6" style={{ fontSize: "clamp(24px,3vw,36px)" }}>{lesson.title}</h1>
           <p className="mt-2 text-lg" style={{ color: "var(--ac-ink-2)" }}>{lesson.summary}</p>
+          <p
+            className="mt-4 rounded-xl px-4 py-3 text-sm leading-relaxed"
+            style={{ background: "var(--ac-primary-soft)", color: "var(--ac-ink)", borderLeft: "3px solid var(--ac-primary)" }}
+          >
+            {lesson.outcome}
+          </p>
 
           {/* Tabs */}
           <div className="mt-8 flex gap-1 border-b" style={{ borderColor: "var(--ac-border)" }}>
