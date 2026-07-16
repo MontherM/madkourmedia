@@ -58,6 +58,7 @@
       "_origin": "ast",
       "id": "next_env_d",
       "community": 16,
+      "community_name": "Next Env Types",
       "norm_label": "next-env.d.ts"
     },
     {
@@ -68,6 +69,7 @@
       "_origin": "ast",
       "id": "next_env_d_rationale_4",
       "community": 16,
+      "community_name": "Next Env Types",
       "norm_label": "note: this file should not be edited"
     },
     {
@@ -78,6 +80,7 @@
       "_origin": "ast",
       "id": "next_config",
       "community": 15,
+      "community_name": "Next.js Config",
       "norm_label": "next.config.mjs"
     },
     {
@@ -88,6 +91,7 @@
       "_origin": "ast",
       "id": "next_config_nextconfig",
       "community": 15,
+      "community_name": "Next.js Config",
       "norm_label": "nextconfig"
     },
     {
@@ -97,7 +101,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package",
-      "community": 10,
+      "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "package.json"
     },
     {
@@ -107,7 +112,8 @@
       "source_location": "L2",
       "_origin": "ast",
       "id": "package_name",
-      "community": 10,
+      "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "name"
     },
     {
@@ -117,7 +123,8 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "package_version",
-      "community": 10,
+      "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "version"
     },
     {
@@ -127,7 +134,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "package_private",
-      "community": 10,
+      "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "private"
     },
     {
@@ -137,7 +145,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "package_scripts",
-      "community": 10,
+      "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "scripts"
     },
     {
@@ -147,7 +156,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "package_scripts_dev",
-      "community": 10,
+      "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "dev"
     },
     {
@@ -157,7 +167,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "package_scripts_build",
-      "community": 10,
+      "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "build"
     },
     {
@@ -167,7 +178,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "package_scripts_start",
-      "community": 10,
+      "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "start"
     },
     {
@@ -177,7 +189,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "package_scripts_lint",
-      "community": 10,
+      "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "lint"
     },
     {
@@ -188,6 +201,7 @@
       "_origin": "ast",
       "id": "package_dependencies",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "dependencies"
     },
     {
@@ -198,6 +212,7 @@
       "_origin": "ast",
       "id": "package_dependencies_framer_motion",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "framer-motion"
     },
     {
@@ -208,6 +223,7 @@
       "_origin": "ast",
       "id": "framer_motion",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "framer-motion"
     },
     {
@@ -218,6 +234,7 @@
       "_origin": "ast",
       "id": "package_dependencies_next",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "next"
     },
     {
@@ -228,6 +245,7 @@
       "_origin": "ast",
       "id": "next",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "next"
     },
     {
@@ -238,6 +256,7 @@
       "_origin": "ast",
       "id": "package_dependencies_qrcode",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "qrcode"
     },
     {
@@ -248,6 +267,7 @@
       "_origin": "ast",
       "id": "qrcode",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "qrcode"
     },
     {
@@ -258,6 +278,7 @@
       "_origin": "ast",
       "id": "package_dependencies_react",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "react"
     },
     {
@@ -268,6 +289,7 @@
       "_origin": "ast",
       "id": "react",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "react"
     },
     {
@@ -278,6 +300,7 @@
       "_origin": "ast",
       "id": "package_dependencies_react_dom",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "react-dom"
     },
     {
@@ -288,6 +311,7 @@
       "_origin": "ast",
       "id": "react_dom",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "react-dom"
     },
     {
@@ -298,6 +322,7 @@
       "_origin": "ast",
       "id": "package_devdependencies",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "devdependencies"
     },
     {
@@ -308,6 +333,7 @@
       "_origin": "ast",
       "id": "package_devdependencies_types_node",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "@types/node"
     },
     {
@@ -318,6 +344,7 @@
       "_origin": "ast",
       "id": "types_node",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "@types/node"
     },
     {
@@ -328,6 +355,7 @@
       "_origin": "ast",
       "id": "package_devdependencies_types_qrcode",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "@types/qrcode"
     },
     {
@@ -338,6 +366,7 @@
       "_origin": "ast",
       "id": "types_qrcode",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "@types/qrcode"
     },
     {
@@ -348,6 +377,7 @@
       "_origin": "ast",
       "id": "package_devdependencies_types_react",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "@types/react"
     },
     {
@@ -358,6 +388,7 @@
       "_origin": "ast",
       "id": "types_react",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "@types/react"
     },
     {
@@ -368,6 +399,7 @@
       "_origin": "ast",
       "id": "package_devdependencies_types_react_dom",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "@types/react-dom"
     },
     {
@@ -378,6 +410,7 @@
       "_origin": "ast",
       "id": "types_react_dom",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "@types/react-dom"
     },
     {
@@ -388,6 +421,7 @@
       "_origin": "ast",
       "id": "package_devdependencies_autoprefixer",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "autoprefixer"
     },
     {
@@ -398,6 +432,7 @@
       "_origin": "ast",
       "id": "autoprefixer",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "autoprefixer"
     },
     {
@@ -408,6 +443,7 @@
       "_origin": "ast",
       "id": "package_devdependencies_eslint",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "eslint"
     },
     {
@@ -418,6 +454,7 @@
       "_origin": "ast",
       "id": "eslint",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "eslint"
     },
     {
@@ -428,6 +465,7 @@
       "_origin": "ast",
       "id": "package_devdependencies_eslint_config_next",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "eslint-config-next"
     },
     {
@@ -438,6 +476,7 @@
       "_origin": "ast",
       "id": "eslint_config_next",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "eslint-config-next"
     },
     {
@@ -448,6 +487,7 @@
       "_origin": "ast",
       "id": "package_devdependencies_postcss",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "postcss"
     },
     {
@@ -458,6 +498,7 @@
       "_origin": "ast",
       "id": "postcss",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "postcss"
     },
     {
@@ -468,6 +509,7 @@
       "_origin": "ast",
       "id": "package_devdependencies_tailwindcss",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "tailwindcss"
     },
     {
@@ -478,6 +520,7 @@
       "_origin": "ast",
       "id": "tailwindcss",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "tailwindcss"
     },
     {
@@ -488,6 +531,7 @@
       "_origin": "ast",
       "id": "package_devdependencies_typescript",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "typescript"
     },
     {
@@ -498,6 +542,7 @@
       "_origin": "ast",
       "id": "typescript",
       "community": 11,
+      "community_name": "Dev Dependencies",
       "norm_label": "typescript"
     },
     {
@@ -508,6 +553,7 @@
       "_origin": "ast",
       "id": "postcss_config",
       "community": 17,
+      "community_name": "PostCSS Config",
       "norm_label": "postcss.config.mjs"
     },
     {
@@ -518,6 +564,7 @@
       "_origin": "ast",
       "id": "postcss_config_config",
       "community": 17,
+      "community_name": "PostCSS Config",
       "norm_label": "config"
     },
     {
@@ -527,7 +574,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app_academy_admin_page",
-      "community": 0,
+      "community": 35,
+      "community_name": "page.tsx",
       "norm_label": "page.tsx"
     },
     {
@@ -537,7 +585,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_app_academy_admin_page_metadata",
-      "community": 0,
+      "community": 35,
+      "community_name": "page.tsx",
       "norm_label": "metadata"
     },
     {
@@ -547,7 +596,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "src_app_academy_admin_page_adminpage",
-      "community": 0,
+      "community": 35,
+      "community_name": "page.tsx",
       "norm_label": "adminpage()"
     },
     {
@@ -557,7 +607,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app_academy_certificates_id_page",
-      "community": 1,
+      "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "page.tsx"
     },
     {
@@ -567,7 +618,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_app_academy_certificates_id_page_generatestaticparams",
-      "community": 1,
+      "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "generatestaticparams()"
     },
     {
@@ -577,7 +629,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_app_academy_certificates_id_page_generatemetadata",
-      "community": 1,
+      "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "generatemetadata()"
     },
     {
@@ -587,7 +640,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "src_app_academy_certificates_id_page_certificatedetailpage",
-      "community": 1,
+      "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "certificatedetailpage()"
     },
     {
@@ -597,7 +651,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app_academy_certificates_page",
-      "community": 5,
+      "community": 36,
+      "community_name": "page.tsx",
       "norm_label": "page.tsx"
     },
     {
@@ -607,7 +662,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_app_academy_certificates_page_metadata",
-      "community": 5,
+      "community": 36,
+      "community_name": "page.tsx",
       "norm_label": "metadata"
     },
     {
@@ -617,7 +673,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_app_academy_certificates_page_certificatespage",
-      "community": 5,
+      "community": 36,
+      "community_name": "page.tsx",
       "norm_label": "certificatespage()"
     },
     {
@@ -628,6 +685,7 @@
       "_origin": "ast",
       "id": "src_app_academy_community_page",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "page.tsx"
     },
     {
@@ -638,6 +696,7 @@
       "_origin": "ast",
       "id": "src_app_academy_community_page_metadata",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "metadata"
     },
     {
@@ -648,6 +707,7 @@
       "_origin": "ast",
       "id": "src_app_academy_community_page_communitypage",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "communitypage()"
     },
     {
@@ -657,7 +717,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app_academy_curriculum_page",
-      "community": 5,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "page.tsx"
     },
     {
@@ -667,7 +728,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_app_academy_curriculum_page_metadata",
-      "community": 5,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "metadata"
     },
     {
@@ -677,7 +739,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_app_academy_curriculum_page_curriculumpage",
-      "community": 5,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "curriculumpage()"
     },
     {
@@ -687,7 +750,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app_academy_dashboard_page",
-      "community": 4,
+      "community": 37,
+      "community_name": "page.tsx",
       "norm_label": "page.tsx"
     },
     {
@@ -697,7 +761,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_app_academy_dashboard_page_metadata",
-      "community": 4,
+      "community": 37,
+      "community_name": "page.tsx",
       "norm_label": "metadata"
     },
     {
@@ -707,7 +772,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_app_academy_dashboard_page_dashboardpage",
-      "community": 4,
+      "community": 37,
+      "community_name": "page.tsx",
       "norm_label": "dashboardpage()"
     },
     {
@@ -717,7 +783,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app_academy_layout",
-      "community": 0,
+      "community": 25,
+      "community_name": "ThemeProvider.tsx",
       "norm_label": "layout.tsx"
     },
     {
@@ -727,7 +794,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_app_academy_layout_metadata",
-      "community": 0,
+      "community": 25,
+      "community_name": "ThemeProvider.tsx",
       "norm_label": "metadata"
     },
     {
@@ -737,7 +805,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_app_academy_layout_academylayout",
-      "community": 0,
+      "community": 25,
+      "community_name": "ThemeProvider.tsx",
       "norm_label": "academylayout()"
     },
     {
@@ -747,7 +816,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app_academy_lessons_slug_page",
-      "community": 4,
+      "community": 28,
+      "community_name": "page.tsx",
       "norm_label": "page.tsx"
     },
     {
@@ -757,7 +827,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_app_academy_lessons_slug_page_generatestaticparams",
-      "community": 4,
+      "community": 28,
+      "community_name": "page.tsx",
       "norm_label": "generatestaticparams()"
     },
     {
@@ -767,7 +838,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "src_app_academy_lessons_slug_page_generatemetadata",
-      "community": 4,
+      "community": 28,
+      "community_name": "page.tsx",
       "norm_label": "generatemetadata()"
     },
     {
@@ -777,7 +849,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "src_app_academy_lessons_slug_page_lessonpage",
-      "community": 4,
+      "community": 28,
+      "community_name": "page.tsx",
       "norm_label": "lessonpage()"
     },
     {
@@ -787,7 +860,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app_academy_page",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "page.tsx"
     },
     {
@@ -797,7 +871,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_app_academy_page_marqueeskills",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "marqueeskills"
     },
     {
@@ -807,7 +882,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "src_app_academy_page_transformation",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "transformation"
     },
     {
@@ -817,7 +893,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "src_app_academy_page_method",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "method"
     },
     {
@@ -827,7 +904,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "src_app_academy_page_features",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "features"
     },
     {
@@ -837,7 +915,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "src_app_academy_page_audiences",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "audiences"
     },
     {
@@ -848,6 +927,7 @@
       "_origin": "ast",
       "id": "src_app_academy_page_academyhome",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "academyhome()"
     },
     {
@@ -857,7 +937,8 @@
       "source_location": "L315",
       "_origin": "ast",
       "id": "src_app_academy_page_herovisual",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "herovisual()"
     },
     {
@@ -867,7 +948,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app_academy_pricing_page",
-      "community": 5,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "page.tsx"
     },
     {
@@ -877,7 +959,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_app_academy_pricing_page_metadata",
-      "community": 5,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "metadata"
     },
     {
@@ -887,7 +970,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_app_academy_pricing_page_faqs",
-      "community": 5,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "faqs"
     },
     {
@@ -897,7 +981,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_app_academy_pricing_page_pricingpage",
-      "community": 5,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "pricingpage()"
     },
     {
@@ -907,7 +992,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_app_academy_prompts_page",
-      "community": 5,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "page.tsx"
     },
     {
@@ -917,7 +1003,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_app_academy_prompts_page_metadata",
-      "community": 5,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "metadata"
     },
     {
@@ -928,6 +1015,7 @@
       "_origin": "ast",
       "id": "src_app_academy_prompts_page_promptspage",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "promptspage()"
     },
     {
@@ -938,6 +1026,7 @@
       "_origin": "ast",
       "id": "src_app_academy_quiz_level_page",
       "community": 5,
+      "community_name": "Curriculum & Pricing Pages",
       "norm_label": "page.tsx"
     },
     {
@@ -948,6 +1037,7 @@
       "_origin": "ast",
       "id": "src_app_academy_quiz_level_page_generatestaticparams",
       "community": 5,
+      "community_name": "Curriculum & Pricing Pages",
       "norm_label": "generatestaticparams()"
     },
     {
@@ -958,6 +1048,7 @@
       "_origin": "ast",
       "id": "src_app_academy_quiz_level_page_generatemetadata",
       "community": 5,
+      "community_name": "Curriculum & Pricing Pages",
       "norm_label": "generatemetadata()"
     },
     {
@@ -968,6 +1059,7 @@
       "_origin": "ast",
       "id": "src_app_academy_quiz_level_page_quizpage",
       "community": 5,
+      "community_name": "Curriculum & Pricing Pages",
       "norm_label": "quizpage()"
     },
     {
@@ -978,6 +1070,7 @@
       "_origin": "ast",
       "id": "src_app_academy_tools_page",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "page.tsx"
     },
     {
@@ -988,6 +1081,7 @@
       "_origin": "ast",
       "id": "src_app_academy_tools_page_metadata",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "metadata"
     },
     {
@@ -998,6 +1092,7 @@
       "_origin": "ast",
       "id": "src_app_academy_tools_page_toolspage",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "toolspage()"
     },
     {
@@ -1008,6 +1103,7 @@
       "_origin": "ast",
       "id": "src_app_jpdlag_layout",
       "community": 13,
+      "community_name": "JP Site Layout",
       "norm_label": "layout.tsx"
     },
     {
@@ -1018,6 +1114,7 @@
       "_origin": "ast",
       "id": "src_app_jpdlag_layout_dmsans",
       "community": 13,
+      "community_name": "JP Site Layout",
       "norm_label": "dmsans"
     },
     {
@@ -1028,6 +1125,7 @@
       "_origin": "ast",
       "id": "src_app_jpdlag_layout_syne",
       "community": 13,
+      "community_name": "JP Site Layout",
       "norm_label": "syne"
     },
     {
@@ -1038,6 +1136,7 @@
       "_origin": "ast",
       "id": "src_app_jpdlag_layout_metadata",
       "community": 13,
+      "community_name": "JP Site Layout",
       "norm_label": "metadata"
     },
     {
@@ -1048,6 +1147,7 @@
       "_origin": "ast",
       "id": "src_app_jpdlag_layout_viewport",
       "community": 13,
+      "community_name": "JP Site Layout",
       "norm_label": "viewport"
     },
     {
@@ -1058,6 +1158,7 @@
       "_origin": "ast",
       "id": "src_app_jpdlag_layout_jplayout",
       "community": 13,
+      "community_name": "JP Site Layout",
       "norm_label": "jplayout()"
     },
     {
@@ -1068,6 +1169,7 @@
       "_origin": "ast",
       "id": "src_app_jpdlag_page",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "page.tsx"
     },
     {
@@ -1078,6 +1180,7 @@
       "_origin": "ast",
       "id": "src_app_jpdlag_page_jpdlagpage",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpdlagpage()"
     },
     {
@@ -1088,6 +1191,7 @@
       "_origin": "ast",
       "id": "src_app_layout",
       "community": 14,
+      "community_name": "Root App Layout",
       "norm_label": "layout.tsx"
     },
     {
@@ -1098,6 +1202,7 @@
       "_origin": "ast",
       "id": "src_app_layout_dmsans",
       "community": 14,
+      "community_name": "Root App Layout",
       "norm_label": "dmsans"
     },
     {
@@ -1108,6 +1213,7 @@
       "_origin": "ast",
       "id": "src_app_layout_syne",
       "community": 14,
+      "community_name": "Root App Layout",
       "norm_label": "syne"
     },
     {
@@ -1118,6 +1224,7 @@
       "_origin": "ast",
       "id": "src_app_layout_metadata",
       "community": 14,
+      "community_name": "Root App Layout",
       "norm_label": "metadata"
     },
     {
@@ -1128,6 +1235,7 @@
       "_origin": "ast",
       "id": "src_app_layout_viewport",
       "community": 14,
+      "community_name": "Root App Layout",
       "norm_label": "viewport"
     },
     {
@@ -1138,6 +1246,7 @@
       "_origin": "ast",
       "id": "src_app_layout_rootlayout",
       "community": 14,
+      "community_name": "Root App Layout",
       "norm_label": "rootlayout()"
     },
     {
@@ -1148,6 +1257,7 @@
       "_origin": "ast",
       "id": "src_app_page",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "page.tsx"
     },
     {
@@ -1158,6 +1268,7 @@
       "_origin": "ast",
       "id": "src_app_page_home",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "home()"
     },
     {
@@ -1168,6 +1279,7 @@
       "_origin": "ast",
       "id": "src_app_robots",
       "community": 18,
+      "community_name": "Robots Route",
       "norm_label": "robots.ts"
     },
     {
@@ -1178,6 +1290,7 @@
       "_origin": "ast",
       "id": "src_app_robots_robots",
       "community": 18,
+      "community_name": "Robots Route",
       "norm_label": "robots()"
     },
     {
@@ -1188,6 +1301,7 @@
       "_origin": "ast",
       "id": "src_app_sitemap",
       "community": 5,
+      "community_name": "Curriculum & Pricing Pages",
       "norm_label": "sitemap.ts"
     },
     {
@@ -1198,6 +1312,7 @@
       "_origin": "ast",
       "id": "src_app_sitemap_sitemap",
       "community": 5,
+      "community_name": "Curriculum & Pricing Pages",
       "norm_label": "sitemap()"
     },
     {
@@ -1208,6 +1323,7 @@
       "_origin": "ast",
       "id": "src_components_about",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "about.tsx"
     },
     {
@@ -1218,6 +1334,7 @@
       "_origin": "ast",
       "id": "src_components_about_values",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "values"
     },
     {
@@ -1228,6 +1345,7 @@
       "_origin": "ast",
       "id": "src_components_about_about",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "about()"
     },
     {
@@ -1238,6 +1356,7 @@
       "_origin": "ast",
       "id": "src_components_clients",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "clients.tsx"
     },
     {
@@ -1248,6 +1367,7 @@
       "_origin": "ast",
       "id": "src_components_clients_clients",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "clients"
     },
     {
@@ -1258,6 +1378,7 @@
       "_origin": "ast",
       "id": "src_components_contact",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "contact.tsx"
     },
     {
@@ -1268,6 +1389,7 @@
       "_origin": "ast",
       "id": "src_components_contact_services",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "services"
     },
     {
@@ -1278,6 +1400,7 @@
       "_origin": "ast",
       "id": "src_components_contact_contact",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "contact()"
     },
     {
@@ -1288,6 +1411,7 @@
       "_origin": "ast",
       "id": "src_components_footer",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "footer.tsx"
     },
     {
@@ -1298,6 +1422,7 @@
       "_origin": "ast",
       "id": "src_components_footer_navlinks",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "navlinks"
     },
     {
@@ -1308,6 +1433,7 @@
       "_origin": "ast",
       "id": "src_components_footer_legallinks",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "legallinks"
     },
     {
@@ -1318,6 +1444,7 @@
       "_origin": "ast",
       "id": "src_components_footer_footer",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "footer()"
     },
     {
@@ -1328,6 +1455,7 @@
       "_origin": "ast",
       "id": "src_components_hero",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "hero.tsx"
     },
     {
@@ -1338,6 +1466,7 @@
       "_origin": "ast",
       "id": "src_components_hero_linevariants",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "linevariants"
     },
     {
@@ -1348,6 +1477,7 @@
       "_origin": "ast",
       "id": "src_components_hero_arrowupright",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "arrowupright()"
     },
     {
@@ -1358,6 +1488,7 @@
       "_origin": "ast",
       "id": "src_components_hero_hero",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "hero()"
     },
     {
@@ -1368,6 +1499,7 @@
       "_origin": "ast",
       "id": "src_components_marqueeband",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "marqueeband.tsx"
     },
     {
@@ -1378,6 +1510,7 @@
       "_origin": "ast",
       "id": "src_components_marqueeband_marqueeband",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "marqueeband()"
     },
     {
@@ -1388,6 +1521,7 @@
       "_origin": "ast",
       "id": "src_components_navigation",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "navigation.tsx"
     },
     {
@@ -1398,6 +1532,7 @@
       "_origin": "ast",
       "id": "src_components_navigation_links",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "links"
     },
     {
@@ -1408,6 +1543,7 @@
       "_origin": "ast",
       "id": "src_components_navigation_navigation",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "navigation()"
     },
     {
@@ -1418,6 +1554,7 @@
       "_origin": "ast",
       "id": "src_components_services",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "services.tsx"
     },
     {
@@ -1428,6 +1565,7 @@
       "_origin": "ast",
       "id": "src_components_services_services",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "services"
     },
     {
@@ -1438,6 +1576,7 @@
       "_origin": "ast",
       "id": "src_components_work",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "work.tsx"
     },
     {
@@ -1448,6 +1587,7 @@
       "_origin": "ast",
       "id": "src_components_work_projects",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "projects"
     },
     {
@@ -1458,6 +1598,7 @@
       "_origin": "ast",
       "id": "src_components_work_projectcard",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "projectcard()"
     },
     {
@@ -1468,6 +1609,7 @@
       "_origin": "ast",
       "id": "src_components_work_work",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "work()"
     },
     {
@@ -1477,7 +1619,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_academy_academyfooter",
-      "community": 0,
+      "community": 25,
+      "community_name": "ThemeProvider.tsx",
       "norm_label": "academyfooter.tsx"
     },
     {
@@ -1487,7 +1630,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_components_academy_academyfooter_groups",
-      "community": 0,
+      "community": 25,
+      "community_name": "ThemeProvider.tsx",
       "norm_label": "groups"
     },
     {
@@ -1497,7 +1641,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "src_components_academy_academyfooter_academyfooter",
-      "community": 0,
+      "community": 25,
+      "community_name": "ThemeProvider.tsx",
       "norm_label": "academyfooter()"
     },
     {
@@ -1508,6 +1653,7 @@
       "_origin": "ast",
       "id": "src_components_academy_academynav",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "academynav.tsx"
     },
     {
@@ -1518,6 +1664,7 @@
       "_origin": "ast",
       "id": "src_components_academy_academynav_links",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "links"
     },
     {
@@ -1528,6 +1675,7 @@
       "_origin": "ast",
       "id": "src_components_academy_academynav_academynav",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "academynav()"
     },
     {
@@ -1538,6 +1686,7 @@
       "_origin": "ast",
       "id": "src_components_academy_adminclient",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "adminclient.tsx"
     },
     {
@@ -1548,6 +1697,7 @@
       "_origin": "ast",
       "id": "src_components_academy_adminclient_tabs",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "tabs"
     },
     {
@@ -1558,6 +1708,7 @@
       "_origin": "ast",
       "id": "src_components_academy_adminclient_tab",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "tab"
     },
     {
@@ -1568,6 +1719,7 @@
       "_origin": "ast",
       "id": "src_components_academy_adminclient_table",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "table()"
     },
     {
@@ -1578,6 +1730,7 @@
       "_origin": "ast",
       "id": "src_components_academy_adminclient_adminclient",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "adminclient()"
     },
     {
@@ -1588,6 +1741,7 @@
       "_origin": "ast",
       "id": "src_components_academy_certificatecard",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "certificatecard.tsx"
     },
     {
@@ -1598,6 +1752,7 @@
       "_origin": "ast",
       "id": "src_components_academy_certificatecard_certificatecard",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "certificatecard()"
     },
     {
@@ -1607,7 +1762,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_academy_certificatedetail",
-      "community": 0,
+      "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "certificatedetail.tsx"
     },
     {
@@ -1618,6 +1774,7 @@
       "_origin": "ast",
       "id": "src_components_academy_certificatedetail_certificatedetail",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "certificatedetail()"
     },
     {
@@ -1627,7 +1784,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_academy_certificatesclient",
-      "community": 5,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "certificatesclient.tsx"
     },
     {
@@ -1638,6 +1796,7 @@
       "_origin": "ast",
       "id": "src_components_academy_certificatesclient_certificatesclient",
       "community": 5,
+      "community_name": "Curriculum & Pricing Pages",
       "norm_label": "certificatesclient()"
     },
     {
@@ -1648,6 +1807,7 @@
       "_origin": "ast",
       "id": "src_components_academy_commandpalette",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "commandpalette.tsx"
     },
     {
@@ -1658,6 +1818,7 @@
       "_origin": "ast",
       "id": "src_components_academy_commandpalette_item",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "item"
     },
     {
@@ -1668,6 +1829,7 @@
       "_origin": "ast",
       "id": "src_components_academy_commandpalette_pages",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "pages"
     },
     {
@@ -1678,6 +1840,7 @@
       "_origin": "ast",
       "id": "src_components_academy_commandpalette_buildindex",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "buildindex()"
     },
     {
@@ -1688,6 +1851,7 @@
       "_origin": "ast",
       "id": "src_components_academy_commandpalette_groupicon",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "groupicon"
     },
     {
@@ -1698,6 +1862,7 @@
       "_origin": "ast",
       "id": "src_components_academy_commandpalette_commandpalette",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "commandpalette()"
     },
     {
@@ -1708,6 +1873,7 @@
       "_origin": "ast",
       "id": "src_components_academy_communityclient",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "communityclient.tsx"
     },
     {
@@ -1718,6 +1884,7 @@
       "_origin": "ast",
       "id": "src_components_academy_communityclient_fmtdate",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "fmtdate()"
     },
     {
@@ -1728,6 +1895,7 @@
       "_origin": "ast",
       "id": "src_components_academy_communityclient_initials",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "initials()"
     },
     {
@@ -1738,6 +1906,7 @@
       "_origin": "ast",
       "id": "src_components_academy_communityclient_leaderboard",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "leaderboard"
     },
     {
@@ -1748,6 +1917,7 @@
       "_origin": "ast",
       "id": "src_components_academy_communityclient_avatar",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "avatar()"
     },
     {
@@ -1758,6 +1928,7 @@
       "_origin": "ast",
       "id": "src_components_academy_communityclient_reply",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "reply()"
     },
     {
@@ -1768,6 +1939,7 @@
       "_origin": "ast",
       "id": "src_components_academy_communityclient_thread",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "thread()"
     },
     {
@@ -1778,6 +1950,7 @@
       "_origin": "ast",
       "id": "src_components_academy_communityclient_communityclient",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "communityclient()"
     },
     {
@@ -1788,6 +1961,7 @@
       "_origin": "ast",
       "id": "src_components_academy_copybutton",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "copybutton.tsx"
     },
     {
@@ -1798,6 +1972,7 @@
       "_origin": "ast",
       "id": "src_components_academy_copybutton_copybutton",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "copybutton()"
     },
     {
@@ -1807,7 +1982,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_academy_curriculumclient",
-      "community": 5,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "curriculumclient.tsx"
     },
     {
@@ -1817,7 +1993,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "src_components_academy_curriculumclient_curriculumclient",
-      "community": 5,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "curriculumclient()"
     },
     {
@@ -1827,7 +2004,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_academy_dashboardclient",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "dashboardclient.tsx"
     },
     {
@@ -1837,7 +2015,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_components_academy_dashboardclient_dashboardclient",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "dashboardclient()"
     },
     {
@@ -1848,6 +2027,7 @@
       "_origin": "ast",
       "id": "src_components_academy_lessonview",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "lessonview.tsx"
     },
     {
@@ -1858,6 +2038,7 @@
       "_origin": "ast",
       "id": "src_components_academy_lessonview_neighbour",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "neighbour"
     },
     {
@@ -1867,7 +2048,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "src_components_academy_lessonview_props",
-      "community": 2,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "props"
     },
     {
@@ -1878,6 +2060,7 @@
       "_origin": "ast",
       "id": "src_components_academy_lessonview_tabs",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "tabs"
     },
     {
@@ -1888,6 +2071,7 @@
       "_origin": "ast",
       "id": "src_components_academy_lessonview_tab",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "tab"
     },
     {
@@ -1898,6 +2082,7 @@
       "_origin": "ast",
       "id": "src_components_academy_lessonview_fmt",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "fmt()"
     },
     {
@@ -1908,6 +2093,7 @@
       "_origin": "ast",
       "id": "src_components_academy_lessonview_resourcelabel",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "resourcelabel"
     },
     {
@@ -1918,6 +2104,7 @@
       "_origin": "ast",
       "id": "src_components_academy_lessonview_lessonview",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "lessonview()"
     },
     {
@@ -1928,6 +2115,7 @@
       "_origin": "ast",
       "id": "src_components_academy_onboardingdialog",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "onboardingdialog.tsx"
     },
     {
@@ -1938,6 +2126,7 @@
       "_origin": "ast",
       "id": "src_components_academy_onboardingdialog_goals",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "goals"
     },
     {
@@ -1948,6 +2137,7 @@
       "_origin": "ast",
       "id": "src_components_academy_onboardingdialog_onboardingdialog",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "onboardingdialog()"
     },
     {
@@ -1958,6 +2148,7 @@
       "_origin": "ast",
       "id": "src_components_academy_planbutton",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "planbutton.tsx"
     },
     {
@@ -1968,6 +2159,7 @@
       "_origin": "ast",
       "id": "src_components_academy_planbutton_planbutton",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "planbutton()"
     },
     {
@@ -1978,6 +2170,7 @@
       "_origin": "ast",
       "id": "src_components_academy_printbutton",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "printbutton.tsx"
     },
     {
@@ -1988,6 +2181,7 @@
       "_origin": "ast",
       "id": "src_components_academy_printbutton_printbutton",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "printbutton()"
     },
     {
@@ -1998,6 +2192,7 @@
       "_origin": "ast",
       "id": "src_components_academy_promptlibrary",
       "community": 12,
+      "community_name": "Prompt Library Export",
       "norm_label": "promptlibrary.tsx"
     },
     {
@@ -2008,6 +2203,7 @@
       "_origin": "ast",
       "id": "src_components_academy_promptlibrary_promptlibrary",
       "community": 12,
+      "community_name": "Prompt Library Export",
       "norm_label": "promptlibrary()"
     },
     {
@@ -2018,6 +2214,7 @@
       "_origin": "ast",
       "id": "src_components_academy_quizrunner",
       "community": 4,
+      "community_name": "Dashboard & Lesson Routing",
       "norm_label": "quizrunner.tsx"
     },
     {
@@ -2028,6 +2225,7 @@
       "_origin": "ast",
       "id": "src_components_academy_quizrunner_props",
       "community": 4,
+      "community_name": "Dashboard & Lesson Routing",
       "norm_label": "props"
     },
     {
@@ -2038,6 +2236,7 @@
       "_origin": "ast",
       "id": "src_components_academy_quizrunner_answers",
       "community": 4,
+      "community_name": "Dashboard & Lesson Routing",
       "norm_label": "answers"
     },
     {
@@ -2048,6 +2247,7 @@
       "_origin": "ast",
       "id": "src_components_academy_quizrunner_arraysequal",
       "community": 4,
+      "community_name": "Dashboard & Lesson Routing",
       "norm_label": "arraysequal()"
     },
     {
@@ -2058,6 +2258,7 @@
       "_origin": "ast",
       "id": "src_components_academy_quizrunner_iscorrect",
       "community": 4,
+      "community_name": "Dashboard & Lesson Routing",
       "norm_label": "iscorrect()"
     },
     {
@@ -2068,6 +2269,7 @@
       "_origin": "ast",
       "id": "src_components_academy_quizrunner_quizrunner",
       "community": 4,
+      "community_name": "Dashboard & Lesson Routing",
       "norm_label": "quizrunner()"
     },
     {
@@ -2077,7 +2279,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_academy_themeprovider",
-      "community": 0,
+      "community": 25,
+      "community_name": "ThemeProvider.tsx",
       "norm_label": "themeprovider.tsx"
     },
     {
@@ -2087,7 +2290,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "src_components_academy_themeprovider_theme",
-      "community": 0,
+      "community": 25,
+      "community_name": "ThemeProvider.tsx",
       "norm_label": "theme"
     },
     {
@@ -2097,7 +2301,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_components_academy_themeprovider_themectx",
-      "community": 0,
+      "community": 25,
+      "community_name": "ThemeProvider.tsx",
       "norm_label": "themectx"
     },
     {
@@ -2107,7 +2312,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_components_academy_themeprovider_ctx",
-      "community": 0,
+      "community": 25,
+      "community_name": "ThemeProvider.tsx",
       "norm_label": "ctx"
     },
     {
@@ -2118,6 +2324,7 @@
       "_origin": "ast",
       "id": "src_components_academy_themeprovider_usetheme",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "usetheme()"
     },
     {
@@ -2127,7 +2334,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_components_academy_themeprovider_themeprovider",
-      "community": 0,
+      "community": 25,
+      "community_name": "ThemeProvider.tsx",
       "norm_label": "themeprovider()"
     },
     {
@@ -2138,6 +2346,7 @@
       "_origin": "ast",
       "id": "src_components_academy_themetoggle",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "themetoggle.tsx"
     },
     {
@@ -2148,6 +2357,7 @@
       "_origin": "ast",
       "id": "src_components_academy_themetoggle_themetoggle",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "themetoggle()"
     },
     {
@@ -2157,7 +2367,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_academy_upgradegate",
-      "community": 0,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "upgradegate.tsx"
     },
     {
@@ -2167,7 +2378,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "src_components_academy_upgradegate_tierlabel",
-      "community": 0,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "tierlabel"
     },
     {
@@ -2177,7 +2389,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "src_components_academy_upgradegate_tierperks",
-      "community": 0,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "tierperks"
     },
     {
@@ -2187,7 +2400,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_components_academy_upgradegate_upgradegate",
-      "community": 0,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "upgradegate()"
     },
     {
@@ -2198,6 +2412,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "icons.tsx"
     },
     {
@@ -2208,6 +2423,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_p",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "p"
     },
     {
@@ -2218,6 +2434,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_base",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "base()"
     },
     {
@@ -2228,6 +2445,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_arrowright",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "arrowright()"
     },
     {
@@ -2238,6 +2456,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_check",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "check()"
     },
     {
@@ -2248,6 +2467,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_play",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "play()"
     },
     {
@@ -2258,6 +2478,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_copy",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "copy()"
     },
     {
@@ -2268,6 +2489,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_search",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "search()"
     },
     {
@@ -2278,6 +2500,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_lock",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "lock()"
     },
     {
@@ -2288,6 +2511,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_sparkles",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "sparkles()"
     },
     {
@@ -2297,7 +2521,8 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_flame",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "flame()"
     },
     {
@@ -2307,7 +2532,8 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_bolt",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "bolt()"
     },
     {
@@ -2317,7 +2543,8 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_trophy",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "trophy()"
     },
     {
@@ -2327,7 +2554,8 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_book",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "book()"
     },
     {
@@ -2338,6 +2566,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_sun",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "sun()"
     },
     {
@@ -2348,6 +2577,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_moon",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "moon()"
     },
     {
@@ -2358,6 +2588,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_menu",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "menu()"
     },
     {
@@ -2368,6 +2599,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_star",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "star()"
     },
     {
@@ -2378,6 +2610,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_download",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "download()"
     },
     {
@@ -2388,6 +2621,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_message",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "message()"
     },
     {
@@ -2398,6 +2632,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_heart",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "heart()"
     },
     {
@@ -2408,6 +2643,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_users",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "users()"
     },
     {
@@ -2418,6 +2654,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_pin",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "pin()"
     },
     {
@@ -2428,6 +2665,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_icons_settings",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "settings()"
     },
     {
@@ -2438,6 +2676,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_progressbar",
       "community": 4,
+      "community_name": "Dashboard & Lesson Routing",
       "norm_label": "progressbar.tsx"
     },
     {
@@ -2448,6 +2687,7 @@
       "_origin": "ast",
       "id": "src_components_academy_ui_progressbar_progressbar",
       "community": 4,
+      "community_name": "Dashboard & Lesson Routing",
       "norm_label": "progressbar()"
     },
     {
@@ -2457,7 +2697,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_components_academy_ui_reveal",
-      "community": 5,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "reveal.tsx"
     },
     {
@@ -2467,7 +2708,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_components_academy_ui_reveal_revealprops",
-      "community": 5,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "revealprops"
     },
     {
@@ -2477,7 +2719,8 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_components_academy_ui_reveal_reveal",
-      "community": 5,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "reveal()"
     },
     {
@@ -2488,6 +2731,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_albaherovisual",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "albaherovisual.tsx"
     },
     {
@@ -2498,6 +2742,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_albaherovisual_albaherovisualprops",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "albaherovisualprops"
     },
     {
@@ -2508,6 +2753,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_albaherovisual_architecturalplaceholder",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "architecturalplaceholder()"
     },
     {
@@ -2518,6 +2764,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_albaherovisual_albaherovisual",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "albaherovisual()"
     },
     {
@@ -2528,6 +2775,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpalbaproject",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpalbaproject.tsx"
     },
     {
@@ -2538,6 +2786,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpalbaproject_facts",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "facts"
     },
     {
@@ -2548,6 +2797,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpalbaproject_arrowupright",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "arrowupright()"
     },
     {
@@ -2558,6 +2808,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpalbaproject_jpalbaproject",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpalbaproject()"
     },
     {
@@ -2568,6 +2819,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpcontact",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpcontact.tsx"
     },
     {
@@ -2578,6 +2830,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpcontact_arrowupright",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "arrowupright()"
     },
     {
@@ -2588,6 +2841,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpcontact_topics",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "topics"
     },
     {
@@ -2598,6 +2852,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpcontact_jpcontact",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpcontact()"
     },
     {
@@ -2608,6 +2863,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpfadein",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpfadein.tsx"
     },
     {
@@ -2618,6 +2874,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpfadein_jpfadeinprops",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpfadeinprops"
     },
     {
@@ -2628,6 +2885,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpfadein_jpfadein",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpfadein()"
     },
     {
@@ -2638,6 +2896,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpfooter",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpfooter.tsx"
     },
     {
@@ -2648,6 +2907,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpfooter_navlinks",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "navlinks"
     },
     {
@@ -2658,6 +2918,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpfooter_services",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "services"
     },
     {
@@ -2668,6 +2929,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpfooter_jpfooter",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpfooter()"
     },
     {
@@ -2678,6 +2940,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jphero",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jphero.tsx"
     },
     {
@@ -2688,6 +2951,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jphero_linevariants",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "linevariants"
     },
     {
@@ -2698,6 +2962,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jphero_arrowupright",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "arrowupright()"
     },
     {
@@ -2708,6 +2973,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jphero_jphero",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jphero()"
     },
     {
@@ -2718,6 +2984,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpintro",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpintro.tsx"
     },
     {
@@ -2728,6 +2995,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpintro_jpintro",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpintro()"
     },
     {
@@ -2738,6 +3006,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpnavigation",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpnavigation.tsx"
     },
     {
@@ -2748,6 +3017,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpnavigation_navlinks",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "navlinks"
     },
     {
@@ -2758,6 +3028,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpnavigation_jpnavigation",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpnavigation()"
     },
     {
@@ -2768,6 +3039,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpprocess",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpprocess.tsx"
     },
     {
@@ -2778,6 +3050,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpprocess_steps",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "steps"
     },
     {
@@ -2788,6 +3061,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpprocess_jpprocess",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpprocess()"
     },
     {
@@ -2798,6 +3072,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpservices",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpservices.tsx"
     },
     {
@@ -2808,6 +3083,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpservices_services",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "services"
     },
     {
@@ -2818,6 +3094,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpservices_arrowupright",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "arrowupright()"
     },
     {
@@ -2828,6 +3105,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpservices_jpservices",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpservices()"
     },
     {
@@ -2838,6 +3116,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpwhy",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpwhy.tsx"
     },
     {
@@ -2848,6 +3127,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpwhy_reasons",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "reasons"
     },
     {
@@ -2858,6 +3138,7 @@
       "_origin": "ast",
       "id": "src_components_jpdlag_jpwhy_jpwhy",
       "community": 3,
+      "community_name": "JP/Alba Portfolio Site",
       "norm_label": "jpwhy()"
     },
     {
@@ -2868,6 +3149,7 @@
       "_origin": "ast",
       "id": "src_components_ui_fadein",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "fadein.tsx"
     },
     {
@@ -2878,6 +3160,7 @@
       "_origin": "ast",
       "id": "src_components_ui_fadein_fadeinprops",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "fadeinprops"
     },
     {
@@ -2888,6 +3171,7 @@
       "_origin": "ast",
       "id": "src_components_ui_fadein_dirmap",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "dirmap"
     },
     {
@@ -2898,6 +3182,7 @@
       "_origin": "ast",
       "id": "src_components_ui_fadein_fadein",
       "community": 6,
+      "community_name": "Agency Landing Page",
       "norm_label": "fadein()"
     },
     {
@@ -2907,7 +3192,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_academy_data",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "data.ts"
     },
     {
@@ -2917,7 +3203,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "src_lib_academy_data_prompts",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "prompts"
     },
     {
@@ -2927,7 +3214,8 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "src_lib_academy_data_promptbyid",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "promptbyid()"
     },
     {
@@ -2937,7 +3225,8 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "src_lib_academy_data_tools",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "tools"
     },
     {
@@ -2947,7 +3236,8 @@
       "source_location": "L260",
       "_origin": "ast",
       "id": "src_lib_academy_data_levels",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "levels"
     },
     {
@@ -2957,7 +3247,8 @@
       "source_location": "L314",
       "_origin": "ast",
       "id": "src_lib_academy_data_chapters",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "chapters"
     },
     {
@@ -2967,7 +3258,8 @@
       "source_location": "L341",
       "_origin": "ast",
       "id": "src_lib_academy_data_r",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "r()"
     },
     {
@@ -2977,7 +3269,8 @@
       "source_location": "L348",
       "_origin": "ast",
       "id": "src_lib_academy_data_lessons",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "lessons"
     },
     {
@@ -2987,7 +3280,8 @@
       "source_location": "L635",
       "_origin": "ast",
       "id": "src_lib_academy_data_badges",
-      "community": 2,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "badges"
     },
     {
@@ -2997,7 +3291,8 @@
       "source_location": "L644",
       "_origin": "ast",
       "id": "src_lib_academy_data_user",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "user"
     },
     {
@@ -3007,7 +3302,8 @@
       "source_location": "L659",
       "_origin": "ast",
       "id": "src_lib_academy_data_quizzes",
-      "community": 2,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "quizzes"
     },
     {
@@ -3017,7 +3313,8 @@
       "source_location": "L812",
       "_origin": "ast",
       "id": "src_lib_academy_data_certificates",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "certificates"
     },
     {
@@ -3028,6 +3325,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_data_forumcategories",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "forumcategories"
     },
     {
@@ -3037,7 +3335,8 @@
       "source_location": "L833",
       "_origin": "ast",
       "id": "src_lib_academy_data_forumthreads",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "forumthreads"
     },
     {
@@ -3047,7 +3346,8 @@
       "source_location": "L938",
       "_origin": "ast",
       "id": "src_lib_academy_data_pricingtiers",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "pricingtiers"
     },
     {
@@ -3057,7 +3357,8 @@
       "source_location": "L985",
       "_origin": "ast",
       "id": "src_lib_academy_data_getlevels",
-      "community": 5,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "getlevels()"
     },
     {
@@ -3067,7 +3368,8 @@
       "source_location": "L986",
       "_origin": "ast",
       "id": "src_lib_academy_data_getlevel",
-      "community": 4,
+      "community": 5,
+      "community_name": "Curriculum & Pricing Pages",
       "norm_label": "getlevel()"
     },
     {
@@ -3077,7 +3379,8 @@
       "source_location": "L987",
       "_origin": "ast",
       "id": "src_lib_academy_data_getchapter",
-      "community": 4,
+      "community": 28,
+      "community_name": "page.tsx",
       "norm_label": "getchapter()"
     },
     {
@@ -3087,7 +3390,8 @@
       "source_location": "L988",
       "_origin": "ast",
       "id": "src_lib_academy_data_getchaptersforlevel",
-      "community": 5,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "getchaptersforlevel()"
     },
     {
@@ -3097,7 +3401,8 @@
       "source_location": "L990",
       "_origin": "ast",
       "id": "src_lib_academy_data_getlesson",
-      "community": 4,
+      "community": 28,
+      "community_name": "page.tsx",
       "norm_label": "getlesson()"
     },
     {
@@ -3107,7 +3412,8 @@
       "source_location": "L991",
       "_origin": "ast",
       "id": "src_lib_academy_data_getlessonsforchapter",
-      "community": 5,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "getlessonsforchapter()"
     },
     {
@@ -3117,7 +3423,8 @@
       "source_location": "L994",
       "_origin": "ast",
       "id": "src_lib_academy_data_getalllessons",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "getalllessons()"
     },
     {
@@ -3127,7 +3434,8 @@
       "source_location": "L995",
       "_origin": "ast",
       "id": "src_lib_academy_data_getneighbours",
-      "community": 4,
+      "community": 28,
+      "community_name": "page.tsx",
       "norm_label": "getneighbours()"
     },
     {
@@ -3137,7 +3445,8 @@
       "source_location": "L1002",
       "_origin": "ast",
       "id": "src_lib_academy_data_getuser",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "getuser()"
     },
     {
@@ -3148,6 +3457,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_data_getprompts",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "getprompts()"
     },
     {
@@ -3158,6 +3468,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_data_gettools",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "gettools()"
     },
     {
@@ -3167,7 +3478,8 @@
       "source_location": "L1005",
       "_origin": "ast",
       "id": "src_lib_academy_data_getpricing",
-      "community": 5,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "getpricing()"
     },
     {
@@ -3178,6 +3490,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_data_getquizzes",
       "community": 5,
+      "community_name": "Curriculum & Pricing Pages",
       "norm_label": "getquizzes()"
     },
     {
@@ -3188,6 +3501,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_data_getquizforlevel",
       "community": 5,
+      "community_name": "Curriculum & Pricing Pages",
       "norm_label": "getquizforlevel()"
     },
     {
@@ -3198,6 +3512,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_data_getforumthreads",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "getforumthreads()"
     },
     {
@@ -3207,7 +3522,8 @@
       "source_location": "L1010",
       "_origin": "ast",
       "id": "src_lib_academy_data_getcertificates",
-      "community": 1,
+      "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "getcertificates()"
     },
     {
@@ -3218,6 +3534,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_data_getcertificate",
       "community": 10,
+      "community_name": "Runtime Dependencies",
       "norm_label": "getcertificate()"
     },
     {
@@ -3227,7 +3544,8 @@
       "source_location": "L1012",
       "_origin": "ast",
       "id": "src_lib_academy_data_getcertificateforlevel",
-      "community": 1,
+      "community": 23,
+      "community_name": "data.ts",
       "norm_label": "getcertificateforlevel()"
     },
     {
@@ -3238,6 +3556,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_markdown",
       "community": 12,
+      "community_name": "Prompt Library Export",
       "norm_label": "markdown.ts"
     },
     {
@@ -3248,6 +3567,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_markdown_prompttomarkdown",
       "community": 12,
+      "community_name": "Prompt Library Export",
       "norm_label": "prompttomarkdown()"
     },
     {
@@ -3258,6 +3578,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_markdown_librarytomarkdown",
       "community": 12,
+      "community_name": "Prompt Library Export",
       "norm_label": "librarytomarkdown()"
     },
     {
@@ -3268,6 +3589,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_markdown_slugify",
       "community": 12,
+      "community_name": "Prompt Library Export",
       "norm_label": "slugify()"
     },
     {
@@ -3278,6 +3600,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_markdown_downloadmarkdown",
       "community": 12,
+      "community_name": "Prompt Library Export",
       "norm_label": "downloadmarkdown()"
     },
     {
@@ -3287,7 +3610,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_academy_progress",
-      "community": 1,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "progress.ts"
     },
     {
@@ -3297,7 +3621,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "src_lib_academy_progress_rank_thresholds",
-      "community": 1,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "rank_thresholds"
     },
     {
@@ -3307,7 +3632,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_lib_academy_progress_rank_names",
-      "community": 1,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "rank_names"
     },
     {
@@ -3317,7 +3643,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "src_lib_academy_progress_rankfor",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "rankfor()"
     },
     {
@@ -3327,7 +3654,8 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "src_lib_academy_progress_iscompleted",
-      "community": 1,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "iscompleted()"
     },
     {
@@ -3337,7 +3665,8 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "src_lib_academy_progress_overallprogress",
-      "community": 4,
+      "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "overallprogress()"
     },
     {
@@ -3347,7 +3676,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "src_lib_academy_progress_levelprogress",
-      "community": 5,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "levelprogress()"
     },
     {
@@ -3357,7 +3687,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "src_lib_academy_progress_levelstats",
-      "community": 4,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "levelstats()"
     },
     {
@@ -3367,7 +3698,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "src_lib_academy_progress_earnedbadges",
-      "community": 1,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "earnedbadges()"
     },
     {
@@ -3377,7 +3709,8 @@
       "source_location": "L56",
       "_origin": "ast",
       "id": "src_lib_academy_progress_tier_order",
-      "community": 1,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "tier_order"
     },
     {
@@ -3387,7 +3720,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "src_lib_academy_progress_tierrank",
-      "community": 1,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "tierrank()"
     },
     {
@@ -3397,7 +3731,8 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "src_lib_academy_progress_canaccess",
-      "community": 5,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "canaccess()"
     },
     {
@@ -3408,6 +3743,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_progress_isoday",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "isoday()"
     },
     {
@@ -3418,6 +3754,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_progress_isoweek",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "isoweek()"
     },
     {
@@ -3428,6 +3765,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_progress_daybefore",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "daybefore()"
     },
     {
@@ -3438,6 +3776,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_progress_computestreak",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "computestreak()"
     },
     {
@@ -3448,6 +3787,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "store.ts"
     },
     {
@@ -3457,7 +3797,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_lib_academy_store_academystate",
-      "community": 1,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "academystate"
     },
     {
@@ -3468,6 +3809,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_default_state",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "default_state"
     },
     {
@@ -3478,6 +3820,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_listeners",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "listeners"
     },
     {
@@ -3488,6 +3831,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_load",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "load()"
     },
     {
@@ -3498,6 +3842,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_persist",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "persist()"
     },
     {
@@ -3508,6 +3853,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_ensureloaded",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "ensureloaded()"
     },
     {
@@ -3518,6 +3864,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_subscribe",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "subscribe()"
     },
     {
@@ -3528,6 +3875,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_getsnapshot",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "getsnapshot()"
     },
     {
@@ -3538,6 +3886,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_getserversnapshot",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "getserversnapshot()"
     },
     {
@@ -3548,6 +3897,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_withday",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "withday()"
     },
     {
@@ -3558,6 +3908,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_togglelessoncomplete",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "togglelessoncomplete()"
     },
     {
@@ -3568,6 +3919,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_togglebookmark",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "togglebookmark()"
     },
     {
@@ -3578,6 +3930,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_visitlesson",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "visitlesson()"
     },
     {
@@ -3588,6 +3941,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_recordpromptcopy",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "recordpromptcopy()"
     },
     {
@@ -3597,7 +3951,8 @@
       "source_location": "L145",
       "_origin": "ast",
       "id": "src_lib_academy_store_certificatecode",
-      "community": 2,
+      "community": 4,
+      "community_name": "Dashboard & Lesson Routing",
       "norm_label": "certificatecode()"
     },
     {
@@ -3607,7 +3962,8 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "src_lib_academy_store_recordquizresult",
-      "community": 2,
+      "community": 4,
+      "community_name": "Dashboard & Lesson Routing",
       "norm_label": "recordquizresult()"
     },
     {
@@ -3618,6 +3974,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_completeonboarding",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "completeonboarding()"
     },
     {
@@ -3628,6 +3985,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_setplan",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "setplan()"
     },
     {
@@ -3638,6 +3996,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_resetprogress",
       "community": 0,
+      "community_name": "Academy Pages & Shell",
       "norm_label": "resetprogress()"
     },
     {
@@ -3648,6 +4007,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_isquizpassed",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "isquizpassed()"
     },
     {
@@ -3657,7 +4017,8 @@
       "source_location": "L219",
       "_origin": "ast",
       "id": "src_lib_academy_store_islevelcomplete",
-      "community": 5,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "islevelcomplete()"
     },
     {
@@ -3668,6 +4029,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_deriveuser",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "deriveuser()"
     },
     {
@@ -3678,6 +4040,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_store_useacademy",
       "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "useacademy()"
     },
     {
@@ -3687,7 +4050,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_lib_academy_types",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "types.ts"
     },
     {
@@ -3697,7 +4061,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "src_lib_academy_types_role",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "role"
     },
     {
@@ -3707,7 +4072,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "src_lib_academy_types_plan",
-      "community": 1,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "plan"
     },
     {
@@ -3717,7 +4083,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_lib_academy_types_accesstier",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "accesstier"
     },
     {
@@ -3728,6 +4095,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_types_prompt",
       "community": 12,
+      "community_name": "Prompt Library Export",
       "norm_label": "prompt"
     },
     {
@@ -3737,7 +4105,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "src_lib_academy_types_resourceitem",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "resourceitem"
     },
     {
@@ -3747,7 +4116,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "src_lib_academy_types_chaptermark",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "chaptermark"
     },
     {
@@ -3757,7 +4127,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "src_lib_academy_types_lesson",
-      "community": 2,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "lesson"
     },
     {
@@ -3767,7 +4138,8 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "src_lib_academy_types_chapter",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "chapter"
     },
     {
@@ -3777,7 +4149,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "src_lib_academy_types_level",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "level"
     },
     {
@@ -3787,7 +4160,8 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "src_lib_academy_types_tool",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "tool"
     },
     {
@@ -3797,7 +4171,8 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "src_lib_academy_types_badgedef",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "badgedef"
     },
     {
@@ -3807,7 +4182,8 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "src_lib_academy_types_userprogress",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "userprogress"
     },
     {
@@ -3817,7 +4193,8 @@
       "source_location": "L123",
       "_origin": "ast",
       "id": "src_lib_academy_types_questiontype",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "questiontype"
     },
     {
@@ -3827,7 +4204,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "src_lib_academy_types_quizoption",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "quizoption"
     },
     {
@@ -3838,6 +4216,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_types_quizquestion",
       "community": 4,
+      "community_name": "Dashboard & Lesson Routing",
       "norm_label": "quizquestion"
     },
     {
@@ -3848,6 +4227,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_types_quiz",
       "community": 4,
+      "community_name": "Dashboard & Lesson Routing",
       "norm_label": "quiz"
     },
     {
@@ -3857,7 +4237,8 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "src_lib_academy_types_certificate",
-      "community": 1,
+      "community": 2,
+      "community_name": "Lesson Player Components",
       "norm_label": "certificate"
     },
     {
@@ -3868,6 +4249,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_types_forumreply",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "forumreply"
     },
     {
@@ -3878,6 +4260,7 @@
       "_origin": "ast",
       "id": "src_lib_academy_types_forumthread",
       "community": 1,
+      "community_name": "Certificates & Community",
       "norm_label": "forumthread"
     },
     {
@@ -3887,7 +4270,8 @@
       "source_location": "L195",
       "_origin": "ast",
       "id": "src_lib_academy_types_pricingtier",
-      "community": 1,
+      "community": 22,
+      "community_name": "types.ts",
       "norm_label": "pricingtier"
     },
     {
@@ -3898,6 +4282,7 @@
       "_origin": "ast",
       "id": "tailwind_config",
       "community": 19,
+      "community_name": "Tailwind Config",
       "norm_label": "tailwind.config.ts"
     },
     {
@@ -3908,6 +4293,7 @@
       "_origin": "ast",
       "id": "tailwind_config_config",
       "community": 19,
+      "community_name": "Tailwind Config",
       "norm_label": "config"
     },
     {
@@ -3918,6 +4304,7 @@
       "_origin": "ast",
       "id": "tsconfig",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "tsconfig.json"
     },
     {
@@ -3928,6 +4315,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "compileroptions"
     },
     {
@@ -3938,6 +4326,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_lib",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "lib"
     },
     {
@@ -3948,6 +4337,7 @@
       "_origin": "ast",
       "id": "ref_dom",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "dom"
     },
     {
@@ -3958,6 +4348,7 @@
       "_origin": "ast",
       "id": "ref_dom_iterable",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "dom.iterable"
     },
     {
@@ -3968,6 +4359,7 @@
       "_origin": "ast",
       "id": "ref_esnext",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "esnext"
     },
     {
@@ -3978,6 +4370,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_allowjs",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "allowjs"
     },
     {
@@ -3988,6 +4381,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_skiplibcheck",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "skiplibcheck"
     },
     {
@@ -3998,6 +4392,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_strict",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "strict"
     },
     {
@@ -4008,6 +4403,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_noemit",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "noemit"
     },
     {
@@ -4018,6 +4414,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_esmoduleinterop",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "esmoduleinterop"
     },
     {
@@ -4028,6 +4425,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_module",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "module"
     },
     {
@@ -4038,6 +4436,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_moduleresolution",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "moduleresolution"
     },
     {
@@ -4048,6 +4447,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_resolvejsonmodule",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "resolvejsonmodule"
     },
     {
@@ -4058,6 +4458,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_isolatedmodules",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "isolatedmodules"
     },
     {
@@ -4068,6 +4469,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_jsx",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "jsx"
     },
     {
@@ -4078,6 +4480,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_incremental",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "incremental"
     },
     {
@@ -4088,6 +4491,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_plugins",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "plugins"
     },
     {
@@ -4098,6 +4502,7 @@
       "_origin": "ast",
       "id": "tsconfig_compileroptions_paths",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "paths"
     },
     {
@@ -4108,6 +4513,7 @@
       "_origin": "ast",
       "id": "tsconfig_include",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "include"
     },
     {
@@ -4118,6 +4524,7 @@
       "_origin": "ast",
       "id": "ref_next_env_d_ts",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "next-env.d.ts"
     },
     {
@@ -4128,6 +4535,7 @@
       "_origin": "ast",
       "id": "ref_ts",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "**/*.ts"
     },
     {
@@ -4138,6 +4546,7 @@
       "_origin": "ast",
       "id": "ref_tsx",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "**/*.tsx"
     },
     {
@@ -4148,6 +4557,7 @@
       "_origin": "ast",
       "id": "ref_next_types_ts",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": ".next/types/**/*.ts"
     },
     {
@@ -4158,6 +4568,7 @@
       "_origin": "ast",
       "id": "tsconfig_exclude",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "exclude"
     },
     {
@@ -4168,7 +4579,877 @@
       "_origin": "ast",
       "id": "ref_node_modules",
       "community": 8,
+      "community_name": "TypeScript Config",
       "norm_label": "node_modules"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "/graphify",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_graphify",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "/graphify"
+    },
+    {
+      "label": "Usage",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_usage",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "usage"
+    },
+    {
+      "label": "What graphify is for",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_what_graphify_is_for",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "what graphify is for"
+    },
+    {
+      "label": "What You Must Do When Invoked",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "what you must do when invoked"
+    },
+    {
+      "label": "Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_0_github_repos_and_multi_path_merge_only_if_a_url_or_several_paths",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 0 - github repos and multi-path merge (only if a url or several paths)"
+    },
+    {
+      "label": "Step 1 - Ensure graphify is installed",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_1_ensure_graphify_is_installed",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 1 - ensure graphify is installed"
+    },
+    {
+      "label": "Step 2 - Detect files",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_2_detect_files",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 2 - detect files"
+    },
+    {
+      "label": "Step 2.5 - Video and audio (only if video files detected)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L144",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_2_5_video_and_audio_only_if_video_files_detected",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 2.5 - video and audio (only if video files detected)"
+    },
+    {
+      "label": "Step 3 - Extract entities and relationships",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_3_extract_entities_and_relationships",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 3 - extract entities and relationships"
+    },
+    {
+      "label": "Part A - Structural extraction for code files",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_part_a_structural_extraction_for_code_files",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "part a - structural extraction for code files"
+    },
+    {
+      "label": "Part B - Semantic extraction (parallel subagents)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L193",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_part_b_semantic_extraction_parallel_subagents",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "part b - semantic extraction (parallel subagents)"
+    },
+    {
+      "label": "Part C - Merge AST + semantic into final extraction",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L354",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_part_c_merge_ast_semantic_into_final_extraction",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "part c - merge ast + semantic into final extraction"
+    },
+    {
+      "label": "Step 4 - Build graph, cluster, analyze, generate outputs",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L388",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 4 - build graph, cluster, analyze, generate outputs"
+    },
+    {
+      "label": "Step 4.5 - Graph health check (read-only integrity gate)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L451",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_4_5_graph_health_check_read_only_integrity_gate",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 4.5 - graph health check (read-only integrity gate)"
+    },
+    {
+      "label": "Step 5 - Label communities",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L477",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_5_label_communities",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 5 - label communities"
+    },
+    {
+      "label": "Step 6 - Generate Obsidian vault (opt-in) + HTML",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L518",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_6_generate_obsidian_vault_opt_in_html",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 6 - generate obsidian vault (opt-in) + html"
+    },
+    {
+      "label": "Steps 6b-8 - Wiki, Neo4j, FalkorDB, SVG, GraphML, MCP, benchmark (only on their flags)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L538",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_steps_6b_8_wiki_neo4j_falkordb_svg_graphml_mcp_benchmark_only_on_their_flags",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "steps 6b-8 - wiki, neo4j, falkordb, svg, graphml, mcp, benchmark (only on their flags)"
+    },
+    {
+      "label": "Step 9 - Save manifest, update cost tracker, clean up, and report",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L544",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 9 - save manifest, update cost tracker, clean up, and report"
+    },
+    {
+      "label": "Interpreter guard for subcommands",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L624",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_interpreter_guard_for_subcommands",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "interpreter guard for subcommands"
+    },
+    {
+      "label": "For --update and --cluster-only",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L642",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_for_update_and_cluster_only",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "for --update and --cluster-only"
+    },
+    {
+      "label": "For /graphify query",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L648",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_for_graphify_query",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "for /graphify query"
+    },
+    {
+      "label": "For /graphify add and --watch",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L660",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_for_graphify_add_and_watch",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "for /graphify add and --watch"
+    },
+    {
+      "label": "For the commit hook and native CLAUDE.md integration",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L666",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_for_the_commit_hook_and_native_claude_md_integration",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "for the commit hook and native claude.md integration"
+    },
+    {
+      "label": "Honesty Rules",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L672",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_honesty_rules",
+      "community": 21,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "honesty rules"
+    },
+    {
+      "label": "add-watch.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_add_watch",
+      "community": 30,
+      "community_name": "graphify reference: add a URL and watch a folder",
+      "norm_label": "add-watch.md"
+    },
+    {
+      "label": "graphify reference: add a URL and watch a folder",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
+      "community": 30,
+      "community_name": "graphify reference: add a URL and watch a folder",
+      "norm_label": "graphify reference: add a url and watch a folder"
+    },
+    {
+      "label": "For /graphify add",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_add_watch_for_graphify_add",
+      "community": 30,
+      "community_name": "graphify reference: add a URL and watch a folder",
+      "norm_label": "for /graphify add"
+    },
+    {
+      "label": "For --watch",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_add_watch_for_watch",
+      "community": 30,
+      "community_name": "graphify reference: add a URL and watch a folder",
+      "norm_label": "for --watch"
+    },
+    {
+      "label": "exports.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports",
+      "community": 26,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "exports.md"
+    },
+    {
+      "label": "graphify reference: extra exports and benchmark",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "community": 26,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "graphify reference: extra exports and benchmark"
+    },
+    {
+      "label": "Step 6b - Wiki (only if --wiki flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_6b_wiki_only_if_wiki_flag",
+      "community": 26,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 6b - wiki (only if --wiki flag)"
+    },
+    {
+      "label": "Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag",
+      "community": 26,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 7 - neo4j export (only if --neo4j or --neo4j-push flag)"
+    },
+    {
+      "label": "Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_7a_falkordb_export_only_if_falkordb_or_falkordb_push_flag",
+      "community": 26,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 7a - falkordb export (only if --falkordb or --falkordb-push flag)"
+    },
+    {
+      "label": "Step 7b - SVG export (only if --svg flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_7b_svg_export_only_if_svg_flag",
+      "community": 26,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 7b - svg export (only if --svg flag)"
+    },
+    {
+      "label": "Step 7c - GraphML export (only if --graphml flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_7c_graphml_export_only_if_graphml_flag",
+      "community": 26,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 7c - graphml export (only if --graphml flag)"
+    },
+    {
+      "label": "Step 7d - MCP server (only if --mcp flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_7d_mcp_server_only_if_mcp_flag",
+      "community": 26,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 7d - mcp server (only if --mcp flag)"
+    },
+    {
+      "label": "Step 8 - Token reduction benchmark (only if total_words > 5000)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_8_token_reduction_benchmark_only_if_total_words_5000",
+      "community": 26,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 8 - token reduction benchmark (only if total_words > 5000)"
+    },
+    {
+      "label": "github-and-merge.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/github-and-merge.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_github_and_merge",
+      "community": 33,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
+      "norm_label": "github-and-merge.md"
+    },
+    {
+      "label": "graphify reference: GitHub clone and cross-repo merge",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/github-and-merge.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge",
+      "community": 33,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
+      "norm_label": "graphify reference: github clone and cross-repo merge"
+    },
+    {
+      "label": "Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/github-and-merge.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_github_and_merge_step_0_clone_github_repo_s_only_if_a_github_url_was_given",
+      "community": 33,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
+      "norm_label": "step 0 - clone github repo(s) (only if a github url was given)"
+    },
+    {
+      "label": "hooks.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_hooks",
+      "community": 31,
+      "community_name": "graphify reference: commit hook and native CLAUDE.md integration",
+      "norm_label": "hooks.md"
+    },
+    {
+      "label": "graphify reference: commit hook and native CLAUDE.md integration",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
+      "community": 31,
+      "community_name": "graphify reference: commit hook and native CLAUDE.md integration",
+      "norm_label": "graphify reference: commit hook and native claude.md integration"
+    },
+    {
+      "label": "For git commit hook",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_hooks_for_git_commit_hook",
+      "community": 31,
+      "community_name": "graphify reference: commit hook and native CLAUDE.md integration",
+      "norm_label": "for git commit hook"
+    },
+    {
+      "label": "For native CLAUDE.md integration",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_hooks_for_native_claude_md_integration",
+      "community": 31,
+      "community_name": "graphify reference: commit hook and native CLAUDE.md integration",
+      "norm_label": "for native claude.md integration"
+    },
+    {
+      "label": "query.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_query",
+      "community": 29,
+      "community_name": "graphify reference: query, path, explain",
+      "norm_label": "query.md"
+    },
+    {
+      "label": "graphify reference: query, path, explain",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_query_graphify_reference_query_path_explain",
+      "community": 29,
+      "community_name": "graphify reference: query, path, explain",
+      "norm_label": "graphify reference: query, path, explain"
+    },
+    {
+      "label": "Step 0 \u2014 Constrained query expansion (REQUIRED before traversal)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_query_step_0_constrained_query_expansion_required_before_traversal",
+      "community": 29,
+      "community_name": "graphify reference: query, path, explain",
+      "norm_label": "step 0 \u2014 constrained query expansion (required before traversal)"
+    },
+    {
+      "label": "Step 1 \u2014 Traversal",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_query_step_1_traversal",
+      "community": 29,
+      "community_name": "graphify reference: query, path, explain",
+      "norm_label": "step 1 \u2014 traversal"
+    },
+    {
+      "label": "For /graphify path",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L186",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_query_for_graphify_path",
+      "community": 29,
+      "community_name": "graphify reference: query, path, explain",
+      "norm_label": "for /graphify path"
+    },
+    {
+      "label": "For /graphify explain",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L254",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_query_for_graphify_explain",
+      "community": 29,
+      "community_name": "graphify reference: query, path, explain",
+      "norm_label": "for /graphify explain"
+    },
+    {
+      "label": "transcribe.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/transcribe.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_transcribe",
+      "community": 34,
+      "community_name": "graphify reference: transcribe video and audio",
+      "norm_label": "transcribe.md"
+    },
+    {
+      "label": "graphify reference: transcribe video and audio",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/transcribe.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_transcribe_graphify_reference_transcribe_video_and_audio",
+      "community": 34,
+      "community_name": "graphify reference: transcribe video and audio",
+      "norm_label": "graphify reference: transcribe video and audio"
+    },
+    {
+      "label": "Step 2.5 - Transcribe video / audio files (only if video files detected)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/transcribe.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_transcribe_step_2_5_transcribe_video_audio_files_only_if_video_files_detected",
+      "community": 34,
+      "community_name": "graphify reference: transcribe video and audio",
+      "norm_label": "step 2.5 - transcribe video / audio files (only if video files detected)"
+    },
+    {
+      "label": "update.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_update",
+      "community": 32,
+      "community_name": "graphify reference: incremental update and cluster-only",
+      "norm_label": "update.md"
+    },
+    {
+      "label": "graphify reference: incremental update and cluster-only",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_update_graphify_reference_incremental_update_and_cluster_only",
+      "community": 32,
+      "community_name": "graphify reference: incremental update and cluster-only",
+      "norm_label": "graphify reference: incremental update and cluster-only"
+    },
+    {
+      "label": "For --update (incremental re-extraction)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_update_for_update_incremental_re_extraction",
+      "community": 32,
+      "community_name": "graphify reference: incremental update and cluster-only",
+      "norm_label": "for --update (incremental re-extraction)"
+    },
+    {
+      "label": "For --cluster-only",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L184",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_update_for_cluster_only",
+      "community": 32,
+      "community_name": "graphify reference: incremental update and cluster-only",
+      "norm_label": "for --cluster-only"
+    },
+    {
+      "label": "CONTENT-STRATEGIE.md",
+      "file_type": "document",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_content_strategie",
+      "community": 27,
+      "community_name": "AI Academy \u2014 Content-Strategie & Produktionsplan",
+      "norm_label": "content-strategie.md"
+    },
+    {
+      "label": "AI Academy \u2014 Content-Strategie & Produktionsplan",
+      "file_type": "document",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_content_strategie_ai_academy_content_strategie_produktionsplan",
+      "community": 27,
+      "community_name": "AI Academy \u2014 Content-Strategie & Produktionsplan",
+      "norm_label": "ai academy \u2014 content-strategie & produktionsplan"
+    },
+    {
+      "label": "1. Was 2026 wirklich gefragt ist (Marktlage)",
+      "file_type": "document",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "docs_content_strategie_1_was_2026_wirklich_gefragt_ist_marktlage",
+      "community": 27,
+      "community_name": "AI Academy \u2014 Content-Strategie & Produktionsplan",
+      "norm_label": "1. was 2026 wirklich gefragt ist (marktlage)"
+    },
+    {
+      "label": "2. Benchmark: OpenAI Academy (unser st\u00e4rkster \u201eGratis-Konkurrent\u201c)",
+      "file_type": "document",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "docs_content_strategie_2_benchmark_openai_academy_unser_st\u00e4rkster_gratis_konkurrent",
+      "community": 27,
+      "community_name": "AI Academy \u2014 Content-Strategie & Produktionsplan",
+      "norm_label": "2. benchmark: openai academy (unser starkster \u201egratis-konkurrent\u201c)"
+    },
+    {
+      "label": "3. Was einen guten Kurs ausmacht (Didaktik-Messlatte)",
+      "file_type": "document",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "docs_content_strategie_3_was_einen_guten_kurs_ausmacht_didaktik_messlatte",
+      "community": 27,
+      "community_name": "AI Academy \u2014 Content-Strategie & Produktionsplan",
+      "norm_label": "3. was einen guten kurs ausmacht (didaktik-messlatte)"
+    },
+    {
+      "label": "4. Ehrliche Kritik am Ist-Content",
+      "file_type": "document",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "docs_content_strategie_4_ehrliche_kritik_am_ist_content",
+      "community": 27,
+      "community_name": "AI Academy \u2014 Content-Strategie & Produktionsplan",
+      "norm_label": "4. ehrliche kritik am ist-content"
+    },
+    {
+      "label": "5. Soll-Curriculum (umgesetzt in dieser Iteration)",
+      "file_type": "document",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "docs_content_strategie_5_soll_curriculum_umgesetzt_in_dieser_iteration",
+      "community": 27,
+      "community_name": "AI Academy \u2014 Content-Strategie & Produktionsplan",
+      "norm_label": "5. soll-curriculum (umgesetzt in dieser iteration)"
+    },
+    {
+      "label": "6. Produktion: KI-generiert oder selbst filmen?",
+      "file_type": "document",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "docs_content_strategie_6_produktion_ki_generiert_oder_selbst_filmen",
+      "community": 27,
+      "community_name": "AI Academy \u2014 Content-Strategie & Produktionsplan",
+      "norm_label": "6. produktion: ki-generiert oder selbst filmen?"
+    },
+    {
+      "label": "7. Besucher abholen (Funnel)",
+      "file_type": "document",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "docs_content_strategie_7_besucher_abholen_funnel",
+      "community": 27,
+      "community_name": "AI Academy \u2014 Content-Strategie & Produktionsplan",
+      "norm_label": "7. besucher abholen (funnel)"
+    },
+    {
+      "label": "PROJEKTPLAN.md",
+      "file_type": "document",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_projektplan",
+      "community": 24,
+      "community_name": "AI Academy \u2014 Projektplan & Architektur",
+      "norm_label": "projektplan.md"
+    },
+    {
+      "label": "AI Academy \u2014 Projektplan & Architektur",
+      "file_type": "document",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_projektplan_ai_academy_projektplan_architektur",
+      "community": 24,
+      "community_name": "AI Academy \u2014 Projektplan & Architektur",
+      "norm_label": "ai academy \u2014 projektplan & architektur"
+    },
+    {
+      "label": "1. Vision & Produktziel",
+      "file_type": "document",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "docs_projektplan_1_vision_produktziel",
+      "community": 24,
+      "community_name": "AI Academy \u2014 Projektplan & Architektur",
+      "norm_label": "1. vision & produktziel"
+    },
+    {
+      "label": "2. Zielgruppen (modular verkaufbar)",
+      "file_type": "document",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "docs_projektplan_2_zielgruppen_modular_verkaufbar",
+      "community": 24,
+      "community_name": "AI Academy \u2014 Projektplan & Architektur",
+      "norm_label": "2. zielgruppen (modular verkaufbar)"
+    },
+    {
+      "label": "3. Tech-Stack (Soll-Architektur)",
+      "file_type": "document",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "docs_projektplan_3_tech_stack_soll_architektur",
+      "community": 24,
+      "community_name": "AI Academy \u2014 Projektplan & Architektur",
+      "norm_label": "3. tech-stack (soll-architektur)"
+    },
+    {
+      "label": "4. Rollen & Berechtigungen (RBAC)",
+      "file_type": "document",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "docs_projektplan_4_rollen_berechtigungen_rbac",
+      "community": 24,
+      "community_name": "AI Academy \u2014 Projektplan & Architektur",
+      "norm_label": "4. rollen & berechtigungen (rbac)"
+    },
+    {
+      "label": "5. Abomodelle",
+      "file_type": "document",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "docs_projektplan_5_abomodelle",
+      "community": 24,
+      "community_name": "AI Academy \u2014 Projektplan & Architektur",
+      "norm_label": "5. abomodelle"
+    },
+    {
+      "label": "6. Architektur & Verzeichnisstruktur",
+      "file_type": "document",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "docs_projektplan_6_architektur_verzeichnisstruktur",
+      "community": 24,
+      "community_name": "AI Academy \u2014 Projektplan & Architektur",
+      "norm_label": "6. architektur & verzeichnisstruktur"
+    },
+    {
+      "label": "7. Dom\u00e4nenmodell (Kern)",
+      "file_type": "document",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "docs_projektplan_7_dom\u00e4nenmodell_kern",
+      "community": 24,
+      "community_name": "AI Academy \u2014 Projektplan & Architektur",
+      "norm_label": "7. domanenmodell (kern)"
+    },
+    {
+      "label": "8. Feature-Matrix \u2192 Status",
+      "file_type": "document",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L155",
+      "_origin": "ast",
+      "id": "docs_projektplan_8_feature_matrix_status",
+      "community": 24,
+      "community_name": "AI Academy \u2014 Projektplan & Architektur",
+      "norm_label": "8. feature-matrix \u2192 status"
+    },
+    {
+      "label": "9. Roadmap (12 Phasen)",
+      "file_type": "document",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L179",
+      "_origin": "ast",
+      "id": "docs_projektplan_9_roadmap_12_phasen",
+      "community": 24,
+      "community_name": "AI Academy \u2014 Projektplan & Architektur",
+      "norm_label": "9. roadmap (12 phasen)"
+    },
+    {
+      "label": "10. Querschnitt: Qualit\u00e4t, Sicherheit, Performance",
+      "file_type": "document",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L196",
+      "_origin": "ast",
+      "id": "docs_projektplan_10_querschnitt_qualit\u00e4t_sicherheit_performance",
+      "community": 24,
+      "community_name": "AI Academy \u2014 Projektplan & Architektur",
+      "norm_label": "10. querschnitt: qualitat, sicherheit, performance"
     },
     {
       "label": "Graphify Build Pipeline",
@@ -4179,9 +5460,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "_claude_skills_graphify_skill_graphify_pipeline",
       "community": 7,
-      "norm_label": "graphify build pipeline"
+      "norm_label": "graphify build pipeline",
+      "id": "_claude_skills_graphify_skill_graphify_pipeline",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Structural AST Extraction",
@@ -4193,9 +5475,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Deterministic and free - code corpora need no LLM and no API key; runs in parallel with semantic extraction to save 5-15s on large corpora",
-      "id": "_claude_skills_graphify_skill_ast_extraction",
       "community": 7,
-      "norm_label": "structural ast extraction"
+      "norm_label": "structural ast extraction",
+      "id": "_claude_skills_graphify_skill_ast_extraction",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Semantic Extraction via Parallel Subagents",
@@ -4207,9 +5490,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Subagents dispatched in one message run in parallel (5-10x faster than reading files one-by-one); must be general-purpose type because Explore is read-only and silently drops chunk files",
-      "id": "_claude_skills_graphify_skill_semantic_extraction",
       "community": 7,
-      "norm_label": "semantic extraction via parallel subagents"
+      "norm_label": "semantic extraction via parallel subagents",
+      "id": "_claude_skills_graphify_skill_semantic_extraction",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Semantic Extraction Cache",
@@ -4221,9 +5505,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Cache check before dispatch avoids re-extracting unchanged files; stale .graphify_cached.json is deleted so Part C never merges leftovers (#1392)",
-      "id": "_claude_skills_graphify_skill_extraction_cache",
       "community": 7,
-      "norm_label": "semantic extraction cache"
+      "norm_label": "semantic extraction cache",
+      "id": "_claude_skills_graphify_skill_extraction_cache",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Community Detection and Labeling",
@@ -4234,9 +5519,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "_claude_skills_graphify_skill_community_detection",
       "community": 7,
-      "norm_label": "community detection and labeling"
+      "norm_label": "community detection and labeling",
+      "id": "_claude_skills_graphify_skill_community_detection",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "God Nodes Analysis",
@@ -4247,9 +5533,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "_claude_skills_graphify_skill_god_nodes",
       "community": 7,
-      "norm_label": "god nodes analysis"
+      "norm_label": "god nodes analysis",
+      "id": "_claude_skills_graphify_skill_god_nodes",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Graph Health Check",
@@ -4261,9 +5548,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Read-only integrity gate that surfaces edge collapse, dangling endpoints and self-loops - the silent-corruption modes of incremental updates and AST/LLM id mismatches; never aborts, but warnings must be surfaced per the Honesty Rules",
-      "id": "_claude_skills_graphify_skill_graph_health_check",
       "community": 7,
-      "norm_label": "graph health check"
+      "norm_label": "graph health check",
+      "id": "_claude_skills_graphify_skill_graph_health_check",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Graph Shrink Guard",
@@ -4275,9 +5563,10 @@
       "author": null,
       "contributor": null,
       "rationale": "to_json refuses to write when the new graph is smaller than the existing graph.json (#479) so an empty or failed extraction never clobbers a good graph; report and analysis sidecar are only written when the graph was actually written (#1392)",
-      "id": "_claude_skills_graphify_skill_shrink_guard",
       "community": 7,
-      "norm_label": "graph shrink guard"
+      "norm_label": "graph shrink guard",
+      "id": "_claude_skills_graphify_skill_shrink_guard",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Fast Path for Existing Graph",
@@ -4289,9 +5578,10 @@
       "author": null,
       "contributor": null,
       "rationale": "If graphify-out/graph.json exists and the request is a natural-language question, skip the build entirely and query - the graph is already built",
-      "id": "_claude_skills_graphify_skill_fast_path_query",
       "community": 7,
-      "norm_label": "fast path for existing graph"
+      "norm_label": "fast path for existing graph",
+      "id": "_claude_skills_graphify_skill_fast_path_query",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Honesty Rules (Audit Trail)",
@@ -4303,9 +5593,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Never invent an edge (use AMBIGUOUS when unsure), always show token cost, show raw cohesion scores - the EXTRACTED/INFERRED/AMBIGUOUS audit trail is the product's trust guarantee",
-      "id": "_claude_skills_graphify_skill_honesty_rules",
       "community": 7,
-      "norm_label": "honesty rules (audit trail)"
+      "norm_label": "honesty rules (audit trail)",
+      "id": "_claude_skills_graphify_skill_honesty_rules",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "No API Key Required Policy",
@@ -4317,9 +5608,10 @@
       "author": null,
       "contributor": null,
       "rationale": "graphify never blocks on an API key: code is extracted via AST with no LLM; semantic extraction uses Gemini only if a key is already set, otherwise the host agent itself is the LLM. Prompting for ANTHROPIC_API_KEY is defined as a misread of the skill",
-      "id": "_claude_skills_graphify_skill_no_api_key_policy",
       "community": 7,
-      "norm_label": "no api key required policy"
+      "norm_label": "no api key required policy",
+      "id": "_claude_skills_graphify_skill_no_api_key_policy",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Extraction Subagent Prompt",
@@ -4330,9 +5622,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "_claude_skills_graphify_references_extraction_spec_subagent_prompt",
       "community": 7,
-      "norm_label": "extraction subagent prompt"
+      "norm_label": "extraction subagent prompt",
+      "id": "_claude_skills_graphify_references_extraction_spec_subagent_prompt",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Discrete Confidence Score Rubric",
@@ -4344,9 +5637,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Models follow discrete rubrics better than continuous ranges; production showed a bimodal collapse (>50% at 0.5, >40% at 0.85+) so the range was replaced with five fixed values and 0.5 was banned as a default",
-      "id": "_claude_skills_graphify_references_extraction_spec_confidence_rubric",
       "community": 7,
-      "norm_label": "discrete confidence score rubric"
+      "norm_label": "discrete confidence score rubric",
+      "id": "_claude_skills_graphify_references_extraction_spec_confidence_rubric",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Full-Path Node ID Format",
@@ -4358,9 +5652,10 @@
       "author": null,
       "contributor": null,
       "rationale": "IDs use the full repo-relative path so same-named files in different directories stay distinct and semantic IDs match AST-generated IDs; filename-only or immediate-parent IDs create orphan ghost-duplicate nodes",
-      "id": "_claude_skills_graphify_references_extraction_spec_node_id_format",
       "community": 7,
-      "norm_label": "full-path node id format"
+      "norm_label": "full-path node id format",
+      "id": "_claude_skills_graphify_references_extraction_spec_node_id_format",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Constrained Query Expansion",
@@ -4372,9 +5667,10 @@
       "author": null,
       "contributor": null,
       "rationale": "The query CLI matches via case-folded substring + IDF with no stemming or synonyms, so vocabulary mismatch returns 0 hits; expanding only with tokens from the graph's own vocabulary fixes this without inventing tokens",
-      "id": "_claude_skills_graphify_references_query_query_expansion",
       "community": 7,
-      "norm_label": "constrained query expansion"
+      "norm_label": "constrained query expansion",
+      "id": "_claude_skills_graphify_references_query_query_expansion",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "BFS/DFS Graph Traversal",
@@ -4386,9 +5682,10 @@
       "author": null,
       "contributor": null,
       "rationale": "BFS for broad context (what is X connected to), DFS depth-limited to 6 for tracing a specific chain",
-      "id": "_claude_skills_graphify_references_query_bfs_dfs_traversal",
       "community": 7,
-      "norm_label": "bfs/dfs graph traversal"
+      "norm_label": "bfs/dfs graph traversal",
+      "id": "_claude_skills_graphify_references_query_bfs_dfs_traversal",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "save-result Feedback Loop",
@@ -4400,9 +5697,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Answers are saved back into the graph so the next --update extracts each Q&A as a node, improving future queries",
-      "id": "_claude_skills_graphify_references_query_save_result_loop",
       "community": 7,
-      "norm_label": "save-result feedback loop"
+      "norm_label": "save-result feedback loop",
+      "id": "_claude_skills_graphify_references_query_save_result_loop",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Work Memory (reflect / LESSONS.md)",
@@ -4414,9 +5712,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Outcome tags (useful/dead_end/corrected) feed graphify reflect, which maintains LESSONS.md listing preferred sources, known dead ends and corrections for future sessions",
-      "id": "_claude_skills_graphify_references_query_work_memory",
       "community": 7,
-      "norm_label": "work memory (reflect / lessons.md)"
+      "norm_label": "work memory (reflect / lessons.md)",
+      "id": "_claude_skills_graphify_references_query_work_memory",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Incremental Update (--update)",
@@ -4428,9 +5727,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Only re-extracts new/changed files to save tokens; code-only changes skip semantic extraction entirely; prune_sources is only for genuinely deleted files because build_merge's replace-on-re-extract reconciles changed files (#1344, #1178)",
-      "id": "_claude_skills_graphify_references_update_incremental_update",
       "community": 7,
-      "norm_label": "incremental update (--update)"
+      "norm_label": "incremental update (--update)",
+      "id": "_claude_skills_graphify_references_update_incremental_update",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "build_merge Graph Merge",
@@ -4442,9 +5742,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Reads graph.json directly without a NetworkX round-trip so edge direction is always preserved (#801); root= relativizes prune paths so stale nodes do not accumulate (#1361)",
-      "id": "_claude_skills_graphify_references_update_build_merge",
       "community": 7,
-      "norm_label": "build_merge graph merge"
+      "norm_label": "build_merge graph merge",
+      "id": "_claude_skills_graphify_references_update_build_merge",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Cluster-Only Rerun",
@@ -4456,9 +5757,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Self-contained CLI command; Steps 5-9 must not be re-run because they read intermediate files already deleted by a prior cleanup (#1392)",
-      "id": "_claude_skills_graphify_references_update_cluster_only",
       "community": 7,
-      "norm_label": "cluster-only rerun"
+      "norm_label": "cluster-only rerun",
+      "id": "_claude_skills_graphify_references_update_cluster_only",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Whisper Video/Audio Transcription",
@@ -4470,9 +5772,10 @@
       "author": null,
       "contributor": null,
       "rationale": "God-node labels are turned into a one-sentence domain hint passed as the Whisper initial prompt - the host agent composes it, no separate API call; transcripts are then treated as doc files",
-      "id": "_claude_skills_graphify_references_transcribe_whisper_transcription",
       "community": 7,
-      "norm_label": "whisper video/audio transcription"
+      "norm_label": "whisper video/audio transcription",
+      "id": "_claude_skills_graphify_references_transcribe_whisper_transcription",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "URL Ingestion (/graphify add)",
@@ -4483,9 +5786,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "_claude_skills_graphify_references_add_watch_url_ingest",
       "community": 7,
-      "norm_label": "url ingestion (/graphify add)"
+      "norm_label": "url ingestion (/graphify add)",
+      "id": "_claude_skills_graphify_references_add_watch_url_ingest",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Watch Mode Auto-Rebuild",
@@ -4497,9 +5801,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Code-only changes rebuild immediately with no LLM; doc/paper/image changes only set a needs_update flag because they require LLM re-extraction; debounce prevents one rebuild per file during agent write waves",
-      "id": "_claude_skills_graphify_references_add_watch_watch_mode",
       "community": 7,
-      "norm_label": "watch mode auto-rebuild"
+      "norm_label": "watch mode auto-rebuild",
+      "id": "_claude_skills_graphify_references_add_watch_watch_mode",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Graphify MCP Server",
@@ -4510,9 +5815,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "_claude_skills_graphify_references_exports_mcp_server",
       "community": 7,
-      "norm_label": "graphify mcp server"
+      "norm_label": "graphify mcp server",
+      "id": "_claude_skills_graphify_references_exports_mcp_server",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Neo4j / FalkorDB Cypher Export",
@@ -4524,9 +5830,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Uses MERGE so re-runs never create duplicates; FalkorDB prefers direct push because GRAPH.QUERY runs one statement at a time with no bulk script import",
-      "id": "_claude_skills_graphify_references_exports_graph_db_export",
       "community": 7,
-      "norm_label": "neo4j / falkordb cypher export"
+      "norm_label": "neo4j / falkordb cypher export",
+      "id": "_claude_skills_graphify_references_exports_graph_db_export",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Token Reduction Benchmark",
@@ -4538,9 +5845,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Only run when total_words > 5000 - for small corpora the graph's value is structural clarity, not token compression",
-      "id": "_claude_skills_graphify_references_exports_token_benchmark",
       "community": 7,
-      "norm_label": "token reduction benchmark"
+      "norm_label": "token reduction benchmark",
+      "id": "_claude_skills_graphify_references_exports_token_benchmark",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Cross-Repo Graph Merge",
@@ -4552,9 +5860,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Monorepo subfolders use the CLI directly (graphify-out inside each scanned path) because the skill pipeline would clobber one shared output dir; merged nodes carry a repo attribute for filtering",
-      "id": "_claude_skills_graphify_references_github_and_merge_cross_repo_merge",
       "community": 7,
-      "norm_label": "cross-repo graph merge"
+      "norm_label": "cross-repo graph merge",
+      "id": "_claude_skills_graphify_references_github_and_merge_cross_repo_merge",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "Post-Commit Auto-Rebuild Hook",
@@ -4566,9 +5875,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Triggers once per commit via git diff HEAD~1 - no background process needed; doc/image changes are ignored and need a manual --update",
-      "id": "_claude_skills_graphify_references_hooks_post_commit_hook",
       "community": 7,
-      "norm_label": "post-commit auto-rebuild hook"
+      "norm_label": "post-commit auto-rebuild hook",
+      "id": "_claude_skills_graphify_references_hooks_post_commit_hook",
+      "community_name": "Graphify Skill Docs"
     },
     {
       "label": "AI Academy Platform",
@@ -4580,9 +5890,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Not 'another AI course' but an ecosystem making learners measurably more productive within weeks; German-language sub-product of MadkourMedia under /academy",
-      "id": "docs_projektplan_ai_academy",
       "community": 9,
-      "norm_label": "ai academy platform"
+      "norm_label": "ai academy platform",
+      "id": "docs_projektplan_ai_academy",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Tech Stack (Next.js/Supabase/Stripe/Mux/Vercel)",
@@ -4594,9 +5905,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Supabase chosen for Auth+Storage+Realtime+RLS in one; Mux for signed adaptive streaming; Stripe for subscriptions; Vercel for edge deploys and ISR",
-      "id": "docs_projektplan_tech_stack",
       "community": 9,
-      "norm_label": "tech stack (next.js/supabase/stripe/mux/vercel)"
+      "norm_label": "tech stack (next.js/supabase/stripe/mux/vercel)",
+      "id": "docs_projektplan_tech_stack",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "localStorage Progress Store (store.ts)",
@@ -4608,9 +5920,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Progress (XP, streaks, badges, certificates, plan) runs on a localStorage store with the same API Supabase will serve later - migrating the backend means only swapping load/persist",
-      "id": "docs_projektplan_localstorage_store",
       "community": 9,
-      "norm_label": "localstorage progress store (store.ts)"
+      "norm_label": "localstorage progress store (store.ts)",
+      "id": "docs_projektplan_localstorage_store",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "RBAC Role Model",
@@ -4622,9 +5935,10 @@
       "author": null,
       "contributor": null,
       "rationale": "guest\u2192student\u2192pro\u2192instructor\u2192admin\u2192super_admin, enforced at three layers (Supabase RLS at DB level, middleware guards at route level, UI gating) - never client-side only",
-      "id": "docs_projektplan_rbac",
       "community": 9,
-      "norm_label": "rbac role model"
+      "norm_label": "rbac role model",
+      "id": "docs_projektplan_rbac",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Subscription Plans (Free/Basic/Pro/Elite)",
@@ -4635,9 +5949,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "docs_projektplan_abomodelle",
       "community": 9,
-      "norm_label": "subscription plans (free/basic/pro/elite)"
+      "norm_label": "subscription plans (free/basic/pro/elite)",
+      "id": "docs_projektplan_abomodelle",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Academy Domain Model (Level\u2192Chapter\u2192Lesson)",
@@ -4649,9 +5964,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Types in src/lib/academy/types.ts are the Single Source of Truth; Academy\u2192Level\u2192Chapter\u2192Lesson with Prompts, Resources, Quiz, plus User Progress and Prompt/Tool libraries",
-      "id": "docs_projektplan_domain_model",
       "community": 9,
-      "norm_label": "academy domain model (level\u2192chapter\u2192lesson)"
+      "norm_label": "academy domain model (level\u2192chapter\u2192lesson)",
+      "id": "docs_projektplan_domain_model",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Clean-Architecture-Light Layering",
@@ -4663,9 +5979,10 @@
       "author": null,
       "contributor": null,
       "rationale": "UI \u2192 feature components \u2192 domain types \u2192 services; the service serves mock data today and Supabase later while the UI stays unchanged",
-      "id": "docs_projektplan_clean_architecture",
       "community": 9,
-      "norm_label": "clean-architecture-light layering"
+      "norm_label": "clean-architecture-light layering",
+      "id": "docs_projektplan_clean_architecture",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "12-Phase Roadmap",
@@ -4676,9 +5993,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "docs_projektplan_roadmap",
       "community": 9,
-      "norm_label": "12-phase roadmap"
+      "norm_label": "12-phase roadmap",
+      "id": "docs_projektplan_roadmap",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Target Segments (Modular Personas)",
@@ -4689,9 +6007,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "docs_projektplan_zielgruppen",
       "community": 9,
-      "norm_label": "target segments (modular personas)"
+      "norm_label": "target segments (modular personas)",
+      "id": "docs_projektplan_zielgruppen",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Market Analysis 2026 (Demand Ranking)",
@@ -4703,9 +6022,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Demand order: AI agents & workflow automation first (Gartner: ~40% of enterprise apps with task-specific agents by end of 2026, most new roles no-code), then workflow design, prompting, context engineering, AI judgment - so course weight must shift from 'understand AI' to 'workflows & agents' where the paid tier begins",
-      "id": "docs_content_strategie_marktanalyse_2026",
       "community": 9,
-      "norm_label": "market analysis 2026 (demand ranking)"
+      "norm_label": "market analysis 2026 (demand ranking)",
+      "id": "docs_content_strategie_marktanalyse_2026",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "OpenAI Academy Benchmark",
@@ -4717,9 +6037,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Strongest free competitor; its weaknesses define the differentiation: German/DACH examples, tool-agnostic (ChatGPT and Claude/Gemini/Perplexity/n8n), a real person, community, pass-based certificates with score, industry personas",
-      "id": "docs_content_strategie_openai_academy_benchmark",
       "community": 9,
-      "norm_label": "openai academy benchmark"
+      "norm_label": "openai academy benchmark",
+      "id": "docs_content_strategie_openai_academy_benchmark",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "7-Point Didactics Checklist",
@@ -4731,9 +6052,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Outcome over topic, one artifact per lesson, quick win in minute 1 (decides completion rates), 5-12 min single-skill videos, practice over watching, built-in repetition, honesty about limits (builds trust ad-driven courses never get)",
-      "id": "docs_content_strategie_didaktik_messlatte",
       "community": 9,
-      "norm_label": "7-point didactics checklist"
+      "norm_label": "7-point didactics checklist",
+      "id": "docs_content_strategie_didaktik_messlatte",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Target Curriculum (3 Levels, 12 Lessons)",
@@ -4745,9 +6067,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Level 3 renamed from 'AI Master' to 'AI Workflows & Agenten' and made the pro-tier focus because that is where demand and willingness to pay converge; the old content had 4 basics lessons but only 1 agents lesson - the inverse of demand",
-      "id": "docs_content_strategie_soll_curriculum",
       "community": 9,
-      "norm_label": "target curriculum (3 levels, 12 lessons)"
+      "norm_label": "target curriculum (3 levels, 12 lessons)",
+      "id": "docs_content_strategie_soll_curriculum",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Hybrid Production (Face Front, AI Backstage)",
@@ -4759,9 +6082,10 @@
       "author": null,
       "contributor": null,
       "rationale": "No AI avatars as the core: avatar videos are 2026 commodity nobody trusts and would destroy the strongest differentiator (a real DACH person showing how they work); AI handles scripts, shotlists, graphics, quizzes, subtitles while the human films one batch day per level - 20-30% talking head, 60-70% screen recording, 10% graphics",
-      "id": "docs_content_strategie_hybrid_produktion",
       "community": 9,
-      "norm_label": "hybrid production (face front, ai backstage)"
+      "norm_label": "hybrid production (face front, ai backstage)",
+      "id": "docs_content_strategie_hybrid_produktion",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Visitor Funnel Strategy",
@@ -4773,9 +6097,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Landing sells transformation not features; Level 1 fully free as honest trial; prompt library .md export as lead magnet against newsletter; shorts from screen recordings as traffic source",
-      "id": "docs_content_strategie_funnel",
       "community": 9,
-      "norm_label": "visitor funnel strategy"
+      "norm_label": "visitor funnel strategy",
+      "id": "docs_content_strategie_funnel",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Context Engineering",
@@ -4787,9 +6112,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Giving agents the right information (knowledge, tools, limits) rather than just the right question - replacing prompt engineering as the differentiator",
-      "id": "docs_content_strategie_context_engineering",
       "community": 9,
-      "norm_label": "context engineering"
+      "norm_label": "context engineering",
+      "id": "docs_content_strategie_context_engineering",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Prompt Library (14+ Prompts, .md Export)",
@@ -4801,9 +6127,10 @@
       "author": null,
       "contributor": null,
       "rationale": "6 prompts felt empty; expanded to 14+ including agent/workflow prompts, exportable as .md for Obsidian/Notion users and reused as the lead magnet",
-      "id": "docs_content_strategie_prompt_bibliothek",
       "community": 9,
-      "norm_label": "prompt library (14+ prompts, .md export)"
+      "norm_label": "prompt library (14+ prompts, .md export)",
+      "id": "docs_content_strategie_prompt_bibliothek",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Project Status Handover (July 2026)",
@@ -4814,9 +6141,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "docs_session_handover_projektstand",
       "community": 9,
-      "norm_label": "project status handover (july 2026)"
+      "norm_label": "project status handover (july 2026)",
+      "id": "docs_session_handover_projektstand",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Live Progress Store (store.ts, shipped)",
@@ -4827,9 +6155,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "docs_session_handover_live_fortschritt_store",
       "community": 9,
-      "norm_label": "live progress store (store.ts, shipped)"
+      "norm_label": "live progress store (store.ts, shipped)",
+      "id": "docs_session_handover_live_fortschritt_store",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Plan Gating (UpgradeGate, canAccess)",
@@ -4840,9 +6169,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "docs_session_handover_plan_gating",
       "community": 9,
-      "norm_label": "plan gating (upgradegate, canaccess)"
+      "norm_label": "plan gating (upgradegate, canaccess)",
+      "id": "docs_session_handover_plan_gating",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Verifiable Certificate Issuance",
@@ -4854,9 +6184,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Issued on quiz pass with code + name + QR + LinkedIn link - a pass-based certificate with score, deliberately stronger than OpenAI Academy's participation certificate",
-      "id": "docs_session_handover_zertifikate",
       "community": 9,
-      "norm_label": "verifiable certificate issuance"
+      "norm_label": "verifiable certificate issuance",
+      "id": "docs_session_handover_zertifikate",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Warm Editorial Design System",
@@ -4868,9 +6199,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Deliberately away from the 'AI look': paper-light/espresso-dark, vermilion accent, ink buttons with hard offset shadows, film grain, marker highlights instead of gradient text, Syne poster typography - all tokens under .academy in globals.css",
-      "id": "docs_session_handover_warm_editorial_design",
       "community": 9,
-      "norm_label": "warm editorial design system"
+      "norm_label": "warm editorial design system",
+      "id": "docs_session_handover_warm_editorial_design",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "Mobile Display Root-Cause Fix (.ac-btn vs hidden)",
@@ -4882,9 +6214,10 @@
       "author": null,
       "contributor": null,
       "rationale": ".ac-btn/.ac-pill set display after Tailwind utilities and beat 'hidden', which caused a 131px overflow on every page - never combine hidden with these classes, hide a wrapper instead; verified 0px horizontal overflow at 390px via Playwright",
-      "id": "docs_session_handover_mobile_display_fix",
       "community": 20,
-      "norm_label": "mobile display root-cause fix (.ac-btn vs hidden)"
+      "norm_label": "mobile display root-cause fix (.ac-btn vs hidden)",
+      "id": "docs_session_handover_mobile_display_fix",
+      "community_name": "Mobile Display Fix Note"
     },
     {
       "label": "Open Items (Next Session Order)",
@@ -4896,9 +6229,10 @@
       "author": null,
       "contributor": null,
       "rationale": "Ordered: video production first (Level 1 shoot day), real downloads, Supabase schema+RLS, Stripe, Mux/Bunny video hosting, lead-magnet funnel, industry tracks (real estate first for JP DL AG synergy)",
-      "id": "docs_session_handover_offene_punkte",
       "community": 9,
-      "norm_label": "open items (next session order)"
+      "norm_label": "open items (next session order)",
+      "id": "docs_session_handover_offene_punkte",
+      "community_name": "Academy Strategy Docs"
     },
     {
       "label": "User Preferences (Monther)",
@@ -4910,9 +6244,10 @@
       "author": null,
       "contributor": null,
       "rationale": "German Du-form, reviews on phone, wants 'loop mode' (Claude works end-to-end autonomously then reports compactly), 'Merge' command = PR + merge to main (Vercel live), design must not look AI-generated",
-      "id": "docs_session_handover_nutzer_praeferenzen",
       "community": 9,
-      "norm_label": "user preferences (monther)"
+      "norm_label": "user preferences (monther)",
+      "id": "docs_session_handover_nutzer_praeferenzen",
+      "community_name": "Academy Strategy Docs"
     }
   ],
   "links": [
@@ -14682,6 +16017,765 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill",
+      "target": "claude_skills_graphify_skill_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L660",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_for_graphify_add_and_watch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L648",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_for_graphify_query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L666",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_for_the_commit_hook_and_native_claude_md_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L642",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_for_update_and_cluster_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L672",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_honesty_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L624",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_interpreter_guard_for_subcommands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_usage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_what_graphify_is_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_0_github_repos_and_multi_path_merge_only_if_a_url_or_several_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_1_ensure_graphify_is_installed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L144",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_2_5_video_and_audio_only_if_video_files_detected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_2_detect_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_3_extract_entities_and_relationships",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L451",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_4_5_graph_health_check_read_only_integrity_gate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L388",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L477",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_5_label_communities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L518",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_6_generate_obsidian_vault_opt_in_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L544",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L538",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_steps_6b_8_wiki_neo4j_falkordb_svg_graphml_mcp_benchmark_only_on_their_flags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_step_3_extract_entities_and_relationships",
+      "target": "claude_skills_graphify_skill_part_a_structural_extraction_for_code_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L193",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_step_3_extract_entities_and_relationships",
+      "target": "claude_skills_graphify_skill_part_b_semantic_extraction_parallel_subagents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L354",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_step_3_extract_entities_and_relationships",
+      "target": "claude_skills_graphify_skill_part_c_merge_ast_semantic_into_final_extraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_add_watch",
+      "target": "claude_skills_graphify_references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
+      "target": "claude_skills_graphify_references_add_watch_for_graphify_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
+      "target": "claude_skills_graphify_references_add_watch_for_watch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports",
+      "target": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_6b_wiki_only_if_wiki_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_7a_falkordb_export_only_if_falkordb_or_falkordb_push_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_7b_svg_export_only_if_svg_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_7c_graphml_export_only_if_graphml_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_7d_mcp_server_only_if_mcp_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_8_token_reduction_benchmark_only_if_total_words_5000",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/github-and-merge.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_github_and_merge",
+      "target": "claude_skills_graphify_references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/github-and-merge.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge",
+      "target": "claude_skills_graphify_references_github_and_merge_step_0_clone_github_repo_s_only_if_a_github_url_was_given",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_hooks",
+      "target": "claude_skills_graphify_references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
+      "target": "claude_skills_graphify_references_hooks_for_git_commit_hook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
+      "target": "claude_skills_graphify_references_hooks_for_native_claude_md_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_query",
+      "target": "claude_skills_graphify_references_query_graphify_reference_query_path_explain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L254",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_query_graphify_reference_query_path_explain",
+      "target": "claude_skills_graphify_references_query_for_graphify_explain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_query_graphify_reference_query_path_explain",
+      "target": "claude_skills_graphify_references_query_for_graphify_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_query_graphify_reference_query_path_explain",
+      "target": "claude_skills_graphify_references_query_step_0_constrained_query_expansion_required_before_traversal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_query_graphify_reference_query_path_explain",
+      "target": "claude_skills_graphify_references_query_step_1_traversal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/transcribe.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_transcribe",
+      "target": "claude_skills_graphify_references_transcribe_graphify_reference_transcribe_video_and_audio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/transcribe.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_transcribe_graphify_reference_transcribe_video_and_audio",
+      "target": "claude_skills_graphify_references_transcribe_step_2_5_transcribe_video_audio_files_only_if_video_files_detected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_update",
+      "target": "claude_skills_graphify_references_update_graphify_reference_incremental_update_and_cluster_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L184",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_update_graphify_reference_incremental_update_and_cluster_only",
+      "target": "claude_skills_graphify_references_update_for_cluster_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_update_graphify_reference_incremental_update_and_cluster_only",
+      "target": "claude_skills_graphify_references_update_for_update_incremental_re_extraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_content_strategie",
+      "target": "docs_content_strategie_ai_academy_content_strategie_produktionsplan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_content_strategie_ai_academy_content_strategie_produktionsplan",
+      "target": "docs_content_strategie_1_was_2026_wirklich_gefragt_ist_marktlage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_content_strategie_ai_academy_content_strategie_produktionsplan",
+      "target": "docs_content_strategie_2_benchmark_openai_academy_unser_st\u00e4rkster_gratis_konkurrent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_content_strategie_ai_academy_content_strategie_produktionsplan",
+      "target": "docs_content_strategie_3_was_einen_guten_kurs_ausmacht_didaktik_messlatte",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_content_strategie_ai_academy_content_strategie_produktionsplan",
+      "target": "docs_content_strategie_4_ehrliche_kritik_am_ist_content",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_content_strategie_ai_academy_content_strategie_produktionsplan",
+      "target": "docs_content_strategie_5_soll_curriculum_umgesetzt_in_dieser_iteration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_content_strategie_ai_academy_content_strategie_produktionsplan",
+      "target": "docs_content_strategie_6_produktion_ki_generiert_oder_selbst_filmen",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/CONTENT-STRATEGIE.md",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_content_strategie_ai_academy_content_strategie_produktionsplan",
+      "target": "docs_content_strategie_7_besucher_abholen_funnel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_projektplan",
+      "target": "docs_projektplan_ai_academy_projektplan_architektur",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_projektplan_ai_academy_projektplan_architektur",
+      "target": "docs_projektplan_10_querschnitt_qualit\u00e4t_sicherheit_performance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_projektplan_ai_academy_projektplan_architektur",
+      "target": "docs_projektplan_1_vision_produktziel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_projektplan_ai_academy_projektplan_architektur",
+      "target": "docs_projektplan_2_zielgruppen_modular_verkaufbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_projektplan_ai_academy_projektplan_architektur",
+      "target": "docs_projektplan_3_tech_stack_soll_architektur",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_projektplan_ai_academy_projektplan_architektur",
+      "target": "docs_projektplan_4_rollen_berechtigungen_rbac",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_projektplan_ai_academy_projektplan_architektur",
+      "target": "docs_projektplan_5_abomodelle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_projektplan_ai_academy_projektplan_architektur",
+      "target": "docs_projektplan_6_architektur_verzeichnisstruktur",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_projektplan_ai_academy_projektplan_architektur",
+      "target": "docs_projektplan_7_dom\u00e4nenmodell_kern",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_projektplan_ai_academy_projektplan_architektur",
+      "target": "docs_projektplan_8_feature_matrix_status",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/PROJEKTPLAN.md",
+      "source_location": "L179",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_projektplan_ai_academy_projektplan_architektur",
+      "target": "docs_projektplan_9_roadmap_12_phasen",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -15418,5 +17512,5 @@
       "source_file": "docs/CONTENT-STRATEGIE.md"
     }
   ],
-  "built_at_commit": "50887a36caa0731bb0dc57a3c54e02c625fe566a"
+  "built_at_commit": "7e645025d31d15255ceb21c8afce215e0e5263c6"
 }
