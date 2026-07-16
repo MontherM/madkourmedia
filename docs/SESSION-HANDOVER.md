@@ -11,11 +11,11 @@ eigenständige Next.js-App im Ordner `academy-app/` (transfer-fertig, eigenes
 package.json, eigene Configs, Routen ohne `/academy`-Präfix, eigene
 Sitemap/Robots, Ziel-Domain `academy.madkourmedia.com`).
 
-**Warum noch als Ordner hier:** Die GitHub-App darf keine neuen Repos anlegen
-(403), und das Leeren des vorhandenen `MontherM/aiplattform`-Repos (alter
-Snapshot vom 02.07.) braucht Monthers Freigabe. Sobald die da ist:
-Ordner-Inhalt als Initial-Commit ins Ziel-Repo pushen, Vercel-Projekt anlegen
-(Anleitung: `academy-app/docs/DEPLOYMENT.md`), dann diesen Ordner hier löschen.
+**Repo-Trennung vollzogen (15.07.2026):** Die Academy lebt jetzt in
+**`MontherM/aiplattform`** (`main` = Academy; alter Snapshot mit Monthers
+ausdrücklicher Freigabe überschrieben). Der Transfer-Ordner `academy-app/`
+wurde aus diesem Repo wieder entfernt — `aiplattform` ist die Single Source
+of Truth für allen Academy-Code inkl. Docs und Video-Produktionsunterlagen.
 
 **Auf madkourmedia-Seite ist die Trennung fertig:**
 - `src/app/academy`, `src/components/academy`, `src/lib/academy` entfernt
@@ -41,15 +41,11 @@ deployen + Domain verbinden, DANN erst diesen Branch mergen.
 
 ## Offene Punkte (nächste Session, priorisiert)
 
-1. **Monthers Entscheid nötig (Sicherheits-Gate, kann nicht delegiert
-   werden):** Ziel-Repo für `academy-app/`. Monther muss wörtlich sagen
-   „Nimm aiplattform" (dann dort pushen; alter Snapshot vom 02.07. wird
-   ersetzt) ODER neues Repo `ai-academy` anlegen + Claude-App-Zugriff geben.
-   Danach: Vercel-Projekt + Domain (docs/DEPLOYMENT.md), DANN erst mergen.
-   Push-Versuche nach aiplattform wurden vom Permission-System blockiert,
-   weil der Nutzer das Repo nie namentlich freigegeben hat.
-2. **Drehtag 1 ist komplett vorbereitet:** alle 4 Skripte in
-   `academy-app/docs/video/` + 4 SVG-Grafiken in `docs/video/gfx/`.
+1. **Monther:** Vercel-Projekt für `MontherM/aiplattform` anlegen +
+   Domain `academy.madkourmedia.com` verbinden (Anleitung:
+   docs/DEPLOYMENT.md im aiplattform-Repo). DANN erst diesen Branch mergen.
+2. **Drehtag 1 ist komplett vorbereitet:** alle 4 Skripte + 4 SVG-Grafiken
+   in `docs/video/` im aiplattform-Repo.
    Nächster Schritt: Monthers Feedback zu den Skripten → Dreh.
 3. Nach dem Dreh: Schnitt-Support, Kapitelmarken, Untertitel, Shorts-Pläne.
 4. Supabase → Stripe → Mux (brauchen Zugänge), Lead-Magnet-Funnel,
