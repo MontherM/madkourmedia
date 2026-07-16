@@ -141,3 +141,7 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# graphify transient sidecar files (final outputs like graph.json / GRAPH_REPORT.md stay tracked)
+graphify-out/.graphify_*
+graphify-out/.needs_update
